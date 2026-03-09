@@ -9,24 +9,24 @@ const {
 
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 const catalog = getCatalog();
-const sections = catalog.sections
-  .filter((section) => section.query_count > 0)
-  .map((section) => ({
-    code: section.code,
-    shortCode: section.short_code,
-    label: section.label,
-  }));
+const sections = catalog.sections.map((section) => ({
+  code: section.code,
+  shortCode: section.short_code,
+  label: section.label,
+  queryCount: section.query_count,
+}));
 
 const subclasses = sections.flatMap((section) => {
   const sectionNode = getNodeByCode(section.code);
   return sectionNode.child_codes
     .map((code) => getNodeByCode(code))
-    .filter((node) => node && getQueriesForCode(node.code).length > 0)
+    .filter(Boolean)
     .map((node) => ({
       code: node.code,
       shortCode: node.short_code,
       label: node.label,
       parentCode: section.code,
+      queryCount: getQueriesForCode(node.code).length,
     }));
 });
 
@@ -34,12 +34,13 @@ const leaves = subclasses.flatMap((subclass) => {
   const subclassNode = getNodeByCode(subclass.code);
   return subclassNode.child_codes
     .map((code) => getNodeByCode(code))
-    .filter((node) => node && getQueriesForCode(node.code).length > 0)
+    .filter(Boolean)
     .map((node) => ({
       code: node.code,
       shortCode: node.short_code,
       label: node.label,
       parentCode: subclass.code,
+      queryCount: getQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length,
     }));
 });
 
@@ -62,6 +63,9 @@ const queryIndex = leaves.map((leaf) => {
 <section class="card" style="padding:20px;">
   <h2 style="margin-top:0;">{title}</h2>
   <p class="muted">{description}</p>
+  <p class="muted" style="margin-top:-4px;">
+    The dropdowns show the full official MSC hierarchy. A selected field may legitimately have zero public queries so far.
+  </p>
 
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
     <label class="card" style="padding:14px;">
@@ -168,7 +172,7 @@ const queryIndex = leaves.map((leaf) => {
   }
 
   resetSelect(sectionSelect, "Choose section");
-  addOptions(sectionSelect, sections, (item) => `${item.shortCode} ${item.label}`);
+  addOptions(sectionSelect, sections, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
   resetSelect(subclassSelect, "Choose subclass");
   resetSelect(leafSelect, "Choose leaf code");
   renderResults();
@@ -179,7 +183,7 @@ const queryIndex = leaves.map((leaf) => {
     resetSelect(leafSelect, "Choose leaf code");
     subclassSelect.disabled = matchingSubclasses.length === 0;
     leafSelect.disabled = true;
-    addOptions(subclassSelect, matchingSubclasses, (item) => `${item.shortCode} ${item.label}`);
+    addOptions(subclassSelect, matchingSubclasses, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
     renderResults();
   });
 
@@ -187,7 +191,7 @@ const queryIndex = leaves.map((leaf) => {
     const matchingLeaves = leaves.filter((item) => item.parentCode === subclassSelect.value);
     resetSelect(leafSelect, "Choose leaf code");
     leafSelect.disabled = matchingLeaves.length === 0;
-    addOptions(leafSelect, matchingLeaves, (item) => `${item.shortCode} ${item.label}`);
+    addOptions(leafSelect, matchingLeaves, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
     renderResults();
   });
 
