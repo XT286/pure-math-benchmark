@@ -1,0 +1,19 @@
+review_id: AREA-REV-2026-0011
+query_id: PMB-FUNAN-2026-0001
+owning_area_code: 46Lxx
+reviewer_area_code: 46Lxx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Good operator-algebra argument item
+requested_changes: []
+summary: This is compact and checks whether the respondent can use the C-star
+  algebra positivity argument rather than appeal vaguely to Hilbert-space
+  intuition.
+legacy_source_review_id: REV-2026-0011
+submitted_at: 2026-03-08T12:50:00Z

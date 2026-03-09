@@ -1,0 +1,18 @@
+review_id: AREA-REV-2026-0008
+query_id: PMB-TOPOL-2026-0001
+owning_area_code: 55Mxx
+reviewer_area_code: 55Mxx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Simple but honest topological baseline
+requested_changes: []
+summary: The item is mathematically correct and reviewable. It is on the easier
+  side of the seed set but useful for cross-field calibration.
+legacy_source_review_id: REV-2026-0008
+submitted_at: 2026-03-08T12:35:00Z

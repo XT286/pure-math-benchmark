@@ -1,0 +1,30 @@
+{
+  "name": "puremathbenchmark",
+  "version": "1.0.0",
+  "description": "`Pure Math Benchmark` is a public benchmark initiative for evaluating `research-style pure mathematical reasoning` in language models.",
+  "scripts": {
+    "msc:import": "node scripts/import_msc2020.mjs",
+    "queries:migrate": "node scripts/migrate_queries.mjs",
+    "catalog:prepare": "node scripts/prepare_catalog_data.mjs",
+    "site:dev": "astro dev",
+    "site:build": "npm run catalog:prepare && astro build",
+    "build": "npm run msc:import && npm run queries:migrate && npm run site:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XT286/pure-math-benchmark.git"
+  },
+  "keywords": [],
+  "author": "Xuntao Hu",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/XT286/pure-math-benchmark/issues"
+  },
+  "homepage": "https://github.com/XT286/pure-math-benchmark#readme",
+  "dependencies": {
+    "astro": "^5.18.0",
+    "n3": "^2.0.3",
+    "yaml": "^2.8.2"
+  }
+}

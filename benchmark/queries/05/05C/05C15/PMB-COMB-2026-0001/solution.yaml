@@ -1,0 +1,17 @@
+query_id: PMB-COMB-2026-0001
+solution_id: SOL-COMB-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: A valid answer gives either the Mycielski construction, which
+  preserves triangle-freeness while increasing chromatic number, or an Erdos
+  probabilistic existence argument producing triangle-free graphs of arbitrarily
+  large chromatic number. The key point is unboundedness, not just a single
+  exotic example.
+required_ingredients:
+  - one infinite family or general existence scheme
+  - explicit link between triangle-freeness and unbounded chromatic number
+common_failure_modes:
+  - confusing girth arguments with a complete proof
+  - providing only one large finite example
+verification_status: editorial_seed

@@ -1,0 +1,29 @@
+rubric_id: RUBRIC-PMB-COMB-2026-0001
+query_id: PMB-COMB-2026-0001
+owning_area_code: 05Cxx
+rubric_basis: construction-rubric-v0
+rubric_focus:
+  problem_type: construction
+  answer_format: construction_with_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - argument_quality
+    - completeness
+success_criteria: The answer should provide or cite a genuine family of
+  triangle-free graphs with arbitrarily large chromatic number, such as
+  Mycielski constructions or Erdos-type existence, and explain the conceptual
+  consequence.
+required_elements:
+  - one infinite family or general existence scheme
+  - explicit link between triangle-freeness and unbounded chromatic number
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming the fact without naming any valid construction or existence method
+  - confuses large girth with triangle-free
+  - gives a finite example with high but bounded chromatic number without
+    addressing unboundedness
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

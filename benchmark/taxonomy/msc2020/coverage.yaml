@@ -1,0 +1,514 @@
+metadata:
+  generated_at: 2026-03-09T06:07:35.058Z
+  description: Benchmark coverage registry keyed to official MSC2020 nodes.
+default_statuses:
+  open_for_seeding: No accepted benchmark content yet, but the area is in scope.
+  seeded: At least one query exists in the area.
+  area_reviewed: At least one query in the area has passed area review.
+  rubric_reviewed: At least one query in the area has passed rubric review.
+  released: At least one query in the area has been released.
+sections:
+  - code: 00-XX
+    short_code: "00"
+    label: General and overarching topics; collections
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 01-XX
+    short_code: "01"
+    label: History and biography
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 03-XX
+    short_code: "03"
+    label: Mathematical logic and foundations
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 05-XX
+    short_code: "05"
+    label: Combinatorics
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 06-XX
+    short_code: "06"
+    label: Order, lattices, ordered algebraic structures
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 08-XX
+    short_code: "08"
+    label: General algebraic systems
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 11-XX
+    short_code: "11"
+    label: Number theory
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 12-XX
+    short_code: "12"
+    label: Field theory and polynomials
+    coverage_status: seeded
+    query_count: 1
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 13-XX
+    short_code: "13"
+    label: Commutative algebra
+    coverage_status: rubric_reviewed
+    query_count: 1
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 14-XX
+    short_code: "14"
+    label: Algebraic geometry
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 15-XX
+    short_code: "15"
+    label: Linear and multilinear algebra; matrix theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 16-XX
+    short_code: "16"
+    label: Associative rings and algebras
+    coverage_status: rubric_reviewed
+    query_count: 1
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 17-XX
+    short_code: "17"
+    label: Nonassociative rings and algebras
+    coverage_status: seeded
+    query_count: 1
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 18-XX
+    short_code: "18"
+    label: Category theory; homological algebra
+    coverage_status: seeded
+    query_count: 1
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 19-XX
+    short_code: "19"
+    label: K-theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 20-XX
+    short_code: "20"
+    label: Group theory and generalizations
+    coverage_status: rubric_reviewed
+    query_count: 1
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 22-XX
+    short_code: "22"
+    label: Topological groups, Lie groups
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 26-XX
+    short_code: "26"
+    label: Real functions
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 28-XX
+    short_code: "28"
+    label: Measure and integration
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 30-XX
+    short_code: "30"
+    label: Functions of a complex variable
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 31-XX
+    short_code: "31"
+    label: Potential theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 32-XX
+    short_code: "32"
+    label: Several complex variables and analytic spaces
+    coverage_status: rubric_reviewed
+    query_count: 1
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 33-XX
+    short_code: "33"
+    label: Special functions
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 34-XX
+    short_code: "34"
+    label: Ordinary differential equations
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 35-XX
+    short_code: "35"
+    label: Partial differential equations
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 37-XX
+    short_code: "37"
+    label: Dynamical systems and ergodic theory
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 39-XX
+    short_code: "39"
+    label: Difference and functional equations
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 40-XX
+    short_code: "40"
+    label: Sequences, series, summability
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 41-XX
+    short_code: "41"
+    label: Approximations and expansions
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 42-XX
+    short_code: "42"
+    label: Harmonic analysis on Euclidean spaces
+    coverage_status: seeded
+    query_count: 1
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 43-XX
+    short_code: "43"
+    label: Abstract harmonic analysis
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 44-XX
+    short_code: "44"
+    label: Integral transforms, operational calculus
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 45-XX
+    short_code: "45"
+    label: Integral equations
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 46-XX
+    short_code: "46"
+    label: Functional analysis
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 47-XX
+    short_code: "47"
+    label: Operator theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 49-XX
+    short_code: "49"
+    label: Calculus of variations and optimal control; optimization
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 51-XX
+    short_code: "51"
+    label: Geometry
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 52-XX
+    short_code: "52"
+    label: Convex and discrete geometry
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 53-XX
+    short_code: "53"
+    label: Differential geometry
+    coverage_status: rubric_reviewed
+    query_count: 2
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 54-XX
+    short_code: "54"
+    label: General topology
+    coverage_status: seeded
+    query_count: 1
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 55-XX
+    short_code: "55"
+    label: Algebraic topology
+    coverage_status: rubric_reviewed
+    query_count: 1
+    area_reviewed_count: 1
+    rubric_reviewed_count: 1
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 57-XX
+    short_code: "57"
+    label: Manifolds and cell complexes
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 58-XX
+    short_code: "58"
+    label: Global analysis, analysis on manifolds
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 60-XX
+    short_code: "60"
+    label: Probability theory and stochastic processes
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 62-XX
+    short_code: "62"
+    label: Statistics
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 65-XX
+    short_code: "65"
+    label: Numerical analysis
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 68-XX
+    short_code: "68"
+    label: Computer science
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 70-XX
+    short_code: "70"
+    label: Mechanics of particles and systems
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 74-XX
+    short_code: "74"
+    label: Mechanics of deformable solids
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 76-XX
+    short_code: "76"
+    label: Fluid mechanics
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 78-XX
+    short_code: "78"
+    label: Optics, electromagnetic theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 80-XX
+    short_code: "80"
+    label: Classical thermodynamics, heat transfer
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 81-XX
+    short_code: "81"
+    label: Quantum theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 82-XX
+    short_code: "82"
+    label: Statistical mechanics, structure of matter
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 83-XX
+    short_code: "83"
+    label: Relativity and gravitational theory
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 85-XX
+    short_code: "85"
+    label: Astronomy and astrophysics
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 86-XX
+    short_code: "86"
+    label: Geophysics
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 90-XX
+    short_code: "90"
+    label: Operations research, mathematical programming
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 91-XX
+    short_code: "91"
+    label: Game theory, economics, finance, and other social and behavioral sciences
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 92-XX
+    short_code: "92"
+    label: Biology and other natural sciences
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 93-XX
+    short_code: "93"
+    label: Systems theory; control
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 94-XX
+    short_code: "94"
+    label: Information and communication theory, circuits
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.
+  - code: 97-XX
+    short_code: "97"
+    label: Mathematics education
+    coverage_status: open_for_seeding
+    query_count: 0
+    area_reviewed_count: 0
+    rubric_reviewed_count: 0
+    notes: Coverage counts are updated from query sources during catalog preparation.

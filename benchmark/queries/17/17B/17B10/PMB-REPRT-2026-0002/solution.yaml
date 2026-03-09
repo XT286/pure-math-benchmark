@@ -1,0 +1,13 @@
+query_id: PMB-REPRT-2026-0002
+solution_id: SOL-REPRT-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should use finite-dimensional weight decomposition
+  and choose a maximal weight relative to the positive roots, then explain why
+  all positive root operators kill a vector in that weight space.
+required_ingredients: []
+common_failure_modes:
+  - confuses semisimple with nilpotent structure
+  - fails to use maximality of a weight
+verification_status: unreviewed_seed

@@ -1,0 +1,18 @@
+review_id: RUBRIC-REV-2026-0004
+query_id: PMB-NUMTH-2026-0001
+rubric_id: RUBRIC-PMB-NUMTH-2026-0001
+owning_area_code: 11Gxx
+review_round: 1
+recommendation: accept
+checks:
+  required_elements_are_sufficient: true
+  fatal_errors_are_field_appropriate: true
+  partial_credit_guidance_is_usable: true
+  alternate_valid_approaches_are_underdescribed: false
+requested_changes: []
+summary: The item is mathematically sound and appropriately tests whether a
+  respondent can identify the genus-zero curve as a conic and invoke the correct
+  local-global principle. The query-specific rubric is usable for expert
+  evaluation.
+legacy_source_review_id: REV-2026-0004
+submitted_at: 2026-03-08T12:15:00Z

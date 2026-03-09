@@ -1,32 +1,31 @@
 # Schema
 
-The schema layer makes the benchmark auditable.
+The schema layer now treats `official MSC2020 classification`, `query ownership`, and
+`review artifact separation` as first-class concepts.
 
 ## Files
 
-- `item.schema.json` defines benchmark items
-- `review.schema.json` defines expert review records
+- `item.schema.json` defines query source files
+- `rubric.schema.json` defines per-query answer rubrics
+- `query-area-review.schema.json` defines field-expert review of the query itself
+- `query-rubric-review.schema.json` defines field-expert review of the answer rubric
 
 ## Design goals
 
-- preserve mathematical provenance
-- separate item content from review state
-- support versioned releases
-- make review and adjudication traceable
+- use official MSC paths instead of a benchmark-internal taxonomy
+- separate stable query content from mutable review artifacts
+- make field ownership and reviewer eligibility explicit
+- keep the repo ready for a later review portal without changing source-of-truth data
 
-## Workflow states
+## Review model
 
-Typical item lifecycle:
+Each query can now accumulate distinct review artifacts:
 
-1. `draft`
-2. `under_review`
-3. `accepted`
-4. `deprecated` or `retracted`
+1. `query area review`
+2. `query rubric review`
+3. later, optional model-answer evaluation artifacts
 
-Each accepted item should have:
+This keeps expert review focused on:
 
-- a stable item ID
-- a canonical release version
-- one primary taxonomy path
-- at least one expert review record
-- an adjudicated disposition
+- whether the `query` is mathematically sound and correctly placed in its area
+- whether the `rubric` fairly evaluates valid answers in that area

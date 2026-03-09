@@ -1,13 +1,13 @@
 # Call For Participation
 
-`Pure Math Benchmark` is building a public evaluation standard for research-style pure mathematics in language models.
+`Pure Math Benchmark` is building a public evaluation standard for research-style mathematics in language models, organized directly by official `MSC2020` areas.
 
 We are looking for mathematicians who want to help with:
 
-- reviewing benchmark items
-- suggesting missing subject coverage
-- improving the taxonomy
-- refining the expert-review rubric
+- reviewing `queries from their own MSC area`
+- reviewing the `answer rubrics` attached to those queries
+- suggesting missing coverage inside their field
+- improving field-specific rubric expectations
 - shaping long-term governance
 
 ## Who should participate
@@ -21,14 +21,14 @@ Participation is especially valuable from:
 
 ## Why participate
 
-- to help define what high-quality mathematical evaluation should look like
+- to help define what high-quality mathematical evaluation should look like in your own field
 - to prevent public math evaluation from collapsing into contest-only or final-answer-only scoring
 - to create a benchmark that reflects real mathematical practice more faithfully
 
 ## How to participate
 
-- open an issue
-- propose an item
-- volunteer as a reviewer
-- suggest taxonomy corrections or missing areas
-- provide comments on the manuscript and benchmark philosophy
+- browse to your MSC area in the public catalog
+- review the visible queries in that area
+- review the attached answer rubrics
+- propose new queries or rubric revisions for thin areas
+- suggest taxonomy corrections or missing coverage

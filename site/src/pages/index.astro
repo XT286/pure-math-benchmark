@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCatalog } from "../lib/catalog.js";
+
+const catalog = getCatalog();
+const activeSections = catalog.sections.filter((section) => section.query_count > 0);
+---
+
+<BaseLayout title="Pure Math Benchmark Catalog">
+  <section class="hero">
+    <h2 style="margin-top:0;">Browse benchmark queries by official MSC area</h2>
+    <p class="muted">
+      This catalog is designed so mathematicians can go directly to their field,
+      inspect the current benchmark queries, and review the answer rubric attached
+      to each query.
+    </p>
+    <div class="grid" style="margin-top:18px;">
+      <div class="card">
+        <strong>{catalog.counts.sections}</strong>
+        <div class="muted">MSC sections indexed</div>
+      </div>
+      <div class="card">
+        <strong>{catalog.counts.msc_nodes}</strong>
+        <div class="muted">Official MSC nodes imported</div>
+      </div>
+      <div class="card">
+        <strong>{catalog.counts.queries}</strong>
+        <div class="muted">Queries currently migrated</div>
+      </div>
+      <div class="card">
+        <strong>{catalog.counts.reviewed_queries}</strong>
+        <div class="muted">Queries with both area and rubric review artifacts</div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Start by area</h2>
+  <div class="grid">
+    {activeSections.map((section) => (
+      <a class="card" href={`/msc/${section.short_code}/`}>
+        <div style="display:flex;justify-content:space-between;gap:8px;">
+          <strong>{section.short_code}</strong>
+          <span class="badge">{section.coverage_status}</span>
+        </div>
+        <h3 style="margin:12px 0 8px;">{section.label}</h3>
+        <div class="muted">{section.query_count} visible queries</div>
+      </a>
+    ))}
+  </div>
+
+  <h2 class="section-title">What experts can do here</h2>
+  <div class="grid">
+    <div class="card">
+      <h3 style="margin-top:0;">Review queries</h3>
+      <p class="muted">Check whether a query is sound, well classified, and appropriate for your area.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">Review rubrics</h3>
+      <p class="muted">Inspect how answers are judged, including fatal errors, acceptable approaches, and partial credit guidance.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">Suggest coverage</h3>
+      <p class="muted">See where benchmark coverage is thin and propose stronger field-specific additions.</p>
+    </div>
+  </div>
+</BaseLayout>

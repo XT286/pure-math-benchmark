@@ -1,0 +1,29 @@
+rubric_id: RUBRIC-PMB-DIFFG-2026-0002
+query_id: PMB-DIFFG-2026-0002
+owning_area_code: 53Cxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: theorem_selection
+  secondary_metrics:
+    - correctness
+success_criteria: The answer should identify Bonnet-Myers as the key theorem and
+  explain that the positive Ricci lower bound gives a finite diameter bound for
+  complete manifolds, hence compactness by completeness and total boundedness in
+  the Riemannian setting.
+required_elements:
+  - The answer should identify Bonnet-Myers as the key theorem and explain that
+    the positive Ricci lower bound gives a finite diameter bound for complete
+    manifolds, hence compactness by completeness and total boundedness in the
+    Riemannian setting.
+alternate_valid_approaches: []
+fatal_errors:
+  - citing Bonnet-Myers without stating the compactness consequence it gives
+  - uses sectional instead of Ricci assumptions without comment
+  - does not mention completeness
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

@@ -1,0 +1,70 @@
+id: PMB-TOPOL-2026-0001
+version: 0.1.0
+status: query_and_rubric_reviewed
+benchmark_track: broad_msc_math
+title: Degree one self-map of the sphere
+primary_msc_code: 55M25
+primary_msc_path:
+  - 55-XX
+  - 55Mxx
+  - 55M25
+secondary_msc_codes:
+  - 55N10
+secondary_msc_paths:
+  - - 55-XX
+    - 55Nxx
+    - 55N10
+owning_area_code: 55Mxx
+eligible_reviewer_area_codes:
+  - 55Mxx
+  - 55-XX
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Degree one self-map of the sphere
+  body: Let f:S^n -> S^n be a continuous map of degree 1. Explain why f cannot be
+    null-homotopic.
+  notation_conventions:
+    - degree means the induced map on top homology
+  definitions_included: true
+  prerequisites_assumed:
+    - singular homology
+    - homotopy invariance
+goal:
+  success_criteria: The answer should note that a null-homotopic map induces the
+    zero map on reduced homology, whereas a degree-one map induces the identity
+    on H_n(S^n), so the map cannot be null-homotopic.
+  forbidden_shortcuts:
+    - stating 'degree is a homotopy invariant' without tying it to null-homotopy
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item from standard algebraic topology.
+  year: 2026
+  license_status: original
+  provenance_notes: Used as a topology baseline with proof-style justification.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: low
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_topol_0001
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: topology
+    subfield: algebraic_topology
+    finer_topic: homotopy_and_homology_operations
+    secondary_tags:
+      - degree_theory
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

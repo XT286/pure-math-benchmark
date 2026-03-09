@@ -1,64 +1,41 @@
 # Taxonomy
 
-## Design goals
+The repository now uses the official `MSC2020` hierarchy as the canonical taxonomy.
 
-The public taxonomy is `MSC2020`-inspired but benchmark-oriented.
+## Canonical files
 
-It should be:
+- `msc2020/tree.yaml` contains the imported official hierarchy
+- `msc2020/coverage.yaml` tracks benchmark coverage by MSC section
+- `legacy_aliases.yaml` maps the original benchmark-specific taxonomy to official MSC sections during migration
 
-- broad enough to represent major pure-math communities
-- readable without consulting official MSC tables
-- stable at the top level
-- specific enough to support coverage accounting and gap analysis
+## Official hierarchy model
 
-## Three-level hierarchy
+The benchmark works with official MSC levels:
 
-Each benchmark item receives one primary path:
+1. `section`, represented as codes such as `03-XX`
+2. `subclass`, represented as codes such as `03Cxx`
+3. `leaf`, represented as codes such as `03C64`
 
-1. `subject_family`
-2. `subfield`
-3. `finer_topic`
+Filesystem paths simplify those levels for browsing:
 
-Each item may also include:
+- section directory: `03`
+- subclass directory: `03C`
+- leaf directory: `03C64`
 
-- `msc2020_codes`
-- optional `secondary_tags`
-- optional `cross_field_tags`
+## Query ownership
 
-## Primary subject families
+Each query now carries:
 
-The initial benchmark uses the following subject families:
+- one `primary_msc_code`
+- one `primary_msc_path`
+- optional secondary MSC codes
+- one `owning_area_code`
 
-1. `logic_foundations`
-2. `combinatorics_discrete`
-3. `structural_algebra`
-4. `number_theory_arithmetic_geometry`
-5. `commutative_algebra_homological`
-6. `representation_theory_noncommutative`
-7. `algebraic_geometry`
-8. `topology`
-9. `differential_symplectic_geometry`
-10. `analysis`
-11. `functional_analysis_operator_theory`
-12. `dynamics_math_physics_interface`
+The owning area determines who should review:
 
-## Mapping philosophy
+- the query itself
+- the rubric used to evaluate answers to that query
 
-The benchmark does not expose the full complexity of `MSC2020` in its public-facing hierarchy.
+## Coverage philosophy
 
-Instead:
-
-- public taxonomy labels remain human-readable
-- official `MSC2020` mappings are stored as metadata
-- multiple MSC codes may be attached to a single item
-- one taxonomy path remains primary for coverage accounting
-
-## Coverage expectations
-
-For the seed release, each subject family should be represented by:
-
-- at least `4` subfields
-- at least `2` finer topics per subfield
-- at least `2` benchmark items per finer topic
-
-Cross-field items should still carry one primary taxonomy path, but may use secondary tags to reflect interdisciplinary structure.
+The benchmark is no longer restricted to a reduced pure-math taxonomy. The data model is ready for broad mathematical coverage across most of MSC, while the coverage registry tracks which areas are merely in scope, seeded, reviewed, or released.

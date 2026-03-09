@@ -1,0 +1,19 @@
+review_id: RUBRIC-REV-2026-0002
+query_id: PMB-COMB-2026-0001
+rubric_id: RUBRIC-PMB-COMB-2026-0001
+owning_area_code: 05Cxx
+review_round: 1
+recommendation: minor_revision
+checks:
+  required_elements_are_sufficient: true
+  fatal_errors_are_field_appropriate: true
+  partial_credit_guidance_is_usable: true
+  alternate_valid_approaches_are_underdescribed: true
+requested_changes:
+  - Specify that a single family or valid existence argument is required.
+summary: The item is sound and captures a real research-literacy fact from
+  extremal graph theory. The rubric should explicitly reward either Mycielski or
+  Erdos-type existence proofs. The query-specific rubric should be tightened
+  before release.
+legacy_source_review_id: REV-2026-0002
+submitted_at: 2026-03-08T12:05:00Z

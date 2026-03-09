@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import QueryCard from "../../../components/QueryCard.astro";
+import { getCatalog, getChildren, getNodeByCode, getQueriesForCode, getSectionByShortCode } from "../../../lib/catalog.js";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return catalog.sections.map((section) => ({
+    params: { section: section.short_code },
+  }));
+}
+
+const { section } = Astro.params;
+const sectionRecord = getSectionByShortCode(section);
+const node = getNodeByCode(`${section}-XX`);
+const subclasses = getChildren(node);
+const queries = getQueriesForCode(node.code);
+---
+
+<BaseLayout title={`${sectionRecord.label} | MSC`}>
+  <div class="breadcrumbs">Home / <a href="/msc/">MSC</a> / {sectionRecord.short_code}</div>
+
+  <section class="hero">
+    <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+      <div>
+        <h2 style="margin-top:0;">{sectionRecord.short_code} {sectionRecord.label}</h2>
+        <p class="muted">Coverage status: <span class="badge">{sectionRecord.coverage_status}</span></p>
+      </div>
+      <div class="badge-row">
+        <span class="badge">{queries.length} queries</span>
+        <span class="badge">{subclasses.length} subclasses</span>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-title">Subclasses</h2>
+  <div class="grid">
+    {subclasses.map((subclass) => (
+      <a class="card" href={`/msc/${sectionRecord.short_code}/${subclass.short_code}/`}>
+        <strong>{subclass.short_code}</strong>
+        <h3 style="margin:12px 0 8px;">{subclass.label}</h3>
+        <div class="muted">{getQueriesForCode(subclass.code).length} visible queries</div>
+      </a>
+    ))}
+  </div>
+
+  <h2 class="section-title">Visible queries in this section</h2>
+  <div class="list">
+    {queries.length > 0 ? queries.map((query) => <QueryCard query={query} />) : <div class="card">No public queries in this section yet.</div>}
+  </div>
+</BaseLayout>

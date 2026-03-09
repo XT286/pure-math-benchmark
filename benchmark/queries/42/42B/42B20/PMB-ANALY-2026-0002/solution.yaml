@@ -1,0 +1,14 @@
+query_id: PMB-ANALY-2026-0002
+solution_id: SOL-ANALY-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should identify the Calderon-Zygmund theorem or
+  T1/Tb-type paradigm in the classical setting, explaining that L^2 boundedness
+  together with kernel control yields weak-(1,1) and interpolation or
+  extrapolation to L^p boundedness for the full range 1<p<infty.
+required_ingredients: []
+common_failure_modes:
+  - states interpolation without endpoint control
+  - ignores kernel hypotheses
+verification_status: unreviewed_seed

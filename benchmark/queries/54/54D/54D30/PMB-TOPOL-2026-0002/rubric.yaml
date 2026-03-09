@@ -1,0 +1,30 @@
+rubric_id: RUBRIC-PMB-TOPOL-2026-0002
+query_id: PMB-TOPOL-2026-0002
+owning_area_code: 54Dxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: use_of_hypotheses
+  secondary_metrics:
+    - correctness
+    - completeness
+success_criteria: The answer should separate a point x notin K from each y in K
+  by disjoint open neighborhoods, extract a finite subcover of K from the
+  neighborhoods around y, and intersect the corresponding neighborhoods of x to
+  obtain an open set disjoint from K.
+required_elements:
+  - The answer should separate a point x notin K from each y in K by disjoint
+    open neighborhoods, extract a finite subcover of K from the neighborhoods
+    around y, and intersect the corresponding neighborhoods of x to obtain an
+    open set disjoint from K.
+alternate_valid_approaches: []
+fatal_errors:
+  - stating the theorem without showing the Hausdorff separation step
+  - uses sequential compactness instead of compactness
+  - does not isolate the Hausdorff step
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

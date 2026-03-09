@@ -20,10 +20,12 @@ The Steering Committee is responsible for:
 
 The Editorial Board is responsible for:
 
-- subject-area oversight
+- subject-area oversight by `MSC` area
 - item review coordination
 - adjudication support
 - recommending corrections, deprecations, and expansions
+
+In the redesigned workflow, editors should be assigned against `owning_area_code` lanes rather than broad informal subject buckets.
 
 ### Contributors
 
@@ -38,7 +40,8 @@ Contributors may:
 
 Reviewers are expected to:
 
-- assess mathematical soundness
+- assess mathematical soundness of queries in their own area
+- assess the fairness and completeness of answer rubrics in their own area
 - declare conflicts of interest
 - provide structured scores and textual justification
 - flag fatal flaws versus reparable gaps
@@ -53,9 +56,11 @@ Reviewers are expected to:
 
 ## Minimum review threshold
 
-Official held-out benchmark material should normally require:
+Official benchmark material should normally require:
 
-- at least two independent expert reviews
+- at least one area review of the query
+- at least one review of the per-query answer rubric
+- additional independent reviews for cross-area or difficult items
 - one handling editor
 - documented adjudication when reviews materially disagree
 

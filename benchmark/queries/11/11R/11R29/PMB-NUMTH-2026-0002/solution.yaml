@@ -1,0 +1,13 @@
+query_id: PMB-NUMTH-2026-0002
+solution_id: SOL-NUMTH-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should explain that Minkowski's bound shows every
+  ideal class contains an integral ideal of bounded norm, and only finitely many
+  such ideals exist, so the class group is finite.
+required_ingredients: []
+common_failure_modes:
+  - invokes Dirichlet units instead of Minkowski
+  - omits why there are finitely many ideals of bounded norm
+verification_status: unreviewed_seed

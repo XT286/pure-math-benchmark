@@ -1,0 +1,18 @@
+review_id: RUBRIC-REV-2026-0005
+query_id: PMB-CAHOM-2026-0001
+rubric_id: RUBRIC-PMB-CAHOM-2026-0001
+owning_area_code: 13Hxx
+review_round: 1
+recommendation: accept
+checks:
+  required_elements_are_sufficient: true
+  fatal_errors_are_field_appropriate: true
+  partial_credit_guidance_is_usable: true
+  alternate_valid_approaches_are_underdescribed: false
+requested_changes: []
+summary: This item cleanly probes recognition of the regular local ring setting
+  and use of Auslander-Buchsbaum. It is appropriate for the benchmark's
+  research-literacy tier. The query-specific rubric is usable for expert
+  evaluation.
+legacy_source_review_id: REV-2026-0005
+submitted_at: 2026-03-08T12:20:00Z

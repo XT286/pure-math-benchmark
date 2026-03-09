@@ -1,0 +1,15 @@
+query_id: PMB-ALGEB-2026-0002
+solution_id: SOL-ALGEB-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should explain that both fields are splitting fields
+  of x^q-x over the prime field, equivalently the unique field with q elements
+  up to isomorphism, and may note the multiplicative group structure as
+  supporting context.
+required_ingredients: []
+common_failure_modes:
+  - uses only multiplicative group cyclicity, which does not by itself prove
+    field isomorphism
+  - fails to mention the prime field
+verification_status: unreviewed_seed

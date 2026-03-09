@@ -2,28 +2,33 @@
 
 ## Reviewer role
 
-Reviewers help determine whether benchmark items and model responses meet the standard of serious mathematical evaluation.
+Reviewers are expected to work inside their own `MSC` area.
+
+The core review tasks are:
+
+- evaluate whether a query is mathematically sound and appropriately classified
+- evaluate whether the per-query answer rubric is fair and usable in that field
 
 ## Expected commitment
 
 For the seed phase, a typical review pass may involve:
 
-- reading the item statement and metadata
+- reading the query statement and metadata
 - checking the canonical solution outline
-- reviewing a sample model response or rubric calibration example
-- completing a structured review form
+- reviewing the attached answer rubric
+- completing a structured `query area review` and `query rubric review`
 
 ## Reviewer norms
 
-- focus on mathematical substance
+- focus on mathematical substance in your own field
 - identify fatal flaws clearly
 - distinguish central from local gaps
-- judge the argument presented, not the style you would personally prefer
+- judge field appropriateness and rubric fairness, not only prose style
 
 ## Before reviewing
 
 Please read:
 
 - [`SCORING.md`](../SCORING.md)
-- [`benchmark/rubrics/proof-rubric.md`](../benchmark/rubrics/proof-rubric.md)
+- the query and rubric files for your MSC area in the public catalog
 - [`governance/conflicts-of-interest.md`](../governance/conflicts-of-interest.md)

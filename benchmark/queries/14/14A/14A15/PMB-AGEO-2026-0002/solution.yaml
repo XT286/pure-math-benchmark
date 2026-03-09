@@ -1,0 +1,13 @@
+query_id: PMB-AGEO-2026-0002
+solution_id: SOL-AGEO-0002
+proof_outline_available: true
+formalization_status: partial
+independent_verification_count: 0
+outline_summary: The answer should describe R mapsto Spec(R), explain that ring
+  homomorphisms A -> B induce morphisms Spec(B) -> Spec(A), and state why every
+  affine scheme arises from a ring and morphisms are recovered contravariantly.
+required_ingredients: []
+common_failure_modes:
+  - gets the direction of morphisms wrong
+  - states object-level correspondence only
+verification_status: unreviewed_seed

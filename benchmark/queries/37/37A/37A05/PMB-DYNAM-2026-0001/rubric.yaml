@@ -1,0 +1,29 @@
+rubric_id: RUBRIC-PMB-DYNAM-2026-0001
+query_id: PMB-DYNAM-2026-0001
+owning_area_code: 37Axx
+rubric_basis: classification-rubric-v0
+rubric_focus:
+  problem_type: framework_comparison
+  answer_format: structured_bullets
+  primary_metric: argument_quality
+  secondary_metrics:
+    - correctness
+    - communication_clarity
+success_criteria: The answer should explain that irrational rotations have dense
+  orbits, giving minimality, and that they have pure point spectrum / rigid
+  correlation behavior preventing mixing.
+required_elements:
+  - density of irrational orbit
+  - spectral or correlation obstruction to mixing
+alternate_valid_approaches: []
+fatal_errors:
+  - asserting 'rotations are isometries so not mixing' without mathematical
+    explanation
+  - confuses transitivity with minimality
+  - asserts nonmixing without discussing eigenfunctions or correlation
+    obstruction
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

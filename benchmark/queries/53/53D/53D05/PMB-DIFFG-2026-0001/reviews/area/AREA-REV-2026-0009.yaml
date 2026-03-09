@@ -1,0 +1,20 @@
+review_id: AREA-REV-2026-0009
+query_id: PMB-DIFFG-2026-0001
+owning_area_code: 53Dxx
+reviewer_area_code: 53Dxx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Good hypothesis-sensitivity item
+  - Clear use of Stokes
+requested_changes: []
+summary: This item is sound and well matched to the rubric. It clearly tests
+  whether the model tracks the closed-manifold hypothesis rather than reciting
+  symplectic folklore.
+legacy_source_review_id: REV-2026-0009
+submitted_at: 2026-03-08T12:40:00Z

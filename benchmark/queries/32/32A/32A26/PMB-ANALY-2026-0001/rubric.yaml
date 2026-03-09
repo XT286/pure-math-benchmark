@@ -1,0 +1,29 @@
+rubric_id: RUBRIC-PMB-ANALY-2026-0001
+query_id: PMB-ANALY-2026-0001
+owning_area_code: 32Axx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: theorem_selection
+  secondary_metrics:
+    - correctness
+    - communication_clarity
+success_criteria: The answer should identify Hartogs extension as the relevant
+  theorem and explain that in several complex variables, unlike one complex
+  variable, isolated compact holes in a connected complement do not obstruct
+  global extension.
+required_elements:
+  - Hartogs extension theorem
+  - connected complement condition
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming removable singularity theorem from one variable without addressing
+    the higher-dimensional phenomenon
+  - confuses the one-variable and several-variable situations
+  - omits the connected complement condition from the explanation
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

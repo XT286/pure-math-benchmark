@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCatalog, getQueryById, getReviewsForQuery, getRubricById, getSolutionById, shortSectionCode, shortSubclassCode } from "../../../lib/catalog.js";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return catalog.queries.map((query) => ({
+    params: { id: query.id },
+  }));
+}
+
+const { id } = Astro.params;
+const query = getQueryById(id);
+const rubric = getRubricById(query.rubric_id);
+const solution = getSolutionById(query.solution_id);
+const reviews = getReviewsForQuery(id);
+const section = shortSectionCode(query.primary_msc_code);
+const subclass = shortSubclassCode(query.primary_msc_code);
+---
+
+<BaseLayout title={`${query.title} | Query`}>
+  <div class="breadcrumbs">
+    Home / <a href="/msc/">MSC</a> /
+    <a href={`/msc/${section}/`}>{section}</a> /
+    <a href={`/msc/${section}/${subclass}/`}>{subclass}</a> /
+    <a href={`/msc/${section}/${subclass}/${query.primary_msc_code}/`}>{query.primary_msc_code}</a> /
+    {query.id}
+  </div>
+
+  <section class="hero">
+    <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+      <div>
+        <h2 style="margin-top:0;">{query.title}</h2>
+        <div class="muted"><code>{query.id}</code></div>
+      </div>
+      <span class="badge">{query.status}</span>
+    </div>
+    <div class="badge-row">
+      <span class="badge">Primary MSC {query.primary_msc_code}</span>
+      <span class="badge">Owning area {query.owning_area_code}</span>
+      <span class="badge">{query.problem_type}</span>
+      <span class="badge">{query.answer_format}</span>
+      <span class="badge">{query.difficulty.stage}</span>
+    </div>
+  </section>
+
+  <h2 class="section-title">Query</h2>
+  <div class="card">
+    <p>{query.statement.body}</p>
+    <h3>Notation</h3>
+    <ul>
+      {query.statement.notation_conventions.map((note) => <li>{note}</li>)}
+    </ul>
+    <h3>Prerequisites</h3>
+    <ul>
+      {query.statement.prerequisites_assumed.map((item) => <li>{item}</li>)}
+    </ul>
+    <h3>Success criteria</h3>
+    <p>{query.goal.success_criteria}</p>
+  </div>
+
+  <h2 class="section-title">Answer rubric</h2>
+  <div class="card">
+    <p><a href={`/rubrics/${rubric.rubric_id}/`}>Open dedicated rubric page</a></p>
+    <h3>Required elements</h3>
+    <ul>
+      {rubric.required_elements.map((item) => <li>{item}</li>)}
+    </ul>
+    <h3>Fatal errors</h3>
+    <ul>
+      {rubric.fatal_errors.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  <h2 class="section-title">Canonical solution outline</h2>
+  <div class="card">
+    <p>{solution.outline_summary}</p>
+  </div>
+
+  <h2 class="section-title">Public review summaries</h2>
+  <div class="list">
+    {reviews.length > 0 ? reviews.map((review) => (
+      <div class="list-item">
+        <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+          <strong>{review.type === "area" ? "Area review" : "Rubric review"}</strong>
+          <span class="badge">{review.recommendation}</span>
+        </div>
+        <p class="muted">{review.summary}</p>
+        {review.requested_changes.length > 0 && (
+          <>
+            <strong>Requested changes</strong>
+            <ul>
+              {review.requested_changes.map((change) => <li>{change}</li>)}
+            </ul>
+          </>
+        )}
+      </div>
+    )) : <div class="card">No public review summaries yet.</div>}
+  </div>
+</BaseLayout>

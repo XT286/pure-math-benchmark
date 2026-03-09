@@ -1,0 +1,29 @@
+rubric_id: RUBRIC-PMB-CAHOM-2026-0001
+query_id: PMB-CAHOM-2026-0001
+owning_area_code: 13Hxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: argument_quality
+  secondary_metrics:
+    - correctness
+    - theorem_selection
+success_criteria: The answer should identify M as maximal Cohen-Macaulay, use
+  that regular local rings have finite global dimension, deduce pd_R(M) is
+  finite, and then apply Auslander-Buchsbaum to obtain pd_R(M)=0 and hence
+  freeness.
+required_elements:
+  - finite projective dimension over regular local rings
+  - Auslander-Buchsbaum formula
+  - projective over local implies free
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming all maximal Cohen-Macaulay modules are free without using regularity
+  - uses Cohen-Macaulay of R but not regularity
+  - omits the finite projective dimension input needed for Auslander-Buchsbaum
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

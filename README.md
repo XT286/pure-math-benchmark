@@ -17,9 +17,9 @@ None of those categories directly targets broad, `research-grade pure mathematic
 
 This benchmark aims to fill that gap with:
 
-- an `MSC-inspired taxonomy` that spans major pure-math subject families
-- `expert-reviewed items` with explicit metadata, provenance, and verification state
-- `argument-centered evaluation` that rewards correctness, rigor, theorem applicability, and meaningful partial progress
+- the official `MSC2020` hierarchy as the canonical taxonomy
+- `query-centered expert review` in the relevant field, rather than only generic benchmark review
+- `per-query answer rubrics` that can themselves be reviewed by experts in that field
 - a `community governance model` intended to support long-term use as a shared standard
 
 ## What this benchmark measures
@@ -59,24 +59,29 @@ The benchmark is intentionally designed to complement, rather than replicate, cu
 
 See [`docs/benchmark-landscape.md`](docs/benchmark-landscape.md) for a fuller comparison.
 
-## Initial release goals
+## Current release goals
 
-The first public release is designed to establish standards before scale:
+The current redesign is focused on the benchmark source-of-truth itself:
 
-- a seeded benchmark corpus organized by subject family, subfield, and finer topic
-- an explicit mapping to `MSC2020`
-- a structured benchmark item schema and review schema
-- an expert-review rubric for proofs, counterexamples, and theorem-selection tasks
+- a seeded benchmark corpus organized directly by official `MSC2020` paths
+- per-query source files under `benchmark/queries/`
+- a structured query schema plus dedicated schemas for `query area review` and `query rubric review`
+- field ownership metadata so mathematicians can review content in their own area
+- a public browsable catalog that routes experts directly to the relevant MSC pages, queries, and rubrics
 - governance, versioning, correction, and conflict-of-interest policies
 - an `arXiv`-ready whitepaper explaining the benchmark and inviting mathematician participation
 
 ## Repository layout
 
-- [`benchmark/`](benchmark/) contains taxonomy, schema, rubrics, and benchmark items
+- [`benchmark/taxonomy/msc2020/`](benchmark/taxonomy/msc2020/) contains the canonical MSC tree and coverage registry
+- [`benchmark/queries/`](benchmark/queries/) contains per-query source files organized by MSC path
+- [`benchmark/schema/`](benchmark/schema/) contains query, rubric, and review schemas
+- [`benchmark/releases/`](benchmark/releases/) contains generated release bundles
 - [`docs/`](docs/) contains scope, comparison, authoring guidance, and release process
 - [`governance/`](governance/) contains governance, conflicts, editorial, and reviewer materials
 - [`community/`](community/) contains participation and feedback-loop documents
 - [`paper/`](paper/) contains the manuscript and bibliography for public circulation
+- [`site/`](site/) contains the public catalog frontend
 
 ## Participation
 
@@ -84,13 +89,21 @@ This project is designed to be shaped by mathematicians, not only by model build
 
 We welcome:
 
-- subject-matter experts willing to review items
+- subject-matter experts willing to review `queries in their own MSC area`
+- subject-matter experts willing to review `the answer rubrics attached to those queries`
 - contributors proposing benchmark items with documented provenance
-- mathematicians who want to critique taxonomy coverage or scoring policy
+- mathematicians who want to critique taxonomy coverage or area ownership
 - researchers interested in careful, reproducible evaluation rather than benchmark gaming
 
 See [`community/call-for-participation.md`](community/call-for-participation.md) and [`community/feedback-channels.md`](community/feedback-channels.md).
 
 ## Current status
 
-This repository is an initial public scaffold for the benchmark program. The seed release emphasizes rigor, reviewability, and breadth of design over raw item count.
+This repository now includes:
+
+- an imported official `MSC2020` hierarchy
+- a migrated per-query corpus under `benchmark/queries/`
+- per-query rubric files and review artifacts
+- a static public catalog for browsing by MSC field
+
+The next major phase after this catalog is a structured review portal that collects expert feedback and routes it into an editorial, versioned update workflow rather than automatically mutating the benchmark.

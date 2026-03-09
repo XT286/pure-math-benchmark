@@ -1,0 +1,16 @@
+query_id: PMB-REPRT-2026-0001
+solution_id: SOL-REPRT-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: A hereditary finite-dimensional algebra has global dimension at
+  most one. Therefore every module admits a projective resolution of length at
+  most one, so the second derived functor Ext_A^2 vanishes identically on the
+  module category.
+required_ingredients:
+  - hereditary implies global dimension at most one
+  - derived-functor interpretation of Ext
+common_failure_modes:
+  - equating hereditary with semisimplicity
+  - stating vanishing without mentioning resolutions
+verification_status: editorial_seed

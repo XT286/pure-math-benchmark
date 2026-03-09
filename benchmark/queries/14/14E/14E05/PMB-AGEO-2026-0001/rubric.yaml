@@ -1,0 +1,28 @@
+rubric_id: RUBRIC-PMB-AGEO-2026-0001
+query_id: PMB-AGEO-2026-0001
+owning_area_code: 14Exx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: argument_quality
+  secondary_metrics:
+    - correctness
+    - use_of_hypotheses
+success_criteria: The answer should observe that a normal projective curve is
+  smooth, identify f as a finite birational morphism between smooth projective
+  curves, and conclude by the universal property of normalization or degree
+  considerations that f is an isomorphism.
+required_elements:
+  - normal curve implies smooth
+  - normalization or finite birational morphism argument
+alternate_valid_approaches: []
+fatal_errors:
+  - saying birational maps between projective varieties are always isomorphisms
+  - forgets to use normality of Y
+  - confuses rational maps with morphisms
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

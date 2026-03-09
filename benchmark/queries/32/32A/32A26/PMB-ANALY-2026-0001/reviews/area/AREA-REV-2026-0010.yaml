@@ -1,0 +1,19 @@
+review_id: AREA-REV-2026-0010
+query_id: PMB-ANALY-2026-0001
+owning_area_code: 32Axx
+reviewer_area_code: 32Axx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Captures a genuinely several-variable phenomenon
+requested_changes: []
+summary: The item is mathematically standard but still probes a meaningful
+  distinction between one and several complex variables. It is a strong analysis
+  seed item.
+legacy_source_review_id: REV-2026-0010
+submitted_at: 2026-03-08T12:45:00Z

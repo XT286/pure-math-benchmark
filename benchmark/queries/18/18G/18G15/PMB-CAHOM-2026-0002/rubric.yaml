@@ -1,0 +1,28 @@
+rubric_id: RUBRIC-PMB-CAHOM-2026-0002
+query_id: PMB-CAHOM-2026-0002
+owning_area_code: 18Gxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - communication_clarity
+success_criteria: The answer should explain that equivalence classes of
+  extensions of M by N are classified by Ext_R^1(M,N), so vanishing means the
+  given extension class is zero and hence split.
+required_elements:
+  - The answer should explain that equivalence classes of extensions of M by N
+    are classified by Ext_R^1(M,N), so vanishing means the given extension class
+    is zero and hence split.
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming split exactness without mentioning the extension-class
+    interpretation
+  - proves only one split criterion direction
+  - forgets the classification of extensions
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

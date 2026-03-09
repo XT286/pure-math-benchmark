@@ -1,0 +1,17 @@
+query_id: PMB-DYNAM-2026-0001
+solution_id: SOL-DYNAM-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: Irrational rotation has dense orbits because integer multiples
+  of an irrational angle are dense mod 1, so the system is minimal. It is not
+  mixing because rotations have pure point spectrum and preserve nontrivial
+  eigenfunctions, obstructing decay of correlations. A correct answer must
+  separate the topological and measure-theoretic notions.
+required_ingredients:
+  - density of irrational orbit
+  - spectral or correlation obstruction to mixing
+common_failure_modes:
+  - conflating minimality with ergodicity
+  - claiming nonmixing from isometry without explanation
+verification_status: editorial_seed

@@ -1,0 +1,71 @@
+id: PMB-FUNAN-2026-0001
+version: 0.1.0
+status: query_and_rubric_reviewed
+benchmark_track: broad_msc_math
+title: Spectrum of a self-adjoint element in a C-star algebra
+primary_msc_code: 46L05
+primary_msc_path:
+  - 46-XX
+  - 46Lxx
+  - 46L05
+secondary_msc_codes:
+  - 47A10
+secondary_msc_paths:
+  - - 47-XX
+    - 47Axx
+    - 47A10
+owning_area_code: 46Lxx
+eligible_reviewer_area_codes:
+  - 46Lxx
+  - 46-XX
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Spectrum of a self-adjoint element in a C-star algebra
+  body: Let a be a self-adjoint element of a unital C-star algebra. Explain why
+    the spectrum of a is contained in the real line.
+  notation_conventions:
+    - self-adjoint means a*=a
+  definitions_included: true
+  prerequisites_assumed:
+    - basic C-star algebra theory
+    - spectrum and resolvent
+goal:
+  success_criteria: The answer should show that if lambda has nonzero imaginary
+    part then (a-lambda 1)^*(a-lambda 1) is invertible, hence a-lambda 1 is
+    invertible, so lambda is not in the spectrum.
+  forbidden_shortcuts:
+    - asserting the spectral theorem for Hilbert space operators without
+      adapting it to general C-star algebras
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item from standard operator algebra theory.
+  year: 2026
+  license_status: original
+  provenance_notes: Included as a concise but nontrivial operator-theoretic item.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: low
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_funan_0001
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: functional_analysis_operator_theory
+    subfield: operator_algebras
+    finer_topic: cstar_algebras
+    secondary_tags:
+      - spectral_theory
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

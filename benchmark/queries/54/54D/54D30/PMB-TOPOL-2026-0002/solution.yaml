@@ -1,0 +1,14 @@
+query_id: PMB-TOPOL-2026-0002
+solution_id: SOL-TOPOL-0002
+proof_outline_available: true
+formalization_status: formalized
+independent_verification_count: 0
+outline_summary: The answer should separate a point x notin K from each y in K
+  by disjoint open neighborhoods, extract a finite subcover of K from the
+  neighborhoods around y, and intersect the corresponding neighborhoods of x to
+  obtain an open set disjoint from K.
+required_ingredients: []
+common_failure_modes:
+  - uses sequential compactness instead of compactness
+  - does not isolate the Hausdorff step
+verification_status: unreviewed_seed

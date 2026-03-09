@@ -1,0 +1,26 @@
+rubric_id: RUBRIC-PMB-REPRT-2026-0001
+query_id: PMB-REPRT-2026-0001
+owning_area_code: 16Gxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - communication_clarity
+success_criteria: The answer should state that hereditary means global dimension
+  at most 1, so all modules admit projective resolutions of length at most 1,
+  forcing Ext^2 to vanish.
+required_elements:
+  - hereditary implies global dimension at most one
+  - derived-functor interpretation of Ext
+alternate_valid_approaches: []
+fatal_errors:
+  - treating hereditary as semisimple
+  - confuses hereditary with every submodule of a projective being injective
+  - omits the resolution argument
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

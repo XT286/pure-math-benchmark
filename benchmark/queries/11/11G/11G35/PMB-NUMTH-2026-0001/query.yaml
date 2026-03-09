@@ -1,0 +1,72 @@
+id: PMB-NUMTH-2026-0001
+version: 0.1.0
+status: query_and_rubric_reviewed
+benchmark_track: broad_msc_math
+title: Local points on a genus-zero curve over a number field
+primary_msc_code: 11G35
+primary_msc_path:
+  - 11-XX
+  - 11Gxx
+  - 11G35
+secondary_msc_codes:
+  - 14G05
+secondary_msc_paths:
+  - - 14-XX
+    - 14Gxx
+    - 14G05
+owning_area_code: 11Gxx
+eligible_reviewer_area_codes:
+  - 11Gxx
+  - 11-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Local points on a genus-zero curve over a number field
+  body: Let C be a smooth projective curve of genus 0 over a number field K.
+    Assume C has a K_v-rational point for every completion K_v of K. Explain why
+    one may conclude that C(K) is nonempty.
+  notation_conventions:
+    - K_v denotes a completion of K at a place v
+  definitions_included: true
+  prerequisites_assumed:
+    - basic facts about genus-zero curves
+    - Hasse principle for conics
+goal:
+  success_criteria: The answer should explain that a smooth projective genus-zero
+    curve is a conic after choosing an embedding and that the Hasse-Minkowski
+    principle for conics yields a K-rational point.
+  forbidden_shortcuts:
+    - stating the Hasse principle without connecting genus zero to conics
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item based on standard local-global theory for conics.
+  year: 2026
+  license_status: original
+  provenance_notes: Designed as a research-literacy arithmetic geometry question.
+novelty_and_leakage:
+  public_on_web: limited
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_numth_0001
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: number_theory_arithmetic_geometry
+    subfield: diophantine_geometry
+    finer_topic: rational_points
+    secondary_tags:
+      - local_global_principles
+    cross_field_tags:
+      - algebraic_geometry
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

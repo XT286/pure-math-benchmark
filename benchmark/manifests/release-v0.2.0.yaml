@@ -1,0 +1,17 @@
+release: v0.2.0
+status: redesign-preview
+description: >
+  Official-MSC redesign preview. This release switches the benchmark source of
+  truth to per-query MSC-organized files, adds query-specific rubrics and
+  separated review artifacts, and introduces the public catalog website.
+canonical_sources:
+  - benchmark/taxonomy/msc2020/tree.yaml
+  - benchmark/taxonomy/msc2020/coverage.yaml
+  - benchmark/queries/
+generated_outputs:
+  - benchmark/releases/v0.2.0-query-index.jsonl
+  - site/src/generated/catalog.json
+notes:
+  - The public catalog is live as a browse layer for experts.
+  - A review portal is intentionally deferred to a later phase.
+  - Legacy JSONL seed files remain for migration history and comparison.

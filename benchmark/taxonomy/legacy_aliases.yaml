@@ -1,0 +1,64 @@
+metadata:
+  description: Legacy mapping from the original benchmark-defined subject families
+    to representative official MSC2020 sections.
+legacy_aliases:
+  - legacy_id: logic_foundations
+    representative_msc_sections:
+      - 03-XX
+  - legacy_id: combinatorics_discrete
+    representative_msc_sections:
+      - 05-XX
+      - 52-XX
+  - legacy_id: structural_algebra
+    representative_msc_sections:
+      - 06-XX
+      - 08-XX
+      - 12-XX
+      - 20-XX
+  - legacy_id: number_theory_arithmetic_geometry
+    representative_msc_sections:
+      - 11-XX
+      - 14-XX
+  - legacy_id: commutative_algebra_homological
+    representative_msc_sections:
+      - 13-XX
+      - 18-XX
+      - 19-XX
+  - legacy_id: representation_theory_noncommutative
+    representative_msc_sections:
+      - 16-XX
+      - 17-XX
+      - 20-XX
+      - 22-XX
+  - legacy_id: algebraic_geometry
+    representative_msc_sections:
+      - 14-XX
+  - legacy_id: topology
+    representative_msc_sections:
+      - 54-XX
+      - 55-XX
+      - 57-XX
+  - legacy_id: differential_symplectic_geometry
+    representative_msc_sections:
+      - 32-XX
+      - 53-XX
+      - 58-XX
+  - legacy_id: analysis
+    representative_msc_sections:
+      - 26-XX
+      - 28-XX
+      - 30-XX
+      - 31-XX
+      - 32-XX
+      - 42-XX
+      - 43-XX
+  - legacy_id: functional_analysis_operator_theory
+    representative_msc_sections:
+      - 46-XX
+      - 47-XX
+  - legacy_id: dynamics_math_physics_interface
+    representative_msc_sections:
+      - 37-XX
+      - 70-XX
+      - 81-XX
+      - 82-XX

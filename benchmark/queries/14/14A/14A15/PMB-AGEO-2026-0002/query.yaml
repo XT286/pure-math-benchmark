@@ -1,0 +1,73 @@
+id: PMB-AGEO-2026-0002
+version: 0.1.0
+status: draft
+benchmark_track: broad_msc_math
+title: Affine schemes and anti-equivalence of categories
+primary_msc_code: 14A15
+primary_msc_path:
+  - 14-XX
+  - 14Axx
+  - 14A15
+secondary_msc_codes:
+  - 14L30
+secondary_msc_paths:
+  - - 14-XX
+    - 14Lxx
+    - 14L30
+owning_area_code: 14Axx
+eligible_reviewer_area_codes:
+  - 14Axx
+  - 14-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: framework_comparison
+answer_format: structured_bullets
+statement:
+  title: Affine schemes and anti-equivalence of categories
+  body: Explain why the category of affine schemes is anti-equivalent to the
+    category of commutative rings. The answer should identify both the
+    object-level correspondence and the morphism-level reversal.
+  notation_conventions:
+    - Spec denotes the prime spectrum functor
+  definitions_included: true
+  prerequisites_assumed:
+    - basic scheme theory
+    - ringed-space viewpoint of affine schemes
+goal:
+  success_criteria: The answer should describe R mapsto Spec(R), explain that ring
+    homomorphisms A -> B induce morphisms Spec(B) -> Spec(A), and state why
+    every affine scheme arises from a ring and morphisms are recovered
+    contravariantly.
+  forbidden_shortcuts:
+    - mentioning only the functor on objects without explaining arrows
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item from basic scheme-theoretic foundations.
+  year: 2026
+  license_status: original
+  provenance_notes: Included to broaden algebraic geometry beyond birational arguments.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: low
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_ageo_0002
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: algebraic_geometry
+    subfield: schemes_stacks
+    finer_topic: descent_and_quotients
+    secondary_tags:
+      - affine_schemes
+    cross_field_tags:
+      - commutative_algebra_homological
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

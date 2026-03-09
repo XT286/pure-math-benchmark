@@ -2,7 +2,13 @@
 
 ## Philosophy
 
-`Pure Math Benchmark` scores mathematical responses primarily as `arguments`, not just as final answers.
+The benchmark now has three related but distinct review layers:
+
+1. `query review`
+2. `rubric review`
+3. later, `model-answer evaluation`
+
+These should not be conflated.
 
 The scoring framework is designed to capture:
 
@@ -12,9 +18,27 @@ The scoring framework is designed to capture:
 - whether important gaps remain
 - whether the response makes meaningful progress even if incomplete
 
-## Default rubric dimensions
+## Query review dimensions
 
-Each review record should evaluate the following dimensions on a bounded scale:
+Field experts reviewing a query should ask:
+
+1. is the query mathematically sound
+2. is it correctly classified in MSC
+3. is it appropriate for the claimed level and area
+4. is it precise enough for consistent evaluation
+
+## Rubric review dimensions
+
+Field experts reviewing a query rubric should ask:
+
+1. does the rubric capture the required elements of a good answer
+2. does it identify fatal errors correctly
+3. does it allow legitimate alternate approaches
+4. does it define partial-credit boundaries sensibly
+
+## Model-answer evaluation dimensions
+
+When the benchmark later evaluates model answers, each answer rubric may still use dimensions such as:
 
 1. main claim correctness
 2. logical validity
@@ -26,12 +50,12 @@ Each review record should evaluate the following dimensions on a bounded scale:
 
 ## Fatal flaws
 
-Some responses should fail regardless of partial strengths. Examples include:
+For query or rubric review, some artifacts should fail regardless of their overall promise. Examples include:
 
-- a false main conclusion
-- circular reasoning
-- application of a theorem without required hypotheses
-- a decisive gap at the core of the argument
+- a mathematically unsound query
+- a query that is badly misclassified for its area
+- a rubric that would reject valid field-standard answers
+- a rubric that fails to mark fatal mathematical mistakes
 
 ## Partial progress
 
@@ -52,21 +76,23 @@ Examples that should not score as meaningful partial progress include:
 
 ## Aggregation
 
-The seed release uses `structured expert judgment` rather than a single automatic scalar score.
+The benchmark should ingest expert opinion through structured review artifacts and editorial adjudication, not direct automatic mutation of the benchmark set.
 
 Reported results should therefore include:
 
-- dimension-level scores
-- fatal-flaw status
-- overall reviewer recommendation
+- query review recommendation
+- rubric review recommendation
+- requested changes
 - adjudicated final disposition where relevant
 
-## Future automation
+## Feedback loop
 
-Automation may later assist with:
+The future review portal should collect structured reviewer feedback and route it into an editorial queue.
 
-- format validation
-- rubric consistency checks
-- coarse triage
+Accepted changes should then enter the benchmark through:
 
-But the core correctness judgments for advanced pure mathematics should remain expert-led unless a validated alternative is demonstrated.
+- adjudication
+- versioned updates
+- release notes
+
+not through automatic direct write-back.

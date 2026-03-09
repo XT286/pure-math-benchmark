@@ -1,0 +1,17 @@
+query_id: PMB-CAHOM-2026-0001
+solution_id: SOL-CAHOM-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: Because R is regular local, every finitely generated module has
+  finite projective dimension. Since depth_R(M)=dim(R)=depth(R), the
+  Auslander-Buchsbaum formula gives pd_R(M)=0. Hence M is projective, and over a
+  local ring projective modules are free.
+required_ingredients:
+  - finite projective dimension over regular local rings
+  - Auslander-Buchsbaum formula
+  - projective over local implies free
+common_failure_modes:
+  - claiming maximal Cohen-Macaulay alone forces freeness
+  - forgetting the local criterion for projective implies free
+verification_status: editorial_seed

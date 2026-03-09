@@ -1,0 +1,27 @@
+rubric_id: RUBRIC-PMB-FUNAN-2026-0001
+query_id: PMB-FUNAN-2026-0001
+owning_area_code: 46Lxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - logical_validity
+success_criteria: The answer should show that if lambda has nonzero imaginary
+  part then (a-lambda 1)^*(a-lambda 1) is invertible, hence a-lambda 1 is
+  invertible, so lambda is not in the spectrum.
+required_elements:
+  - C-star algebra positivity argument
+  - invertibility of x*x implies invertibility of x
+alternate_valid_approaches: []
+fatal_errors:
+  - asserting the spectral theorem for Hilbert space operators without adapting
+    it to general C-star algebras
+  - uses Hilbert-space spectral theorem too narrowly
+  - does not explain invertibility for nonreal lambda
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

@@ -1,0 +1,17 @@
+query_id: PMB-LOGIC-2026-0001
+solution_id: SOL-LOGIC-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: In an o-minimal expansion of an ordered field, every definable
+  subset of the line is a finite union of points and open intervals. An infinite
+  discrete subset with no accumulation point would require infinitely many
+  isolated points, which is impossible for a definable one-variable set in an
+  o-minimal structure.
+required_ingredients:
+  - one-variable cell decomposition or monotonicity consequences
+  - finite union of points and intervals characterization
+common_failure_modes:
+  - allowing countable unions of definable points
+  - failing to use the one-dimensional structure theorem
+verification_status: editorial_seed

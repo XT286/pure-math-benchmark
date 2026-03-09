@@ -1,0 +1,30 @@
+rubric_id: RUBRIC-PMB-COMB-2026-0002
+query_id: PMB-COMB-2026-0002
+owning_area_code: 05Exx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: theorem_selection
+  secondary_metrics:
+    - correctness
+    - communication_clarity
+success_criteria: The answer should invoke the Littlewood-Richardson rule or an
+  equivalent representation-theoretic interpretation and explain that the
+  coefficients count combinatorial objects or multiplicities, hence are
+  nonnegative integers.
+required_elements:
+  - The answer should invoke the Littlewood-Richardson rule or an equivalent
+    representation-theoretic interpretation and explain that the coefficients
+    count combinatorial objects or multiplicities, hence are nonnegative
+    integers.
+alternate_valid_approaches: []
+fatal_errors:
+  - stating positivity as a known fact without the mechanism
+  - equates positivity with monomial positivity
+  - mentions LR rule without saying what is counted
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

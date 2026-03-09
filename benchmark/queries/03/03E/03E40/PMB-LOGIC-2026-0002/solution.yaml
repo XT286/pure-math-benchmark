@@ -1,0 +1,14 @@
+query_id: PMB-LOGIC-2026-0002
+solution_id: SOL-LOGIC-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should explain that a ccc forcing cannot add a
+  countable cofinal sequence through the ground-model omega_1 because deciding
+  the values of a name for such a sequence would lead to a countable union of
+  countable sets in the ground model, contradicting uncountability.
+required_ingredients: []
+common_failure_modes:
+  - claims ccc preserves all cardinals without argument
+  - confuses omega_1 with all uncountable ordinals
+verification_status: unreviewed_seed

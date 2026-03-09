@@ -1,0 +1,74 @@
+id: PMB-COMB-2026-0001
+version: 0.1.0
+status: query_and_rubric_reviewed
+benchmark_track: broad_msc_math
+title: Triangle-free does not force bounded chromatic number
+primary_msc_code: 05C15
+primary_msc_path:
+  - 05-XX
+  - 05Cxx
+  - 05C15
+secondary_msc_codes:
+  - 05C55
+secondary_msc_paths:
+  - - 05-XX
+    - 05Cxx
+    - 05C55
+owning_area_code: 05Cxx
+eligible_reviewer_area_codes:
+  - 05Cxx
+  - 05-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: construction
+answer_format: construction_with_justification
+statement:
+  title: Triangle-free does not force bounded chromatic number
+  body: Give a mathematically valid explanation that the property of being
+    triangle-free does not bound chromatic number uniformly. Your answer may use
+    an explicit construction family or a standard existence argument, but it
+    should make clear what phenomenon is being demonstrated.
+  notation_conventions:
+    - chromatic number means ordinary vertex chromatic number
+  definitions_included: true
+  prerequisites_assumed:
+    - basic graph theory
+    - familiarity with high-chromatic constructions or probabilistic existence
+      methods
+goal:
+  success_criteria: The answer should provide or cite a genuine family of
+    triangle-free graphs with arbitrarily large chromatic number, such as
+    Mycielski constructions or Erdos-type existence, and explain the conceptual
+    consequence.
+  forbidden_shortcuts:
+    - claiming the fact without naming any valid construction or existence method
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item inspired by standard extremal graph theory examples.
+  year: 2026
+  license_status: original
+  provenance_notes: Designed as a hypothesis-sensitivity item for combinatorics.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_comb_0001
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: combinatorics_discrete
+    subfield: graph_hypergraph_theory
+    finer_topic: coloring_and_ramsey
+    secondary_tags:
+      - extremal_examples
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

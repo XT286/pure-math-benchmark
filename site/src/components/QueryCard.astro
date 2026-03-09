@@ -1,0 +1,23 @@
+---
+const { query } = Astro.props;
+---
+
+<article class="list-item">
+  <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+    <div>
+      <h3 style="margin:0 0 8px;"><a href={`/queries/${query.id}/`}>{query.title}</a></h3>
+      <div class="muted"><code>{query.id}</code></div>
+    </div>
+    <span class="badge">{query.status}</span>
+  </div>
+  <p class="muted" style="margin:12px 0 0;">
+    Primary MSC path:
+    <code>{query.primary_msc_path.join(" -> ")}</code>
+  </p>
+  <div class="badge-row">
+    <span class="badge">{query.problem_type}</span>
+    <span class="badge">{query.answer_format}</span>
+    <span class="badge">{query.difficulty.stage}</span>
+    <span class="badge">Area {query.owning_area_code}</span>
+  </div>
+</article>

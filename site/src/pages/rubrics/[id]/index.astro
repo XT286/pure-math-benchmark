@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getCatalog, getQueryById, getRubricById } from "../../../lib/catalog.js";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return catalog.rubrics.map((rubric) => ({
+    params: { id: rubric.rubric_id },
+  }));
+}
+
+const { id } = Astro.params;
+const rubric = getRubricById(id);
+const query = getQueryById(rubric.query_id);
+---
+
+<BaseLayout title={`${rubric.rubric_id} | Rubric`}>
+  <div class="breadcrumbs">
+    Home / <a href={`/queries/${query.id}/`}>{query.id}</a> / {rubric.rubric_id}
+  </div>
+
+  <section class="hero">
+    <h2 style="margin-top:0;">{rubric.rubric_id}</h2>
+    <p class="muted">Per-query answer rubric for <a href={`/queries/${query.id}/`}>{query.title}</a>.</p>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3 style="margin-top:0;">Rubric focus</h3>
+      <div class="badge-row">
+        <span class="badge">{rubric.rubric_focus.problem_type}</span>
+        <span class="badge">{rubric.rubric_focus.answer_format}</span>
+        <span class="badge">{rubric.rubric_focus.primary_metric}</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0;">Owning area</h3>
+      <p><code>{rubric.owning_area_code}</code></p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Success criteria</h2>
+  <div class="card">
+    <p>{rubric.success_criteria}</p>
+  </div>
+
+  <h2 class="section-title">Required elements</h2>
+  <div class="card">
+    <ul>
+      {rubric.required_elements.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  <h2 class="section-title">Fatal errors</h2>
+  <div class="card">
+    <ul>
+      {rubric.fatal_errors.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  <h2 class="section-title">Partial credit guidance</h2>
+  <div class="card">
+    <ul>
+      {rubric.partial_credit_guidance.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</BaseLayout>

@@ -27,19 +27,18 @@ Items target:
 
 ## Taxonomy
 
-Each item carries:
+Each query now carries:
 
-- one primary `subject_family`
-- one primary `subfield`
-- one primary `finer_topic`
-- one or more `msc2020_codes`
-- optional secondary tags for cross-field content
+- one primary official `MSC2020` leaf code
+- one primary official MSC path
+- optional secondary MSC codes
+- one `owning_area_code` for field-specific review
 
 See [`benchmark/taxonomy/README.md`](benchmark/taxonomy/README.md).
 
-## Item requirements
+## Query requirements
 
-Each accepted benchmark item must define:
+Each accepted benchmark query must define:
 
 - the mathematical statement or prompt
 - notation conventions
@@ -47,19 +46,20 @@ Each accepted benchmark item must define:
 - success criteria
 - answer format
 - provenance and license status
+- owning MSC area
 - review and verification status
 
-## Evaluation philosophy
+Each query must also have a dedicated answer rubric artifact.
 
-The benchmark evaluates:
+## Review philosophy
 
-- correctness of the central mathematical claim
-- soundness of reasoning
-- correct use of assumptions and definitions
-- completeness relative to the prompt
-- usefulness of partial progress
+The benchmark now separates:
 
-The benchmark does not treat theorem naming alone as a sufficient answer unless the item explicitly asks for identification only.
+- `query area review`
+- `query rubric review`
+- later, `model-answer evaluation`
+
+The benchmark does not treat field review as generic process review. Experts are expected to review queries and rubrics inside their own area.
 
 ## Tool-use policy
 
@@ -85,13 +85,15 @@ Later releases may add:
 - partially hidden evaluation sets
 - hidden expert-administered sets
 
-## Item status lifecycle
+## Query status lifecycle
 
-Items move through statuses such as:
+Queries move through statuses such as:
 
 - `draft`
-- `under_review`
-- `accepted`
+- `query_reviewed`
+- `rubric_reviewed`
+- `query_and_rubric_reviewed`
+- `released`
 - `deprecated`
 - `retracted`
 

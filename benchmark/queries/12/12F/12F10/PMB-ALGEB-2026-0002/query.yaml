@@ -1,0 +1,68 @@
+id: PMB-ALGEB-2026-0002
+version: 0.1.0
+status: draft
+benchmark_track: broad_msc_math
+title: Why finite fields of the same cardinality are isomorphic
+primary_msc_code: 12F10
+primary_msc_path:
+  - 12-XX
+  - 12Fxx
+  - 12F10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 12Fxx
+eligible_reviewer_area_codes:
+  - 12Fxx
+  - 12-XX
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3
+problem_type: framework_comparison
+answer_format: structured_bullets
+statement:
+  title: Why finite fields of the same cardinality are isomorphic
+  body: Let F and F' be finite fields with q elements. Explain why F and F' must
+    be isomorphic, and make clear whether the argument is best viewed through
+    splitting fields, cyclic multiplicative groups, or both.
+  notation_conventions:
+    - q denotes a prime power
+  definitions_included: true
+  prerequisites_assumed:
+    - basic finite field theory
+    - splitting fields
+goal:
+  success_criteria: The answer should explain that both fields are splitting
+    fields of x^q-x over the prime field, equivalently the unique field with q
+    elements up to isomorphism, and may note the multiplicative group structure
+    as supporting context.
+  forbidden_shortcuts:
+    - asserting uniqueness without any structural reason
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item from standard finite field theory.
+  year: 2026
+  license_status: original
+  provenance_notes: Included as a structural algebra comparison item.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: low
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_algeb_0002
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: structural_algebra
+    subfield: field_theory
+    finer_topic: galois_theory
+    secondary_tags:
+      - finite_fields
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

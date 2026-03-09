@@ -1,0 +1,73 @@
+id: PMB-NUMTH-2026-0002
+version: 0.1.0
+status: draft
+benchmark_track: broad_msc_math
+title: Why the class group of a number field is finite
+primary_msc_code: 11R29
+primary_msc_path:
+  - 11-XX
+  - 11Rxx
+  - 11R29
+secondary_msc_codes:
+  - 11R27
+secondary_msc_paths:
+  - - 11-XX
+    - 11Rxx
+    - 11R27
+owning_area_code: 11Rxx
+eligible_reviewer_area_codes:
+  - 11Rxx
+  - 11-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Why the class group of a number field is finite
+  body: Give a proof outline for the finiteness of the ideal class group of a
+    number field K. The answer should identify the geometric input that makes
+    the argument work.
+  notation_conventions:
+    - ideal class group means the usual class group of fractional ideals modulo
+      principal ideals
+  definitions_included: true
+  prerequisites_assumed:
+    - Minkowski theory
+    - basic algebraic number theory
+goal:
+  success_criteria: The answer should explain that Minkowski's bound shows every
+    ideal class contains an integral ideal of bounded norm, and only finitely
+    many such ideals exist, so the class group is finite.
+  forbidden_shortcuts:
+    - stating finiteness as a theorem without describing the bounded-norm
+      argument
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item based on Minkowski theory.
+  year: 2026
+  license_status: original
+  provenance_notes: Broadens arithmetic coverage beyond rational points.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_numth_0002
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: number_theory_arithmetic_geometry
+    subfield: algebraic_number_theory
+    finer_topic: class_groups_and_units
+    secondary_tags:
+      - minkowski_theory
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCatalog } from "../../lib/catalog.js";
+
+const catalog = getCatalog();
+---
+
+<BaseLayout title="MSC Browse">
+  <div class="breadcrumbs">Home / MSC</div>
+  <section class="hero">
+    <h2 style="margin-top:0;">Official MSC2020 browse</h2>
+    <p class="muted">
+      Each section page routes to its subclasses, visible queries, and participation paths for experts in that field.
+    </p>
+  </section>
+
+  <div class="grid">
+    {catalog.sections.map((section) => (
+      <a class="card" href={`/msc/${section.short_code}/`}>
+        <div style="display:flex;justify-content:space-between;gap:8px;">
+          <strong>{section.short_code}</strong>
+          <span class="badge">{section.coverage_status}</span>
+        </div>
+        <h3 style="margin:12px 0 8px;">{section.label}</h3>
+        <div class="muted">{section.query_count} visible queries</div>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

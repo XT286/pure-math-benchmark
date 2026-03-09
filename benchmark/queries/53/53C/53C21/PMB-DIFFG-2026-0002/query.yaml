@@ -1,0 +1,71 @@
+id: PMB-DIFFG-2026-0002
+version: 0.1.0
+status: draft
+benchmark_track: broad_msc_math
+title: Bonnet-Myers and compactness
+primary_msc_code: 53C21
+primary_msc_path:
+  - 53-XX
+  - 53Cxx
+  - 53C21
+secondary_msc_codes:
+  - 53C23
+secondary_msc_paths:
+  - - 53-XX
+    - 53Cxx
+    - 53C23
+owning_area_code: 53Cxx
+eligible_reviewer_area_codes:
+  - 53Cxx
+  - 53-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Bonnet-Myers and compactness
+  body: Let M be a complete Riemannian manifold with Ricci curvature bounded below
+    by (n-1)k > 0. Explain why M must be compact.
+  notation_conventions:
+    - Ricci lower bound is in the usual tensor sense
+  definitions_included: true
+  prerequisites_assumed:
+    - basic Riemannian geometry
+    - Bonnet-Myers theorem
+goal:
+  success_criteria: The answer should identify Bonnet-Myers as the key theorem and
+    explain that the positive Ricci lower bound gives a finite diameter bound
+    for complete manifolds, hence compactness by completeness and total
+    boundedness in the Riemannian setting.
+  forbidden_shortcuts:
+    - citing Bonnet-Myers without stating the compactness consequence it gives
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item based on Bonnet-Myers.
+  year: 2026
+  license_status: original
+  provenance_notes: Broadens geometry coverage beyond symplectic examples.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_diffg_0002
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: differential_symplectic_geometry
+    subfield: riemannian_geometry
+    finer_topic: comparison_geometry
+    secondary_tags:
+      - compactness
+    cross_field_tags: []
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

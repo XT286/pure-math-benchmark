@@ -1,0 +1,26 @@
+rubric_id: RUBRIC-PMB-ALGEB-2026-0001
+query_id: PMB-ALGEB-2026-0001
+owning_area_code: 20Exx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - theorem_selection
+success_criteria: The answer should conclude that G is finite and justify this
+  using a valid theorem such as Schur's theorem on finitely generated torsion
+  linear groups or an equivalent argument.
+required_elements:
+  - valid structural theorem for finitely generated torsion linear groups
+  - clear statement that the theorem applies to G
+alternate_valid_approaches: []
+fatal_errors:
+  - asserting Burnside without enough context to support the conclusion
+  - confuses torsion with finite exponent without justification
+  - states Lie-Kolchin, which is irrelevant here
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

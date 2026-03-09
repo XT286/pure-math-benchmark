@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/XT286/pure-math-benchmark/blob/main/benchmark/schema/query-area-review.schema.json",
+  "title": "PureMathBenchmarkQueryAreaReview",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_id",
+    "query_id",
+    "owning_area_code",
+    "reviewer_area_code",
+    "review_round",
+    "recommendation",
+    "checks",
+    "strengths",
+    "requested_changes",
+    "summary",
+    "submitted_at"
+  ],
+  "properties": {
+    "review_id": { "type": "string" },
+    "query_id": {
+      "type": "string",
+      "pattern": "^PMB-[A-Z]{3,6}-[0-9]{4}-[0-9]{4}$"
+    },
+    "owning_area_code": {
+      "type": "string",
+      "pattern": "^[0-9]{2}[A-Z]xx$"
+    },
+    "reviewer_area_code": {
+      "type": "string",
+      "pattern": "^[0-9]{2}[A-Z]xx$"
+    },
+    "review_round": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "recommendation": {
+      "type": "string",
+      "enum": ["accept", "minor_revision", "major_revision", "reject"]
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "query_is_mathematically_sound",
+        "msc_classification_is_appropriate",
+        "difficulty_is_appropriate",
+        "area_fit_is_appropriate"
+      ],
+      "properties": {
+        "query_is_mathematically_sound": { "type": "boolean" },
+        "msc_classification_is_appropriate": { "type": "boolean" },
+        "difficulty_is_appropriate": { "type": "boolean" },
+        "area_fit_is_appropriate": { "type": "boolean" }
+      }
+    },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requested_changes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "legacy_source_review_id": {
+      "type": "string"
+    },
+    "submitted_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

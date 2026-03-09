@@ -1,0 +1,17 @@
+query_id: PMB-DIFFG-2026-0001
+solution_id: SOL-DIFFG-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: If omega=dalpha, then omega^n=d(alpha wedge omega^(n-1)).
+  Integrating over a compact boundaryless manifold gives zero by Stokes. But
+  omega^n is a positive volume form for a symplectic structure, so its integral
+  is positive, a contradiction. The compact boundaryless hypothesis is
+  essential.
+required_ingredients:
+  - Stokes theorem
+  - omega^n as positive volume form
+common_failure_modes:
+  - omitting the boundaryless assumption
+  - not explaining positivity of the top wedge
+verification_status: editorial_seed

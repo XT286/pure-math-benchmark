@@ -1,0 +1,21 @@
+review_id: AREA-REV-2026-0007
+query_id: PMB-AGEO-2026-0001
+owning_area_code: 14Exx
+reviewer_area_code: 14Exx
+review_round: 1
+recommendation: minor_revision
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Good use of birational and normalization ideas
+requested_changes:
+  - Canonical solution should state explicitly why normal projective curves are
+    smooth.
+summary: The item is sound but the canonical explanation should be slightly more
+  explicit about the curve-specific normality input to avoid reviewer
+  disagreement across fields.
+legacy_source_review_id: REV-2026-0007
+submitted_at: 2026-03-08T12:30:00Z

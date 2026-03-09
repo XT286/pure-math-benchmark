@@ -1,0 +1,26 @@
+rubric_id: RUBRIC-PMB-TOPOL-2026-0001
+query_id: PMB-TOPOL-2026-0001
+owning_area_code: 55Mxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - completeness
+success_criteria: The answer should note that a null-homotopic map induces the
+  zero map on reduced homology, whereas a degree-one map induces the identity on
+  H_n(S^n), so the map cannot be null-homotopic.
+required_elements:
+  - homotopy invariance of homology
+  - top-degree homology interpretation of degree
+alternate_valid_approaches: []
+fatal_errors:
+  - stating 'degree is a homotopy invariant' without tying it to null-homotopy
+  - conflates degree one with homeomorphism
+  - argues by fundamental group even when n>1
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

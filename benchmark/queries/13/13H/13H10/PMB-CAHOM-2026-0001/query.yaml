@@ -1,0 +1,76 @@
+id: PMB-CAHOM-2026-0001
+version: 0.1.0
+status: query_and_rubric_reviewed
+benchmark_track: broad_msc_math
+title: Maximal Cohen-Macaulay modules over a regular local ring
+primary_msc_code: 13H10
+primary_msc_path:
+  - 13-XX
+  - 13Hxx
+  - 13H10
+secondary_msc_codes:
+  - 13D02
+secondary_msc_paths:
+  - - 13-XX
+    - 13Dxx
+    - 13D02
+owning_area_code: 13Hxx
+eligible_reviewer_area_codes:
+  - 13Hxx
+  - 13-XX
+difficulty:
+  stage: phd
+  reviewer_score: 4
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Maximal Cohen-Macaulay modules over a regular local ring
+  body: Let R be a regular local ring and M a finitely generated R-module with
+    depth_R(M)=dim(R). Explain why M must be free. A complete proof is not
+    required, but the argument should identify the structural theorem that
+    closes the reasoning.
+  notation_conventions:
+    - depth_R(M) is the module depth over R
+  definitions_included: true
+  prerequisites_assumed:
+    - regular local rings
+    - Auslander-Buchsbaum formula
+    - projective dimension
+goal:
+  success_criteria: The answer should identify M as maximal Cohen-Macaulay, use
+    that regular local rings have finite global dimension, deduce pd_R(M) is
+    finite, and then apply Auslander-Buchsbaum to obtain pd_R(M)=0 and hence
+    freeness.
+  forbidden_shortcuts:
+    - claiming all maximal Cohen-Macaulay modules are free without using
+      regularity
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item based on standard commutative algebra reasoning.
+  year: 2026
+  license_status: original
+  provenance_notes: Designed to probe theorem chaining rather than brute-force computation.
+novelty_and_leakage:
+  public_on_web: limited
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_cahom_0001
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: commutative_algebra_homological
+    subfield: local_commutative_algebra
+    finer_topic: depth_and_regularity
+    secondary_tags:
+      - maximal_cohen_macaulay
+    cross_field_tags:
+      - homological_algebra
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

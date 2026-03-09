@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../../../../layouts/BaseLayout.astro";
+import QueryCard from "../../../../../components/QueryCard.astro";
+import { getCatalog, getNodeByCode, getQueriesForCode } from "../../../../../lib/catalog.js";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  const paths = [];
+  for (const section of catalog.sections) {
+    const sectionNode = getNodeByCode(section.code);
+    for (const subclassCode of sectionNode.child_codes) {
+      const subclassNode = getNodeByCode(subclassCode);
+      for (const leafCode of subclassNode.child_codes) {
+        const leafNode = getNodeByCode(leafCode);
+        paths.push({
+          params: {
+            section: section.short_code,
+            subclass: subclassNode.short_code,
+            leaf: leafNode.short_code,
+          },
+        });
+      }
+    }
+  }
+  return paths;
+}
+
+const { section, subclass, leaf } = Astro.params;
+const leafNode = getNodeByCode(leaf);
+const queries = getQueriesForCode(leafNode.code);
+---
+
+<BaseLayout title={`${leafNode.short_code} | MSC`}>
+  <div class="breadcrumbs">
+    Home / <a href="/msc/">MSC</a> / <a href={`/msc/${section}/`}>{section}</a> /
+    <a href={`/msc/${section}/${subclass}/`}>{subclass}</a> / {leaf}
+  </div>
+
+  <section class="hero">
+    <h2 style="margin-top:0;">{leafNode.short_code} {leafNode.label}</h2>
+    <p class="muted">Leaf-level MSC page showing the exact query set currently assigned to this code.</p>
+  </section>
+
+  <h2 class="section-title">Queries</h2>
+  <div class="list">
+    {queries.length > 0 ? queries.map((query) => <QueryCard query={query} />) : <div class="card">No public queries for this leaf code yet.</div>}
+  </div>
+</BaseLayout>

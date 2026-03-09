@@ -1,0 +1,16 @@
+query_id: PMB-TOPOL-2026-0001
+solution_id: SOL-TOPOL-0001
+proof_outline_available: true
+formalization_status: partial
+independent_verification_count: 0
+outline_summary: If f were null-homotopic, then by homotopy invariance it would
+  induce the same map as a constant map on reduced homology, namely zero in
+  degree n. But a degree-one self-map acts as the identity on H_n(S^n), so f
+  cannot be null-homotopic.
+required_ingredients:
+  - homotopy invariance of homology
+  - top-degree homology interpretation of degree
+common_failure_modes:
+  - arguing only by intuition about surjectivity
+  - using fundamental group for arbitrary n
+verification_status: editorial_seed

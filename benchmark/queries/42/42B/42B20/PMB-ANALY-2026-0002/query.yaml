@@ -1,0 +1,70 @@
+id: PMB-ANALY-2026-0002
+version: 0.1.0
+status: draft
+benchmark_track: broad_msc_math
+title: Why boundedness on L^2 matters for singular integrals
+primary_msc_code: 42B20
+primary_msc_path:
+  - 42-XX
+  - 42Bxx
+  - 42B20
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 42Bxx
+eligible_reviewer_area_codes:
+  - 42Bxx
+  - 42-XX
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Why boundedness on L^2 matters for singular integrals
+  body: Suppose T is a Calderon-Zygmund singular integral operator initially
+    defined on smooth compactly supported functions, and assume the standard
+    kernel estimates together with boundedness on L^2(R^n). Explain why one then
+    expects boundedness on L^p(R^n) for 1<p<infty.
+  notation_conventions:
+    - L^p means Lebesgue spaces on R^n
+  definitions_included: true
+  prerequisites_assumed:
+    - Calderon-Zygmund theory
+    - interpolation and weak-type estimates
+goal:
+  success_criteria: The answer should identify the Calderon-Zygmund theorem or
+    T1/Tb-type paradigm in the classical setting, explaining that L^2
+    boundedness together with kernel control yields weak-(1,1) and interpolation
+    or extrapolation to L^p boundedness for the full range 1<p<infty.
+  forbidden_shortcuts:
+    - claiming interpolation alone gives the result without the endpoint input
+source:
+  source_type: original_benchmark_item
+  citation: Original benchmark item from standard singular-integral theory.
+  year: 2026
+  license_status: original
+  provenance_notes: Extends analysis coverage into harmonic analysis.
+novelty_and_leakage:
+  public_on_web: moderate
+  generated_by_model: false
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: v0.1.0
+  item_hash: pending_seed_hash_analy_0002
+legacy_record:
+  split: public_seed
+  previous_schema_taxonomy:
+    subject_family: analysis
+    subfield: real_harmonic_analysis
+    finer_topic: singular_integrals
+    secondary_tags:
+      - Lp_boundedness
+    cross_field_tags:
+      - functional_analysis_operator_theory
+  previous_review_summary_embedded:
+    handling_editor: ""
+    reviewers: []
+    conflicts_checked: false
+    review_rounds: 0
+    last_reviewed_at: 2026-03-08

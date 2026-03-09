@@ -1,0 +1,20 @@
+review_id: RUBRIC-REV-2026-0007
+query_id: PMB-AGEO-2026-0001
+rubric_id: RUBRIC-PMB-AGEO-2026-0001
+owning_area_code: 14Exx
+review_round: 1
+recommendation: minor_revision
+checks:
+  required_elements_are_sufficient: true
+  fatal_errors_are_field_appropriate: true
+  partial_credit_guidance_is_usable: true
+  alternate_valid_approaches_are_underdescribed: true
+requested_changes:
+  - Canonical solution should state explicitly why normal projective curves are
+    smooth.
+summary: The item is sound but the canonical explanation should be slightly more
+  explicit about the curve-specific normality input to avoid reviewer
+  disagreement across fields. The query-specific rubric should be tightened
+  before release.
+legacy_source_review_id: REV-2026-0007
+submitted_at: 2026-03-08T12:30:00Z

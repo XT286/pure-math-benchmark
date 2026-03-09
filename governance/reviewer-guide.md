@@ -2,34 +2,54 @@
 
 ## Purpose
 
-Reviewers assess whether a response would satisfy a mathematically serious reader under the benchmark's stated expectations.
+Reviewers are not primarily being asked to review the benchmark process in the abstract.
 
-## Reviewer checklist
+They are being asked to review:
 
-For each item, check:
+- the `query` in their own area
+- the `answer rubric` for that query
 
-- Is the main conclusion correct?
-- Are the logical steps valid?
-- Are the necessary hypotheses used correctly?
-- Is the response complete enough for the stated task?
-- Does the response demonstrate the right proof strategy, even if incomplete?
-- Are any gaps fatal or reparable?
+## Query area review checklist
+
+For each query, check:
+
+- Is the query mathematically sound?
+- Is the query correctly classified in its MSC area?
+- Is the claimed level appropriate for the field?
+- Is the query genuinely representative of mathematical work in that area?
+- Is the query precise enough to be reviewed consistently?
+
+## Rubric review checklist
+
+For each query rubric, check:
+
+- Does the rubric specify the required elements of a strong answer?
+- Does it identify fatal mathematical errors accurately?
+- Does it allow legitimate alternate approaches used in the field?
+- Does it separate meaningful partial progress from bluffing?
+- Would two serious experts be able to use it consistently?
 
 ## Scoring practice
 
-Reviewers should score dimension by dimension, not by immediate overall impression.
+The public benchmark should distinguish:
+
+- query acceptance review
+- rubric acceptance review
+- later model-answer evaluation
 
 ## Fatal flaws
 
-Mark a fatal flaw when the response cannot reasonably be repaired without changing its core argument.
+For query review, a fatal flaw means the query itself is unsound, ambiguous, misclassified, or not fit for the claimed area.
+
+For rubric review, a fatal flaw means the rubric would systematically misjudge valid answers in the field.
 
 ## Text justification
 
 Short written justifications are required. They should identify:
 
-- where the main argument succeeds
-- where the main argument fails
-- whether the failure is local or central
+- what is correct about the query or rubric
+- what should be revised before release
+- whether the issue is local or structurally significant
 
 ## Calibration principle
 

@@ -1,0 +1,14 @@
+query_id: PMB-FUNAN-2026-0002
+solution_id: SOL-FUNAN-0002
+proof_outline_available: true
+formalization_status: formalized
+independent_verification_count: 0
+outline_summary: The answer should explain that the canonical embedding into the
+  bidual is always isometric, and in finite dimension domain and codomain have
+  the same finite dimension, so the map is onto. It should also note that
+  dimension equality fails in infinite dimension.
+required_ingredients: []
+common_failure_modes:
+  - confuses reflexivity with separability
+  - does not mention the canonical embedding
+verification_status: unreviewed_seed

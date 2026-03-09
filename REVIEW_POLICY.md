@@ -2,27 +2,30 @@
 
 ## Purpose
 
-This policy defines how benchmark items move from draft material to accepted public benchmark content.
+This policy defines how benchmark queries and their answer rubrics move from draft material to accepted public benchmark content.
 
 ## Item lifecycle
 
-Each item passes through one of the following states:
+Each query passes through one of the following states:
 
 1. `draft`
-2. `under_review`
-3. `accepted`
-4. `deprecated`
-5. `retracted`
+2. `query_reviewed`
+3. `rubric_reviewed`
+4. `query_and_rubric_reviewed`
+5. `released`
+6. `deprecated`
+7. `retracted`
 
 ## Acceptance requirements
 
-An item should normally satisfy all of the following before acceptance:
+A query should normally satisfy all of the following before release:
 
 - clear mathematical statement and notation
 - explicit success criteria
 - documented provenance and license status
 - contamination and leakage assessment
-- at least two independent expert reviews
+- at least one area review of the query
+- at least one review of the attached answer rubric
 - handling-editor signoff
 
 ## Reasons for revision or rejection

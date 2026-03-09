@@ -1,0 +1,22 @@
+review_id: AREA-REV-2026-0001
+query_id: PMB-LOGIC-2026-0001
+owning_area_code: 03Cxx
+reviewer_area_code: 03Cxx
+review_round: 1
+recommendation: minor_revision
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Clear target phenomenon
+  - Good o-minimality fit
+requested_changes:
+  - Could benefit from a more explicit statement of the one-variable
+    definable-set theorem.
+summary: The item is mathematically sound and well targeted. A canonical
+  solution should explicitly mention the finite union of points and intervals
+  characterization to reduce reviewer variance.
+legacy_source_review_id: REV-2026-0001
+submitted_at: 2026-03-08T12:00:00Z

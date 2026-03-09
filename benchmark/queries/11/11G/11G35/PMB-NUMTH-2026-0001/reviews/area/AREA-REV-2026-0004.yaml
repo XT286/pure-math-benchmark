@@ -1,0 +1,19 @@
+review_id: AREA-REV-2026-0004
+query_id: PMB-NUMTH-2026-0001
+owning_area_code: 11Gxx
+reviewer_area_code: 11Gxx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Good local-to-global arithmetic geometry item
+requested_changes: []
+summary: The item is mathematically sound and appropriately tests whether a
+  respondent can identify the genus-zero curve as a conic and invoke the correct
+  local-global principle.
+legacy_source_review_id: REV-2026-0004
+submitted_at: 2026-03-08T12:15:00Z

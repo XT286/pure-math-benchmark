@@ -1,0 +1,20 @@
+review_id: AREA-REV-2026-0003
+query_id: PMB-ALGEB-2026-0001
+owning_area_code: 20Exx
+reviewer_area_code: 20Exx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Clean theorem-applicability item
+  - Low ambiguity
+requested_changes: []
+summary: This is a concise and well-posed structural algebra item. The relevant
+  theorem is standard, and the answer conditions are clear enough for consistent
+  review.
+legacy_source_review_id: REV-2026-0003
+submitted_at: 2026-03-08T12:10:00Z

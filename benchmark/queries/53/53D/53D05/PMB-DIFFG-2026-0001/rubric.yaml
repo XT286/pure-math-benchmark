@@ -1,0 +1,27 @@
+rubric_id: RUBRIC-PMB-DIFFG-2026-0001
+query_id: PMB-DIFFG-2026-0001
+owning_area_code: 53Dxx
+rubric_basis: proof-rubric-v0
+rubric_focus:
+  problem_type: hypothesis_sensitivity
+  answer_format: short_justification
+  primary_metric: correctness
+  secondary_metrics:
+    - use_of_hypotheses
+success_criteria: The answer should conclude that omega cannot be exact on a
+  closed symplectic manifold because if omega=dalpha, then integral of omega^n
+  equals integral of d(alpha wedge omega^(n-1)), which vanishes by Stokes,
+  contradicting positivity of symplectic volume.
+required_elements:
+  - Stokes theorem
+  - omega^n as positive volume form
+alternate_valid_approaches: []
+fatal_errors:
+  - asserting nonexactness without using compactness and no-boundary
+  - forgets compactness or boundarylessness
+  - states volume positivity without relating it to Stokes
+partial_credit_guidance:
+  - Credit mathematically meaningful progress that establishes a valid proof
+    skeleton or isolates the correct obstruction.
+  - Do not grant high credit for citation-only responses or vague references to
+    standard methods.

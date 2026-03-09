@@ -1,0 +1,17 @@
+query_id: PMB-FUNAN-2026-0001
+solution_id: SOL-FUNAN-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: For Im(lambda) nonzero, one checks that (a-lambda 1)^*(a-lambda
+  1)=(a-Re(lambda)1)^2+|Im(lambda)|^2 1, which is bounded below by a strictly
+  positive scalar multiple of the identity and hence invertible. Therefore
+  a-lambda 1 is invertible, so lambda is not in the spectrum. The spectrum is
+  real.
+required_ingredients:
+  - C-star algebra positivity argument
+  - invertibility of x*x implies invertibility of x
+common_failure_modes:
+  - appealing only to Hilbert-space spectral theorem
+  - not showing why nonreal lambda is excluded
+verification_status: editorial_seed

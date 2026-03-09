@@ -1,0 +1,15 @@
+query_id: PMB-DYNAM-2026-0002
+solution_id: SOL-DYNAM-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: The answer should explain that if two distinct points stayed
+  uniformly close under all forward and backward iterates, hyperbolic splitting
+  would force their displacement to lie simultaneously in stable and unstable
+  directions, hence to vanish. Compactness and uniformity produce a common
+  expansivity constant.
+required_ingredients: []
+common_failure_modes:
+  - uses only forward contraction or only backward expansion
+  - does not explain the role of stable and unstable directions together
+verification_status: unreviewed_seed

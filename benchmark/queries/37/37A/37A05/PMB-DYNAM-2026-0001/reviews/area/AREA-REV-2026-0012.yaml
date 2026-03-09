@@ -1,0 +1,19 @@
+review_id: AREA-REV-2026-0012
+query_id: PMB-DYNAM-2026-0001
+owning_area_code: 37Axx
+reviewer_area_code: 37Axx
+review_round: 1
+recommendation: accept
+checks:
+  query_is_mathematically_sound: true
+  msc_classification_is_appropriate: true
+  difficulty_is_appropriate: true
+  area_fit_is_appropriate: true
+strengths:
+  - Nice contrast between topological and measure-theoretic notions
+requested_changes: []
+summary: The item is mathematically sound and useful for testing whether a model
+  can keep related but distinct dynamical notions separate. It should remain in
+  the seed release.
+legacy_source_review_id: REV-2026-0012
+submitted_at: 2026-03-08T12:55:00Z

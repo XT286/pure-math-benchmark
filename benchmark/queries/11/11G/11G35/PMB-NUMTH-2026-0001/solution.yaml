@@ -1,0 +1,16 @@
+query_id: PMB-NUMTH-2026-0001
+solution_id: SOL-NUMTH-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: A smooth projective genus-zero curve over a number field is a
+  conic. The assumption of local points everywhere then triggers the
+  Hasse-Minkowski principle for conics, yielding a global rational point. The
+  answer should make the genus-zero-to-conic reduction explicit.
+required_ingredients:
+  - identify the curve as a conic or Severi-Brauer variety of dimension one
+  - apply Hasse principle for conics
+common_failure_modes:
+  - assuming genus zero implies rationality without a rational point
+  - citing local-global principles too vaguely
+verification_status: editorial_seed

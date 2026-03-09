@@ -1,0 +1,17 @@
+query_id: PMB-ANALY-2026-0001
+solution_id: SOL-ANALY-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: For n at least two, Hartogs extension applies to holomorphic
+  functions on the complement of a compact set with connected complement in C^n.
+  Thus every such function extends holomorphically across K. A correct answer
+  should emphasize the several-complex-variables phenomenon absent in one
+  variable.
+required_ingredients:
+  - Hartogs extension theorem
+  - connected complement condition
+common_failure_modes:
+  - using one-variable removable singularity in the wrong setting
+  - ignoring the dimension assumption
+verification_status: editorial_seed

@@ -1,0 +1,16 @@
+query_id: PMB-ALGEB-2026-0001
+solution_id: SOL-ALGEB-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: "The correct conclusion is that G is finite. One standard route
+  is Schur's theorem: a finitely generated torsion subgroup of GL_n(C) is
+  finite. Equivalent linear-group arguments are acceptable if they truly
+  establish finiteness under the torsion hypothesis."
+required_ingredients:
+  - valid structural theorem for finitely generated torsion linear groups
+  - clear statement that the theorem applies to G
+common_failure_modes:
+  - invoking unrelated linear-group structure results
+  - confusing torsion with uniform bounded exponent
+verification_status: editorial_seed

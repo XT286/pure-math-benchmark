@@ -1,0 +1,17 @@
+review_id: RUBRIC-REV-2026-0011
+query_id: PMB-FUNAN-2026-0001
+rubric_id: RUBRIC-PMB-FUNAN-2026-0001
+owning_area_code: 46Lxx
+review_round: 1
+recommendation: accept
+checks:
+  required_elements_are_sufficient: true
+  fatal_errors_are_field_appropriate: true
+  partial_credit_guidance_is_usable: true
+  alternate_valid_approaches_are_underdescribed: false
+requested_changes: []
+summary: This is compact and checks whether the respondent can use the C-star
+  algebra positivity argument rather than appeal vaguely to Hilbert-space
+  intuition. The query-specific rubric is usable for expert evaluation.
+legacy_source_review_id: REV-2026-0011
+submitted_at: 2026-03-08T12:50:00Z
