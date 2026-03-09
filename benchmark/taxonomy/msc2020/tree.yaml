@@ -1,6 +1,6 @@
 metadata:
   source: https://raw.githubusercontent.com/TIBHannover/MSC2020_SKOS/main/msc-2020-suggestion4.ttl
-  generated_at: 2026-03-09T06:12:09.087Z
+  generated_at: 2026-03-09T06:19:31.237Z
   description: Official MSC2020 hierarchy imported from a public SKOS serialization.
 sections:
   - code: 00-XX

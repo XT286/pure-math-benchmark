@@ -1,0 +1,195 @@
+---
+import { getCatalog, getNodeByCode, getQueriesForCode } from "../lib/catalog.js";
+
+const {
+  title = "Find your field",
+  description = "Select an MSC section, subclass, and leaf code to see the relevant queries and rubrics.",
+  idPrefix = "msc-nav",
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const catalog = getCatalog();
+const sections = catalog.sections
+  .filter((section) => section.query_count > 0)
+  .map((section) => ({
+    code: section.code,
+    shortCode: section.short_code,
+    label: section.label,
+  }));
+
+const subclasses = sections.flatMap((section) => {
+  const sectionNode = getNodeByCode(section.code);
+  return sectionNode.child_codes
+    .map((code) => getNodeByCode(code))
+    .filter((node) => node && getQueriesForCode(node.code).length > 0)
+    .map((node) => ({
+      code: node.code,
+      shortCode: node.short_code,
+      label: node.label,
+      parentCode: section.code,
+    }));
+});
+
+const leaves = subclasses.flatMap((subclass) => {
+  const subclassNode = getNodeByCode(subclass.code);
+  return subclassNode.child_codes
+    .map((code) => getNodeByCode(code))
+    .filter((node) => node && getQueriesForCode(node.code).length > 0)
+    .map((node) => ({
+      code: node.code,
+      shortCode: node.short_code,
+      label: node.label,
+      parentCode: subclass.code,
+    }));
+});
+
+const queryIndex = leaves.map((leaf) => {
+  const queries = getQueriesForCode(leaf.code).filter((query) => query.primary_msc_code === leaf.code);
+  return {
+    leafCode: leaf.code,
+    queries: queries.map((query) => ({
+      id: query.id,
+      title: query.title,
+      status: query.status,
+      problemType: query.problem_type,
+      answerFormat: query.answer_format,
+      rubricId: query.rubric_id,
+    })),
+  };
+});
+---
+
+<section class="card" style="padding:20px;">
+  <h2 style="margin-top:0;">{title}</h2>
+  <p class="muted">{description}</p>
+
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+    <label class="card" style="padding:14px;">
+      <strong>Level 1</strong>
+      <div class="muted" style="margin:6px 0 10px;">MSC section</div>
+      <select id={`${idPrefix}-section`} style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--panel-soft);color:var(--text);">
+        <option value="">Choose section</option>
+      </select>
+    </label>
+    <label class="card" style="padding:14px;">
+      <strong>Level 2</strong>
+      <div class="muted" style="margin:6px 0 10px;">MSC subclass</div>
+      <select id={`${idPrefix}-subclass`} disabled style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--panel-soft);color:var(--text);">
+        <option value="">Choose subclass</option>
+      </select>
+    </label>
+    <label class="card" style="padding:14px;">
+      <strong>Level 3</strong>
+      <div class="muted" style="margin:6px 0 10px;">MSC leaf</div>
+      <select id={`${idPrefix}-leaf`} disabled style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:var(--panel-soft);color:var(--text);">
+        <option value="">Choose leaf code</option>
+      </select>
+    </label>
+  </div>
+
+  <div id={`${idPrefix}-selection`} class="muted" style="margin-top:16px;"></div>
+  <div id={`${idPrefix}-results`} class="list" style="margin-top:16px;"></div>
+</section>
+
+<script
+  define:vars={{
+    idPrefix,
+    base,
+    sections,
+    subclasses,
+    leaves,
+    queryIndex,
+  }}
+>
+  const sectionSelect = document.getElementById(`${idPrefix}-section`);
+  const subclassSelect = document.getElementById(`${idPrefix}-subclass`);
+  const leafSelect = document.getElementById(`${idPrefix}-leaf`);
+  const selection = document.getElementById(`${idPrefix}-selection`);
+  const results = document.getElementById(`${idPrefix}-results`);
+
+  function resetSelect(select, placeholder) {
+    select.innerHTML = "";
+    const option = document.createElement("option");
+    option.value = "";
+    option.textContent = placeholder;
+    select.appendChild(option);
+    select.value = "";
+  }
+
+  function addOptions(select, items, formatter) {
+    for (const item of items) {
+      const option = document.createElement("option");
+      option.value = item.code;
+      option.textContent = formatter(item);
+      select.appendChild(option);
+    }
+  }
+
+  function renderResults() {
+    const leafCode = leafSelect.value;
+    results.innerHTML = "";
+
+    if (!leafCode) {
+      selection.textContent = "Select all three levels to view the queries in that field.";
+      return;
+    }
+
+    const section = sections.find((item) => item.code === sectionSelect.value);
+    const subclass = subclasses.find((item) => item.code === subclassSelect.value);
+    const leaf = leaves.find((item) => item.code === leafCode);
+    selection.textContent = `${section.shortCode} ${section.label} -> ${subclass.shortCode} ${subclass.label} -> ${leaf.shortCode} ${leaf.label}`;
+
+    const queryGroup = queryIndex.find((item) => item.leafCode === leafCode);
+    if (!queryGroup || queryGroup.queries.length === 0) {
+      results.innerHTML = `<div class="list-item">No public queries for this leaf code yet.</div>`;
+      return;
+    }
+
+    results.innerHTML = queryGroup.queries
+      .map(
+        (query) => `
+          <article class="list-item">
+            <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+              <div>
+                <h3 style="margin:0 0 8px;"><a href="${base}queries/${query.id}/">${query.title}</a></h3>
+                <div class="muted"><code>${query.id}</code></div>
+              </div>
+              <span class="badge">${query.status}</span>
+            </div>
+            <div class="badge-row" style="margin-top:12px;">
+              <span class="badge">${query.problemType}</span>
+              <span class="badge">${query.answerFormat}</span>
+            </div>
+            <p style="margin:12px 0 0;"><a href="${base}rubrics/${query.rubricId}/">Open answer rubric</a></p>
+          </article>
+        `,
+      )
+      .join("");
+  }
+
+  resetSelect(sectionSelect, "Choose section");
+  addOptions(sectionSelect, sections, (item) => `${item.shortCode} ${item.label}`);
+  resetSelect(subclassSelect, "Choose subclass");
+  resetSelect(leafSelect, "Choose leaf code");
+  renderResults();
+
+  sectionSelect.addEventListener("change", () => {
+    const matchingSubclasses = subclasses.filter((item) => item.parentCode === sectionSelect.value);
+    resetSelect(subclassSelect, "Choose subclass");
+    resetSelect(leafSelect, "Choose leaf code");
+    subclassSelect.disabled = matchingSubclasses.length === 0;
+    leafSelect.disabled = true;
+    addOptions(subclassSelect, matchingSubclasses, (item) => `${item.shortCode} ${item.label}`);
+    renderResults();
+  });
+
+  subclassSelect.addEventListener("change", () => {
+    const matchingLeaves = leaves.filter((item) => item.parentCode === subclassSelect.value);
+    resetSelect(leafSelect, "Choose leaf code");
+    leafSelect.disabled = matchingLeaves.length === 0;
+    addOptions(leafSelect, matchingLeaves, (item) => `${item.shortCode} ${item.label}`);
+    renderResults();
+  });
+
+  leafSelect.addEventListener("change", renderResults);
+</script>

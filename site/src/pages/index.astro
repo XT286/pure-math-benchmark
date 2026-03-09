@@ -1,10 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import MscNavigator from "../components/MscNavigator.astro";
 import { getCatalog } from "../lib/catalog.js";
 
 const catalog = getCatalog();
-const activeSections = catalog.sections.filter((section) => section.query_count > 0);
-const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Pure Math Benchmark Catalog">
@@ -35,19 +34,11 @@ const base = import.meta.env.BASE_URL;
     </div>
   </section>
 
-  <h2 class="section-title">Start by area</h2>
-  <div class="grid">
-    {activeSections.map((section) => (
-      <a class="card" href={`${base}msc/${section.short_code}/`}>
-        <div style="display:flex;justify-content:space-between;gap:8px;">
-          <strong>{section.short_code}</strong>
-          <span class="badge">{section.coverage_status}</span>
-        </div>
-        <h3 style="margin:12px 0 8px;">{section.label}</h3>
-        <div class="muted">{section.query_count} visible queries</div>
-      </a>
-    ))}
-  </div>
+  <MscNavigator
+    title="Start by field"
+    description="Pick level 1, then level 2, then the leaf code for your area. Once you reach the field you care about, the matching queries and rubric links appear below."
+    idPrefix="home-nav"
+  />
 
   <h2 class="section-title">What experts can do here</h2>
   <div class="grid">

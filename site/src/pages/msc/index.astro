@@ -1,9 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getCatalog } from "../../lib/catalog.js";
-
-const catalog = getCatalog();
-const base = import.meta.env.BASE_URL;
+import MscNavigator from "../../components/MscNavigator.astro";
 ---
 
 <BaseLayout title="MSC Browse">
@@ -15,16 +12,9 @@ const base = import.meta.env.BASE_URL;
     </p>
   </section>
 
-  <div class="grid">
-    {catalog.sections.map((section) => (
-      <a class="card" href={`${base}msc/${section.short_code}/`}>
-        <div style="display:flex;justify-content:space-between;gap:8px;">
-          <strong>{section.short_code}</strong>
-          <span class="badge">{section.coverage_status}</span>
-        </div>
-        <h3 style="margin:12px 0 8px;">{section.label}</h3>
-        <div class="muted">{section.query_count} visible queries</div>
-      </a>
-    ))}
-  </div>
+  <MscNavigator
+    title="MSC field selector"
+    description="Use the dropdowns to narrow from section to subclass to leaf code. This keeps the browse experience focused and lets reviewers go straight to their own area."
+    idPrefix="msc-nav"
+  />
 </BaseLayout>
