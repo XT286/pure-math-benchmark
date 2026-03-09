@@ -1,0 +1,18 @@
+release: v0.1.0
+status: seed
+description: >
+  Initial public seed release for the Pure Math Benchmark repository. This
+  release establishes the taxonomy, schema, review framework, and a
+  representative cross-subject corpus preview.
+public_files:
+  - benchmark/public/public_seed.jsonl
+  - benchmark/public/README.md
+coverage_targets:
+  subject_families: 12
+  subfields_per_family: 4
+  finer_topics_per_subfield: "2-3"
+  items_per_finer_topic: "2-3"
+  projected_public_corpus_size: "360-480"
+notes:
+  - This release is not yet a leaderboard-grade held-out benchmark.
+  - Public items are intended for review, calibration, and corpus design feedback.
