@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Participate">
-  <div class="breadcrumbs">Home / Participate</div>
+  <div class="breadcrumbs">Home / <a href={base}>Catalog</a> / Participate</div>
 
   <section class="hero">
     <h2 style="margin-top:0;">How mathematicians should participate</h2>

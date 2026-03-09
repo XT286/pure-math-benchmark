@@ -28,12 +28,13 @@ export function getStaticPaths() {
 const { section, subclass, leaf } = Astro.params;
 const leafNode = getNodeByCode(leaf);
 const queries = getQueriesForCode(leafNode.code);
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${leafNode.short_code} | MSC`}>
   <div class="breadcrumbs">
-    Home / <a href="/msc/">MSC</a> / <a href={`/msc/${section}/`}>{section}</a> /
-    <a href={`/msc/${section}/${subclass}/`}>{subclass}</a> / {leaf}
+    Home / <a href={`${base}msc/`}>MSC</a> / <a href={`${base}msc/${section}/`}>{section}</a> /
+    <a href={`${base}msc/${section}/${subclass}/`}>{subclass}</a> / {leaf}
   </div>
 
   <section class="hero">

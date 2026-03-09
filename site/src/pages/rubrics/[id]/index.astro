@@ -12,16 +12,17 @@ export function getStaticPaths() {
 const { id } = Astro.params;
 const rubric = getRubricById(id);
 const query = getQueryById(rubric.query_id);
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${rubric.rubric_id} | Rubric`}>
   <div class="breadcrumbs">
-    Home / <a href={`/queries/${query.id}/`}>{query.id}</a> / {rubric.rubric_id}
+    Home / <a href={`${base}queries/${query.id}/`}>{query.id}</a> / {rubric.rubric_id}
   </div>
 
   <section class="hero">
     <h2 style="margin-top:0;">{rubric.rubric_id}</h2>
-    <p class="muted">Per-query answer rubric for <a href={`/queries/${query.id}/`}>{query.title}</a>.</p>
+    <p class="muted">Per-query answer rubric for <a href={`${base}queries/${query.id}/`}>{query.title}</a>.</p>
   </section>
 
   <div class="grid">

@@ -24,11 +24,12 @@ const { section, subclass } = Astro.params;
 const node = getNodeByCode(`${subclass}xx`);
 const leafNodes = getChildren(node);
 const queries = getQueriesForCode(node.code);
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${subclass} | MSC`}>
   <div class="breadcrumbs">
-    Home / <a href="/msc/">MSC</a> / <a href={`/msc/${section}/`}>{section}</a> / {subclass}
+    Home / <a href={`${base}msc/`}>MSC</a> / <a href={`${base}msc/${section}/`}>{section}</a> / {subclass}
   </div>
 
   <section class="hero">
@@ -42,7 +43,7 @@ const queries = getQueriesForCode(node.code);
   <h2 class="section-title">Leaf codes</h2>
   <div class="grid">
     {leafNodes.map((leaf) => (
-      <a class="card" href={`/msc/${section}/${subclass}/${leaf.short_code}/`}>
+      <a class="card" href={`${base}msc/${section}/${subclass}/${leaf.short_code}/`}>
         <strong>{leaf.short_code}</strong>
         <h3 style="margin:12px 0 8px;">{leaf.label}</h3>
         <div class="muted">{getQueriesForCode(leaf.code).length} visible queries</div>
