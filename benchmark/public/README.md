@@ -14,6 +14,15 @@ It is meant to demonstrate:
 ## Included files
 
 - `public_seed.jsonl`: representative seed items spanning all current subject families
+- `../solutions/public_seed_solutions.jsonl`: canonical solution outlines for the first reviewed tranche
+- `../reviews/public_seed_reviews.jsonl`: structured review records for the first reviewed tranche
+
+## Current seed size
+
+The current seed release contains `24` public items:
+
+- an initial reviewed tranche of `12` cross-subject items with solution and review records
+- an additional tranche of `12` representative expansion items broadening subfield coverage
 
 ## Scaling targets
 
