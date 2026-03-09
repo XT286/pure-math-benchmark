@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0012
+generation_method: reference_grounded_seed_spec
+source_id: mac-lane
+source_citation: Saunders Mac Lane, Categories for the Working Mathematician,
+  2nd ed., Springer, 1998.
+source_scope_notes: Canonical reference for adjunctions, monads, and categorical constructions.
+msc_path:
+  - "18"
+  - 18C
+  - 18C15
+adaptation_notes: Candidate adapted from a standard theorem-level fact in Mac
+  Lane, Categories; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

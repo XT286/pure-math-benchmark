@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0036
+solution_id: SOL-CAND-0036
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If lambda = a + i b with b != 0, then for any x one computes ||(A - lambda
+  I)x||^2 >= b^2 ||x||^2 because A is selfadjoint. Thus A - lambda I is
+  injective with closed range and bounded inverse on its range; a standard
+  Hilbert-space argument shows the range is all of H. So nonreal lambda belong
+  to the resolvent and sigma(A) is contained in R.
+required_ingredients:
+  - selfadjointness
+  - lower bound for A - lambda I when Im(lambda) != 0
+common_failure_modes:
+  - assuming compactness or finite dimension
+verification_status: reference_grounded_candidate

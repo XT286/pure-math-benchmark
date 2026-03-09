@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0029
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Uniqueness of the Levi-Civita connection
+primary_msc_code: 53B20
+primary_msc_path:
+  - 53-XX
+  - 53Bxx
+  - 53B20
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 53Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 53Bxx
+  - 53-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.6
+problem_type: framework_comparison
+answer_format: proof_outline
+statement:
+  title: Uniqueness of the Levi-Civita connection
+  body: >
+    Let (M, g) be a Riemannian manifold. Explain why there is at most one affine
+    connection on M that is both torsion free and metric compatible.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - affine connections
+    - torsion
+    - metric compatibility
+    - Koszul formula
+goal:
+  success_criteria: >
+    The answer should invoke or derive the Koszul formula, showing that the
+    value of nabla_X Y is determined entirely by g, Lie brackets, and vector
+    fields, hence uniqueness.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "John M. Lee, Riemannian Manifolds: An Introduction to Curvature,
+    Springer, 1997."
+  year: 1997
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Lee, Riemannian Manifolds; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: ec6576298a62f72b
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

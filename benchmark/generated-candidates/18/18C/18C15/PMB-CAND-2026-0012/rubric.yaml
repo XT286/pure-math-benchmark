@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0012
+query_id: PMB-CAND-2026-0012
+owning_area_code: 18Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Mac Lane, Categories.
+rubric_focus:
+  problem_type: construction
+  answer_format: structured_bullets
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the endofunctor UF, take eta as the unit, and
+  define multiplication by U epsilon F, with a brief indication that the monad
+  axioms follow from the triangle identities.
+required_elements:
+  - specify the endofunctor
+  - specify the unit natural transformation
+  - specify the multiplication natural transformation
+alternate_valid_approaches: []
+fatal_errors:
+  - putting the monad on D instead of C
+  - reversing the roles of unit and counit
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

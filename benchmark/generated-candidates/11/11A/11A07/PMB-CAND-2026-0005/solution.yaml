@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0005
+solution_id: SOL-CAND-0005
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The nonzero residue classes modulo p form a finite subgroup of the
+  multiplicative group of the field F_p. A standard theorem says every finite
+  subgroup of a field's multiplicative group is cyclic, so (Z / pZ)^times is
+  cyclic of order p - 1. Any generator is a primitive root modulo p.
+required_ingredients:
+  - cyclicity of finite multiplicative subgroups of fields
+common_failure_modes:
+  - using Euler's theorem alone without establishing existence of an element of
+    maximal order
+verification_status: reference_grounded_candidate

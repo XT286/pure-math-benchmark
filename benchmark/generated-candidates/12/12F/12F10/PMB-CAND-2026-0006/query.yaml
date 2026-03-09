@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0006
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Inclusion-reversing Galois correspondence
+primary_msc_code: 12F10
+primary_msc_path:
+  - 12-XX
+  - 12Fxx
+  - 12F10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 12Fxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 12Fxx
+  - 12-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.6
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Inclusion-reversing Galois correspondence
+  body: >
+    Let L / K be a finite Galois extension with G = Gal(L / K). Explain why the
+    assignments H -> L^H and E -> Gal(L / E) define an inclusion-reversing
+    bijection between subgroups of G and intermediate fields E with K subseteq E
+    subseteq L.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - finite Galois extensions
+    - fixed fields
+    - Galois groups
+goal:
+  success_criteria: >
+    The answer should identify the two assignments, state why each lands in the
+    right class, and explain why normality and separability ensure the two
+    operations are inverse.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: David S. Dummit and Richard M. Foote, Abstract Algebra, 3rd ed., Wiley, 2004.
+  year: 2004
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Dummit-Foote, Abstract Algebra; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 3e8b3d6766ce80c4
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

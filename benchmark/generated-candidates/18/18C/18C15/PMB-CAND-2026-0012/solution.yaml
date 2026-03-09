@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0012
+solution_id: SOL-CAND-0012
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The associated monad is T = U F on C. Its unit is the adjunction unit eta:
+  Id_C -> U F. Its multiplication is mu = U epsilon F: U F U F -> U F. The monad
+  axioms are exactly the adjunction triangle identities transported through
+  these formulas.
+required_ingredients:
+  - unit and counit of an adjunction
+  - triangle identities
+common_failure_modes:
+  - writing F U instead of U F
+verification_status: reference_grounded_candidate

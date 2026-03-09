@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0013
+query_id: PMB-CAND-2026-0013
+owning_area_code: 20Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Rotman, Group Theory.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use the class equation to show that the contribution of the
+  noncentral conjugacy classes is divisible by p, forcing |Z(G)| to be divisible
+  by p and therefore greater than 1.
+required_elements:
+  - write the class equation
+  - use divisibility of noncentral conjugacy class sizes by p
+  - conclude that the center has size divisible by p
+alternate_valid_approaches: []
+fatal_errors:
+  - assuming the group is abelian
+  - omitting why noncentral class sizes are divisible by p
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

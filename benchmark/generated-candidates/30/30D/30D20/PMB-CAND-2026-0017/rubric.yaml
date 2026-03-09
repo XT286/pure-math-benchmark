@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0017
+query_id: PMB-CAND-2026-0017
+owning_area_code: 30Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Conway, Functions
+  of One Complex Variable.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use Cauchy estimates to show that f'(z_0) = 0 for every z_0
+  and then conclude constancy.
+required_elements:
+  - apply Cauchy estimates on large circles
+  - let the radius tend to infinity
+  - conclude all first derivatives vanish
+alternate_valid_approaches: []
+fatal_errors:
+  - using the maximum modulus principle without explaining the global step
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0010
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Projective modules as direct summands of free modules
+primary_msc_code: 16D40
+primary_msc_path:
+  - 16-XX
+  - 16Dxx
+  - 16D40
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 16Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 16Dxx
+  - 16-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: framework_comparison
+answer_format: proof_outline
+statement:
+  title: Projective modules as direct summands of free modules
+  body: >
+    Let P be a left module over a ring R. Explain why P is projective if and
+    only if P is isomorphic to a direct summand of some free R-module.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - projective modules
+    - free modules
+    - split exact sequences
+goal:
+  success_criteria: >
+    The answer should prove both directions: a splitting of a surjection from a
+    free module yields a direct-summand decomposition, and a direct summand of a
+    free module has the lifting property.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: T. Y. Lam, A First Course in Noncommutative Rings, 2nd ed., Springer, 2001.
+  year: 2001
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Lam, First Course in Noncommutative Rings; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 0ac185cc065e3da2
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

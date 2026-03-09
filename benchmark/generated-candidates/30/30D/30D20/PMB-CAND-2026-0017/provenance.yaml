@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0017
+generation_method: reference_grounded_seed_spec
+source_id: conway-complex
+source_citation: John B. Conway, Functions of One Complex Variable I, 2nd ed., Springer, 1978.
+source_scope_notes: Standard source for Liouville's theorem and basic
+  one-variable complex analysis.
+msc_path:
+  - "30"
+  - 30D
+  - 30D20
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Conway, Functions of One Complex Variable; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

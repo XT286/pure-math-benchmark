@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0009
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Distinct eigenvalues force linear independence
+primary_msc_code: 15A18
+primary_msc_path:
+  - 15-XX
+  - 15Axx
+  - 15A18
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 15Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 15Axx
+  - 15-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 2.8
+problem_type: proof
+answer_format: short_justification
+statement:
+  title: Distinct eigenvalues force linear independence
+  body: >
+    Let T be a linear operator on a finite-dimensional vector space V. Explain
+    why eigenvectors corresponding to distinct eigenvalues of T are linearly
+    independent.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - eigenvalues and eigenvectors
+    - linear independence
+goal:
+  success_criteria: >
+    The answer should give the standard induction or annihilating-polynomial
+    argument showing that a nontrivial linear dependence contradicts
+    distinctness of the eigenvalues.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: David S. Dummit and Richard M. Foote, Abstract Algebra, 3rd ed., Wiley, 2004.
+  year: 2004
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Dummit-Foote, Abstract Algebra; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 7f9608f0a3645ec7
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0036
+version: 0.0.0
+status: draft
+benchmark_track: adjacent_theory
+title: Selfadjoint operators have real spectrum
+primary_msc_code: 81Q10
+primary_msc_path:
+  - 81-XX
+  - 81Qxx
+  - 81Q10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 81Qxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 81Qxx
+  - 81-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Selfadjoint operators have real spectrum
+  body: >
+    Let A be a selfadjoint bounded operator on a complex Hilbert space. Explain
+    why every spectral value of A is real.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - bounded operators on Hilbert spaces
+    - adjoints
+    - spectrum and resolvent
+goal:
+  success_criteria: >
+    The answer should show that A - lambda I is bounded below when Im(lambda) !=
+    0, hence invertible, so nonreal lambda lie in the resolvent.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "Michael Reed and Barry Simon, Methods of Modern Mathematical Physics
+    I: Functional Analysis, Academic Press, 1980."
+  year: 1980
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Reed-Simon, Methods of Modern Mathematical Physics I; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 24e8657e987e76da
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

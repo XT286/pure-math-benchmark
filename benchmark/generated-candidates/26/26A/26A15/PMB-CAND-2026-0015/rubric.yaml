@@ -1,0 +1,27 @@
+rubric_id: RUB-CAND-0015
+query_id: PMB-CAND-2026-0015
+owning_area_code: 26Axx
+rubric_basis: Reference-grounded candidate rubric derived from Rudin, Principles
+  of Mathematical Analysis.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should invoke the Heine-Cantor theorem or provide the standard
+  compactness contradiction argument.
+required_elements:
+  - use compactness of [a, b]
+  - explain why pointwise continuity upgrades to a global delta
+alternate_valid_approaches: []
+fatal_errors:
+  - giving an argument that works only on open intervals
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

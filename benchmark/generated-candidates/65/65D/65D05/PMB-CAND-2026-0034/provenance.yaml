@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0034
+generation_method: reference_grounded_seed_spec
+source_id: trefethen-bau
+source_citation: Lloyd N. Trefethen and David Bau III, Numerical Linear Algebra, SIAM, 1997.
+source_scope_notes: Standard source for interpolation and numerical linear algebra fundamentals.
+msc_path:
+  - "65"
+  - 65D
+  - 65D05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Trefethen-Bau, Numerical Linear Algebra; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

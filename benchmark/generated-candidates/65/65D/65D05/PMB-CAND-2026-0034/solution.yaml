@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0034
+solution_id: SOL-CAND-0034
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If p and q are two interpolating polynomials of degree at most n, then r = p -
+  q has degree at most n and vanishes at each x_i. Since the nodes are distinct,
+  r has n + 1 roots. The only polynomial of degree at most n with that many
+  roots is the zero polynomial, so p = q.
+required_ingredients:
+  - root bound for nonzero polynomials
+common_failure_modes:
+  - confusing distinct nodes with multiplicity conditions
+verification_status: reference_grounded_candidate

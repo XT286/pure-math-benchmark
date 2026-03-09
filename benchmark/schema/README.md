@@ -9,6 +9,8 @@ The schema layer now treats `official MSC2020 classification`, `query ownership`
 - `rubric.schema.json` defines per-query answer rubrics
 - `query-area-review.schema.json` defines field-expert review of the query itself
 - `query-rubric-review.schema.json` defines field-expert review of the answer rubric
+- `reference-source-catalog.schema.json` defines the curated source catalog for candidate generation
+- `candidate-seed-batch.schema.json` defines the structured seed inputs for reference-grounded candidate generation
 
 ## Design goals
 
@@ -29,3 +31,11 @@ This keeps expert review focused on:
 
 - whether the `query` is mathematically sound and correctly placed in its area
 - whether the `rubric` fairly evaluates valid answers in that area
+
+## Candidate generation
+
+Reference-grounded candidate generation uses:
+
+1. a curated source catalog
+2. structured seed specs keyed by official MSC leaf codes
+3. generated candidate packages kept separate from canonical benchmark queries

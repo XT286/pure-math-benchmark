@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0013
+solution_id: SOL-CAND-0013
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  In a finite p-group, the size of every conjugacy class equals the index of a
+  centralizer and hence is a power of p. For noncentral elements that size is
+  greater than 1, so it is divisible by p. The class equation therefore writes
+  |G| as |Z(G)| plus multiples of p. Since |G| itself is a power of p, |Z(G)| is
+  divisible by p, so the center is nontrivial.
+required_ingredients:
+  - class equation
+common_failure_modes:
+  - confusing coset sizes with conjugacy class sizes
+verification_status: reference_grounded_candidate

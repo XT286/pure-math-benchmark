@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0005
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Primitive roots modulo a prime
+primary_msc_code: 11A07
+primary_msc_path:
+  - 11-XX
+  - 11Axx
+  - 11A07
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 11Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 11Axx
+  - 11-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.1
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Primitive roots modulo a prime
+  body: >
+    Let p be prime. Explain why the multiplicative group (Z / pZ)^times is
+    cyclic, and hence why a primitive root modulo p exists.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - finite groups
+    - elementary number theory
+    - multiplicative groups modulo p
+goal:
+  success_criteria: >
+    The answer should invoke the standard structure theorem for finite subgroups
+    of a field's multiplicative group, or an equivalent classical argument, and
+    conclude the existence of an element of order p - 1.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Kenneth Ireland and Michael Rosen, A Classical Introduction to Modern
+    Number Theory, 2nd ed., Springer, 1990.
+  year: 1990
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Ireland-Rosen, Number Theory; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 6f31b5a314a9ad8d
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

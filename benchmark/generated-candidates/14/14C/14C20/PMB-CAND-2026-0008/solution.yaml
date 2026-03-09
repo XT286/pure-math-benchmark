@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0008
+solution_id: SOL-CAND-0008
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  A nonzero rational function f defines a morphism C -> P^1 away from
+  indeterminacy, and projectivity extends the relevant divisor computation. The
+  pullback of the divisor [0] - [infinity] on P^1 is exactly div(f). Since [0]
+  and [infinity] each have degree one, their pullbacks have equal degree, so deg
+  div(f) = 0.
+required_ingredients:
+  - principal divisors
+  - degree of divisors on curves
+common_failure_modes:
+  - concluding only linear equivalence to zero without mentioning degree
+verification_status: reference_grounded_candidate

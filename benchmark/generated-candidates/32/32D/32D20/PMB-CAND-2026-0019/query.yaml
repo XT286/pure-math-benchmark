@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0019
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Isolated singularities disappear in several complex variables
+primary_msc_code: 32D20
+primary_msc_path:
+  - 32-XX
+  - 32Dxx
+  - 32D20
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 32Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 32Dxx
+  - 32-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.8
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Isolated singularities disappear in several complex variables
+  body: >
+    Let n >= 2 and let f be holomorphic on B(0, 1) \\ {0} in C^n. Explain why f
+    extends holomorphically across 0.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - holomorphic functions in several complex variables
+    - Hartogs extension phenomenon
+goal:
+  success_criteria: >
+    The answer should identify this as a Hartogs removable singularity
+    phenomenon specific to dimension at least 2 and conclude existence of a
+    holomorphic extension to the whole ball.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Steven G. Krantz, Function Theory of Several Complex Variables, 2nd
+    ed., AMS Chelsea Publishing, 2001.
+  year: 2001
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Krantz, Several Complex Variables; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 47d5601cac0771e0
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0032
+version: 0.0.0
+status: draft
+benchmark_track: adjacent_theory
+title: Weak convergence controls bounded continuous test functions
+primary_msc_code: 60B10
+primary_msc_path:
+  - 60-XX
+  - 60Bxx
+  - 60B10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 60Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 60Bxx
+  - 60-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.4
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Weak convergence controls bounded continuous test functions
+  body: >
+    Let mu_n converge weakly to mu on a Polish space. Explain why integral phi
+    dmu_n converges to integral phi dmu for every bounded continuous function
+    phi.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - weak convergence of probability measures
+    - bounded continuous functions
+goal:
+  success_criteria: >
+    The answer should identify this as a standard characterization of weak
+    convergence, for example via the Portmanteau theorem.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "Rick Durrett, Probability: Theory and Examples, 5th ed., Cambridge
+    University Press, 2019."
+  year: 2019
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Durrett, Probability; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 28d8ced3a0f912f7
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

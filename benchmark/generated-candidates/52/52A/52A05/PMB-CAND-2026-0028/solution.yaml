@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0028
+solution_id: SOL-CAND-0028
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Because K is compact and C is closed and disjoint from K, the distance between
+  them is positive and is attained by some x_0 in K and y_0 in C. The linear
+  functional determined by y_0 - x_0 strictly separates the two sets: the
+  midpoint hyperplane orthogonal to y_0 - x_0 places K on one side and C on the
+  other.
+required_ingredients:
+  - attainment of distance between compact and closed sets
+  - geometric separating hyperplane argument
+common_failure_modes:
+  - forgetting why strict inequality holds on the compact side
+verification_status: reference_grounded_candidate

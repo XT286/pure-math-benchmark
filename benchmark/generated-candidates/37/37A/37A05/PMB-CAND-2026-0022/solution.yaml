@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0022
+solution_id: SOL-CAND-0022
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If a positive-measure subset of A consisted of points that eventually never
+  return to A, then forward iterates of that subset would be pairwise disjoint.
+  Because T preserves measure, each iterate would have the same positive
+  measure, contradicting finiteness of mu(X). Therefore almost every point of A
+  returns infinitely often.
+required_ingredients:
+  - measure preservation
+  - finite total measure
+common_failure_modes:
+  - proving only existence of one recurrent point
+verification_status: reference_grounded_candidate

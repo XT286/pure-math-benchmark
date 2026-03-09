@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0030
+solution_id: SOL-CAND-0030
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For x outside K and each y in K, choose disjoint open sets U_y containing y
+  and V_y containing x. The U_y cover K, so compactness gives finitely many. The
+  intersection of the corresponding finitely many V_y is an open neighborhood of
+  x disjoint from K. Thus every point outside K has an open neighborhood
+  disjoint from K, so X \\ K is open and K is closed.
+required_ingredients:
+  - Hausdorff separation
+  - finite subcover argument
+common_failure_modes:
+  - citing a metric-space theorem without adapting it to general topology
+verification_status: reference_grounded_candidate

@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0024
+solution_id: SOL-CAND-0024
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For Schwartz f, compute the Fourier transform of partial_j f and integrate by
+  parts against the exponential kernel. Rapid decay ensures the boundary term
+  vanishes, while differentiating the exponential brings down the factor 2 pi i
+  xi_j. Hence differentiation in the spatial variable becomes multiplication by
+  2 pi i xi_j in frequency space.
+required_ingredients:
+  - integration by parts for Schwartz functions
+common_failure_modes:
+  - using a different Fourier convention without saying so
+verification_status: reference_grounded_candidate

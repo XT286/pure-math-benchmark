@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0018
+solution_id: SOL-CAND-0018
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The strong maximum principle says that a harmonic function on a connected open
+  set cannot achieve a strict interior maximum unless it is constant. Since u
+  does attain an interior maximum, the only possibility is that u is constant on
+  Omega.
+required_ingredients:
+  - strong maximum principle
+common_failure_modes:
+  - treating subharmonic and harmonic cases as identical without comment
+verification_status: reference_grounded_candidate

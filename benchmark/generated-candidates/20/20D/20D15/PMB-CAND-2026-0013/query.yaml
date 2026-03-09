@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0013
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Finite p-groups have nontrivial center
+primary_msc_code: 20D15
+primary_msc_path:
+  - 20-XX
+  - 20Dxx
+  - 20D15
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 20Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 20Dxx
+  - 20-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Finite p-groups have nontrivial center
+  body: |
+    Let G be a finite p-group. Explain why Z(G) is nontrivial.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - finite groups
+    - conjugacy classes
+    - class equation
+goal:
+  success_criteria: >
+    The answer should use the class equation to show that the contribution of
+    the noncentral conjugacy classes is divisible by p, forcing |Z(G)| to be
+    divisible by p and therefore greater than 1.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Joseph J. Rotman, An Introduction to the Theory of Groups, 4th ed.,
+    Springer, 1995.
+  year: 1995
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Rotman, Group Theory; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 5992cb8bd50be821
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

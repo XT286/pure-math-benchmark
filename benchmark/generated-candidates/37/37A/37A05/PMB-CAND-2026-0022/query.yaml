@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0022
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Poincare recurrence in finite measure spaces
+primary_msc_code: 37A05
+primary_msc_path:
+  - 37-XX
+  - 37Axx
+  - 37A05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 37Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 37Axx
+  - 37-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.3
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Poincare recurrence in finite measure spaces
+  body: >
+    Let T be a measure-preserving transformation of a finite measure space (X,
+    A, mu). Explain why almost every point of a measurable set A of positive
+    measure returns to A infinitely often.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - measure-preserving transformations
+    - recurrence
+    - finite measure spaces
+goal:
+  success_criteria: >
+    The answer should identify the statement as Poincare recurrence and explain
+    that infinitely many disjoint forward images of a positive-measure wandering
+    subset would contradict finiteness of the measure.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Peter Walters, An Introduction to Ergodic Theory, Springer, 1982.
+  year: 1982
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Walters, Ergodic Theory; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: c628185c08d5db31
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0020
+solution_id: SOL-CAND-0020
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Picard-Lindelof states that continuity in t together with local Lipschitz
+  control in x yields a unique local solution to the initial value problem. The
+  hypotheses match that theorem exactly, so two distinct local solutions through
+  (t_0, x_0) cannot exist.
+required_ingredients:
+  - Picard-Lindelof uniqueness theorem
+common_failure_modes:
+  - invoking Peano's theorem, which gives existence but not uniqueness
+verification_status: reference_grounded_candidate

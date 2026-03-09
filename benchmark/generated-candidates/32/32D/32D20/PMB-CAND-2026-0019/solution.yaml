@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0019
+solution_id: SOL-CAND-0019
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  In several complex variables with n >= 2, isolated singularities are
+  removable: Hartogs' theorem implies any function holomorphic on a punctured
+  ball extends holomorphically to the full ball. The puncture at the origin
+  therefore causes no genuine singularity.
+required_ingredients:
+  - Hartogs extension theorem
+common_failure_modes:
+  - treating the statement as false because of one-variable examples like 1/z
+verification_status: reference_grounded_candidate

@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0033
+generation_method: reference_grounded_seed_spec
+source_id: casella-berger
+source_citation: George Casella and Roger L. Berger, Statistical Inference, 2nd
+  ed., Duxbury, 2002.
+source_scope_notes: Standard source for factorization criteria and sufficiency.
+msc_path:
+  - "62"
+  - 62B
+  - 62B05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Casella-Berger, Statistical Inference; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

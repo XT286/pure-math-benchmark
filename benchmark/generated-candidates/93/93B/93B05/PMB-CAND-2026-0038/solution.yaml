@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0038
+solution_id: SOL-CAND-0038
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For a linear time-invariant system, the reachable subspace from the origin is
+  the smallest A-invariant subspace containing the columns of B, which is
+  exactly the span of the columns of B, AB, ..., A^{n-1}B. If the
+  controllability matrix has full rank n, that span is all of R^n, so every
+  state is reachable in finite time and the system is controllable.
+required_ingredients:
+  - reachable subspace characterization
+  - Cayley-Hamilton reduction to powers up to n - 1
+common_failure_modes:
+  - treating a rank computation as sufficient without explaining the reachable
+    subspace
+verification_status: reference_grounded_candidate

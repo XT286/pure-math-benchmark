@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0004
+solution_id: SOL-CAND-0004
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The relation a ~ a' iff h(a) = h(a') is an equivalence relation. Because h
+  respects each basic operation, applying any operation to equivalent tuples
+  gives equivalent outputs, so ker(h) is a congruence. Then [a] maps to h(a) on
+  A / ker(h), and well-definedness follows precisely from the definition of
+  ker(h).
+required_ingredients:
+  - compatibility of homomorphisms with basic operations
+common_failure_modes:
+  - proving only equivalence and not congruence compatibility
+verification_status: reference_grounded_candidate

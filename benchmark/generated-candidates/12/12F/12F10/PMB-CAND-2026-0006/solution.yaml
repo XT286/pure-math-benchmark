@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0006
+solution_id: SOL-CAND-0006
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For a subgroup H of G, the fixed field L^H is intermediate. For an
+  intermediate field E, the subgroup Gal(L / E) consists of automorphisms fixing
+  E pointwise. These maps reverse inclusion because larger subgroups fix fewer
+  elements and larger fields admit fewer automorphisms fixing them. In a finite
+  Galois extension the fundamental theorem of Galois theory says these
+  assignments are inverse bijections.
+required_ingredients:
+  - fundamental theorem of Galois theory
+common_failure_modes:
+  - discussing fixed rings or fixed subsets instead of fixed fields
+verification_status: reference_grounded_candidate

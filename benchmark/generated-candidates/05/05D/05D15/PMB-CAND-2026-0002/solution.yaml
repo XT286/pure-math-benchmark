@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0002
+solution_id: SOL-CAND-0002
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The given inequality is exactly Hall's condition for the left vertex class X.
+  Hall's theorem states that this condition is necessary and sufficient for a
+  matching saturating X, so the desired matching exists.
+required_ingredients:
+  - Hall's theorem
+common_failure_modes:
+  - mixing up a matching saturating X with a perfect matching of the whole graph
+verification_status: reference_grounded_candidate

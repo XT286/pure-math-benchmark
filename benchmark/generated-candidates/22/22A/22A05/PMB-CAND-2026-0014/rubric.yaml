@@ -1,0 +1,26 @@
+rubric_id: RUB-CAND-0014
+query_id: PMB-CAND-2026-0014
+owning_area_code: 22Axx
+rubric_basis: Reference-grounded candidate rubric derived from Hofmann-Morris,
+  Structure of Compact Groups.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use the general fact that compact subsets of Hausdorff
+  spaces are closed, noting that a subgroup being compact is enough.
+required_elements:
+  - identify the Hausdorff plus compactness implication
+alternate_valid_approaches: []
+fatal_errors:
+  - using subgroup structure in place of the topology
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

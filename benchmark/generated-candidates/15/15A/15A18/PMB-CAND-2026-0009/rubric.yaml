@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0009
+query_id: PMB-CAND-2026-0009
+owning_area_code: 15Axx
+rubric_basis: Reference-grounded candidate rubric derived from Dummit-Foote,
+  Abstract Algebra.
+rubric_focus:
+  problem_type: proof
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should give the standard induction or annihilating-polynomial
+  argument showing that a nontrivial linear dependence contradicts distinctness
+  of the eigenvalues.
+required_elements:
+  - start from a hypothetical minimal linear dependence
+  - apply T and subtract a scalar multiple
+alternate_valid_approaches: []
+fatal_errors:
+  - treating generalized eigenvectors as ordinary eigenvectors
+  - arguing only for two eigenvectors
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

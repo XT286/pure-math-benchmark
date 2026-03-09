@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0033
+solution_id: SOL-CAND-0033
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The Fisher-Neyman factorization theorem states that if the joint density can
+  be written as g_theta(T(x)) h(x), then all theta-dependence is funneled
+  through T. Consequently the conditional distribution of X given T(X) = t is
+  determined by h and the fiber T^{-1}(t), not by theta, so T is sufficient.
+required_ingredients:
+  - factorization criterion
+common_failure_modes:
+  - describing sufficiency only informally, without the conditional-law criterion
+verification_status: reference_grounded_candidate

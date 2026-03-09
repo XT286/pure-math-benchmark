@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0011
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Nilpotent Lie algebras have nontrivial center
+primary_msc_code: 17B05
+primary_msc_path:
+  - 17-XX
+  - 17Bxx
+  - 17B05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 17Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 17Bxx
+  - 17-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.4
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Nilpotent Lie algebras have nontrivial center
+  body: >
+    Let g be a nonzero finite-dimensional nilpotent Lie algebra. Explain why its
+    center Z(g) is nonzero.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - Lie algebras
+    - lower central series
+    - center of a Lie algebra
+goal:
+  success_criteria: >
+    The answer should use the terminating lower central series to identify a
+    last nonzero term whose bracket with g vanishes, placing that term inside
+    the center.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: James E. Humphreys, Introduction to Lie Algebras and Representation
+    Theory, Springer, 1972.
+  year: 1972
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Humphreys, Introduction to Lie Algebras; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 13219822c6378191
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

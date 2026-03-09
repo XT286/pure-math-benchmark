@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0011
+generation_method: reference_grounded_seed_spec
+source_id: humphreys-lie
+source_citation: James E. Humphreys, Introduction to Lie Algebras and
+  Representation Theory, Springer, 1972.
+source_scope_notes: Standard reference for nilpotent Lie algebras and basic structural results.
+msc_path:
+  - "17"
+  - 17B
+  - 17B05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Humphreys, Introduction to Lie Algebras; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

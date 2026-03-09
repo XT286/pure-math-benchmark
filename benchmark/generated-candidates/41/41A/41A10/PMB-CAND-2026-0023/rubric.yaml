@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0023
+query_id: PMB-CAND-2026-0023
+owning_area_code: 41Axx
+rubric_basis: Reference-grounded candidate rubric derived from DeVore-Lorentz,
+  Constructive Approximation.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should invoke Stone-Weierstrass, noting that polynomials form a
+  subalgebra containing constants and separating points of [a, b].
+required_elements:
+  - mention constants
+  - mention point separation
+  - conclude density in C([a, b])
+alternate_valid_approaches: []
+fatal_errors:
+  - using Weierstrass approximation without explaining the interval setting
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

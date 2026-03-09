@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0024
+generation_method: reference_grounded_seed_spec
+source_id: grafakos
+source_citation: Loukas Grafakos, Classical Fourier Analysis, 3rd ed., Springer, 2014.
+source_scope_notes: Standard source for Fourier-transform arguments and singular integral basics.
+msc_path:
+  - "42"
+  - 42B
+  - 42B10
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Grafakos, Classical Fourier Analysis; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

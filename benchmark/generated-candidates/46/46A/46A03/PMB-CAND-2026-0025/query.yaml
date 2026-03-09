@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0025
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Hahn-Banach extension without increasing norm
+primary_msc_code: 46A03
+primary_msc_path:
+  - 46-XX
+  - 46Axx
+  - 46A03
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 46Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 46Axx
+  - 46-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.2
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Hahn-Banach extension without increasing norm
+  body: >
+    Let X be a normed real vector space, Y a subspace of X, and phi a bounded
+    linear functional on Y. Explain why phi extends to a bounded linear
+    functional Phi on X with the same operator norm.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - normed vector spaces
+    - bounded linear functionals
+    - Hahn-Banach theorem
+goal:
+  success_criteria: >
+    The answer should identify the norm as a sublinear dominating function and
+    invoke Hahn-Banach to obtain an extension preserving the bound.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: John B. Conway, A Course in Functional Analysis, 2nd ed., Springer, 1990.
+  year: 1990
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Conway, Functional Analysis; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 7b3d325ffe233a0c
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

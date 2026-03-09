@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0004
+query_id: PMB-CAND-2026-0004
+owning_area_code: 08Axx
+rubric_basis: Reference-grounded candidate rubric derived from
+  Burris-Sankappanavar, Universal Algebra.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should check compatibility of ker(h) with each basic operation,
+  define the induced map on the quotient, and explain why the induced map is
+  well defined.
+required_elements:
+  - define ker(h) as equality of images
+  - show operation compatibility
+  - explain the quotient factorization
+alternate_valid_approaches: []
+fatal_errors:
+  - treating ker(h) as a subset instead of an equivalence relation
+  - failing to prove the induced quotient map is well defined
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

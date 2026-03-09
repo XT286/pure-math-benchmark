@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0005
+generation_method: reference_grounded_seed_spec
+source_id: ireland-rosen
+source_citation: Kenneth Ireland and Michael Rosen, A Classical Introduction to
+  Modern Number Theory, 2nd ed., Springer, 1990.
+source_scope_notes: Standard source for primitive roots and basic algebraic number theory facts.
+msc_path:
+  - "11"
+  - 11A
+  - 11A07
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Ireland-Rosen, Number Theory; explicit expert review required before promotion
+  into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0020
+generation_method: reference_grounded_seed_spec
+source_id: teschl-ode
+source_citation: Gerald Teschl, Ordinary Differential Equations and Dynamical
+  Systems, AMS, 2012.
+source_scope_notes: Standard source for existence and uniqueness in ODEs.
+msc_path:
+  - "34"
+  - 34A
+  - 34A12
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Teschl, Ordinary Differential Equations; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

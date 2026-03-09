@@ -1,0 +1,60 @@
+id: PMB-CAND-2026-0030
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Compact subsets of Hausdorff spaces are closed
+primary_msc_code: 54D10
+primary_msc_path:
+  - 54-XX
+  - 54Dxx
+  - 54D10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 54Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 54Dxx
+  - 54-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 2.8
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Compact subsets of Hausdorff spaces are closed
+  body: |
+    Let X be Hausdorff and K subseteq X compact. Explain why K is closed.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - Hausdorff spaces
+    - compactness
+goal:
+  success_criteria: >
+    The answer should separate a point x notin K from each point of K by
+    disjoint neighborhoods, use compactness to pass to finitely many such
+    neighborhoods, and conclude that X \\ K is open.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: James R. Munkres, Topology, 2nd ed., Prentice Hall, 2000.
+  year: 2000
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Munkres, Topology; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: ac80ee60ffd0392e
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

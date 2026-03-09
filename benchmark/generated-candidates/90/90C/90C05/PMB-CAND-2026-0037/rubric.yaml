@@ -1,0 +1,27 @@
+rubric_id: RUB-CAND-0037
+query_id: PMB-CAND-2026-0037
+owning_area_code: 90Cxx
+rubric_basis: Reference-grounded candidate rubric derived from
+  Boyd-Vandenberghe, Convex Optimization.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should chain the inequalities c^T x <= y^T A x <= y^T b, explaining
+  each step from feasibility and nonnegativity.
+required_elements:
+  - use A^T y >= c and x >= 0
+  - use A x <= b and y >= 0
+alternate_valid_approaches: []
+fatal_errors:
+  - reversing the primal and dual objective directions
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

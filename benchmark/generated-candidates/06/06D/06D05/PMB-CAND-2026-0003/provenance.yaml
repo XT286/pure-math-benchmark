@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0003
+generation_method: reference_grounded_seed_spec
+source_id: davey-priestley
+source_citation: B. A. Davey and H. A. Priestley, Introduction to Lattices and
+  Order, 2nd ed., Cambridge University Press, 2002.
+source_scope_notes: Standard reference for distributive lattices and representation theorems.
+msc_path:
+  - "06"
+  - 06D
+  - 06D05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Davey-Priestley, Lattices and Order; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

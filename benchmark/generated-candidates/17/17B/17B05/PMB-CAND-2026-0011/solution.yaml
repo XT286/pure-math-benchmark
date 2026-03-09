@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0011
+solution_id: SOL-CAND-0011
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Because g is nilpotent, its lower central series g = g_1 supseteq g_2 supseteq
+  ... with g_{i+1} = [g, g_i] eventually reaches zero. Let g_k be the last
+  nonzero term. Then [g, g_k] = g_{k+1} = 0, so every element of g_k commutes
+  with g and g_k is contained in Z(g). Since g_k is nonzero, so is the center.
+required_ingredients:
+  - lower central series
+common_failure_modes:
+  - using Engel's theorem without making the central-series argument explicit
+verification_status: reference_grounded_candidate

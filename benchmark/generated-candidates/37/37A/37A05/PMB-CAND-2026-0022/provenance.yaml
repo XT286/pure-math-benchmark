@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0022
+generation_method: reference_grounded_seed_spec
+source_id: walters-ergodic
+source_citation: Peter Walters, An Introduction to Ergodic Theory, Springer, 1982.
+source_scope_notes: Standard source for Poincare recurrence and basic ergodic arguments.
+msc_path:
+  - "37"
+  - 37A
+  - 37A05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Walters, Ergodic Theory; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

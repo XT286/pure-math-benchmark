@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0016
+generation_method: reference_grounded_seed_spec
+source_id: folland-real
+source_citation: "Gerald B. Folland, Real Analysis: Modern Techniques and Their
+  Applications, 2nd ed., Wiley, 1999."
+source_scope_notes: Standard source for measure theory, convergence theorems,
+  and weak convergence prerequisites.
+msc_path:
+  - "28"
+  - 28A
+  - 28A20
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Folland, Real Analysis; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

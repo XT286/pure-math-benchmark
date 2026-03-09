@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0032
+generation_method: reference_grounded_seed_spec
+source_id: durrett
+source_citation: "Rick Durrett, Probability: Theory and Examples, 5th ed.,
+  Cambridge University Press, 2019."
+source_scope_notes: Standard source for weak convergence and bounded continuous test functions.
+msc_path:
+  - "60"
+  - 60B
+  - 60B10
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Durrett, Probability; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/XT286/pure-math-benchmark/blob/main/benchmark/schema/reference-source-catalog.schema.json",
+  "title": "PureMathBenchmarkReferenceSourceCatalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": {
+      "type": "integer"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "short_title",
+          "citation",
+          "source_type",
+          "year",
+          "license_status",
+          "scope_notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "short_title": {
+            "type": "string"
+          },
+          "citation": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": ["journal", "monograph", "lecture_notes", "commissioned", "original_benchmark_item"]
+          },
+          "year": {
+            "type": "integer"
+          },
+          "license_status": {
+            "type": "string",
+            "enum": ["cleared", "public_domain", "original", "restricted", "pending"]
+          },
+          "scope_notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0015
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Uniform continuity on a compact interval
+primary_msc_code: 26A15
+primary_msc_path:
+  - 26-XX
+  - 26Axx
+  - 26A15
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 26Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 26Axx
+  - 26-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 2.7
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Uniform continuity on a compact interval
+  body: >
+    Let f: [a, b] -> R be continuous. Explain why f is uniformly continuous on
+    [a, b].
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - continuity
+    - compactness
+    - uniform continuity
+goal:
+  success_criteria: >
+    The answer should invoke the Heine-Cantor theorem or provide the standard
+    compactness contradiction argument.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Walter Rudin, Principles of Mathematical Analysis, 3rd ed.,
+    McGraw-Hill, 1976.
+  year: 1976
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Rudin, Principles of Mathematical Analysis; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: de0022533e083936
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

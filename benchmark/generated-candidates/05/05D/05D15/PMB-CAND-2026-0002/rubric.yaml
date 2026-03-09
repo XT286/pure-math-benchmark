@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0002
+query_id: PMB-CAND-2026-0002
+owning_area_code: 05Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Lovasz-Plummer,
+  Matching Theory.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify Hall's condition and conclude, with a short
+  justification, that there is a matching covering every vertex of X.
+required_elements:
+  - identify the theorem being applied
+  - state the role of the condition on all subsets S of X
+alternate_valid_approaches: []
+fatal_errors:
+  - checking the condition only for singleton subsets
+  - concluding existence of a perfect matching when |X| need not equal |Y|
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

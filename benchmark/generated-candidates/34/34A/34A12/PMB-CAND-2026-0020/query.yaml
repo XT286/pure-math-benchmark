@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0020
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Local uniqueness from a Lipschitz condition
+primary_msc_code: 34A12
+primary_msc_path:
+  - 34-XX
+  - 34Axx
+  - 34A12
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 34Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 34Axx
+  - 34-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.2
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Local uniqueness from a Lipschitz condition
+  body: >
+    Consider the initial value problem x'(t) = F(t, x(t)), x(t_0) = x_0. Assume
+    F is continuous in t and locally Lipschitz in x near (t_0, x_0). Explain why
+    the problem has at most one local solution through (t_0, x_0).
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - initial value problems
+    - Picard-Lindelof theorem
+goal:
+  success_criteria: >
+    The answer should identify the local Lipschitz hypothesis as the standard
+    uniqueness condition in Picard-Lindelof and conclude local uniqueness.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Gerald Teschl, Ordinary Differential Equations and Dynamical Systems,
+    AMS, 2012.
+  year: 2012
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Teschl, Ordinary Differential Equations; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 2147751bfe177d85
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

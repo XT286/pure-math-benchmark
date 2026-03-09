@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0031
+solution_id: SOL-CAND-0031
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If H is a chain homotopy, then f_sharp - g_sharp = partial H + H partial. On a
+  cycle z, the term H partial z vanishes, so f_sharp(z) - g_sharp(z) = partial
+  H(z), which is a boundary. Therefore f_sharp(z) and g_sharp(z) represent the
+  same homology class, and the induced maps on homology agree.
+required_ingredients:
+  - chain homotopy identity
+common_failure_modes:
+  - showing only that homologous cycles stay homologous, rather than comparing f
+    and g
+verification_status: reference_grounded_candidate

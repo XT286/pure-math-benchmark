@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0039
+version: 0.0.0
+status: draft
+benchmark_track: adjacent_theory
+title: Dimension of a code and its dual
+primary_msc_code: 94B05
+primary_msc_path:
+  - 94-XX
+  - 94Bxx
+  - 94B05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 94Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 94Bxx
+  - 94-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.1
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Dimension of a code and its dual
+  body: >
+    Let C be a linear code of length n over a finite field F_q. Explain why
+    dim(C) + dim(C^perp) = n.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - finite-dimensional vector spaces
+    - duality and orthogonality
+    - linear codes
+goal:
+  success_criteria: >
+    The answer should interpret C^perp as the orthogonal complement of C in
+    F_q^n with respect to the standard bilinear form and use the general
+    dimension formula for a subspace plus its orthogonal complement.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: W. Cary Huffman and Vera Pless, Fundamentals of Error-Correcting
+    Codes, Cambridge University Press, 2003.
+  year: 2003
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Huffman-Pless, Fundamentals of Error-Correcting Codes; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: ae4fe1adf70ed4f7
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

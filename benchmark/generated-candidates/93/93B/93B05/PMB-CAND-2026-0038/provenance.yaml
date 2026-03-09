@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0038
+generation_method: reference_grounded_seed_spec
+source_id: zhou-doyle-glover
+source_citation: Kemin Zhou, John C. Doyle, and Keith Glover, Robust and Optimal
+  Control, Prentice Hall, 1996.
+source_scope_notes: Standard reference for controllability criteria in linear systems.
+msc_path:
+  - "93"
+  - 93B
+  - 93B05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Zhou-Doyle-Glover, Robust and Optimal Control; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

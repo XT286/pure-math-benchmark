@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0033
+version: 0.0.0
+status: draft
+benchmark_track: adjacent_theory
+title: Factorization criterion for sufficiency
+primary_msc_code: 62B05
+primary_msc_path:
+  - 62-XX
+  - 62Bxx
+  - 62B05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 62Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 62Bxx
+  - 62-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.2
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Factorization criterion for sufficiency
+  body: >
+    Let X have density p_theta(x) with respect to a fixed measure. Explain why a
+    statistic T(X) is sufficient for theta if the density factors as p_theta(x)
+    = g_theta(T(x)) h(x).
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - sufficient statistics
+    - conditional distributions
+    - Fisher-Neyman factorization theorem
+goal:
+  success_criteria: >
+    The answer should connect the stated factorization to the fact that the
+    conditional distribution of X given T(X) no longer depends on theta.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: George Casella and Roger L. Berger, Statistical Inference, 2nd ed.,
+    Duxbury, 2002.
+  year: 2002
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Casella-Berger, Statistical Inference; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 863e5bdc0817785f
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

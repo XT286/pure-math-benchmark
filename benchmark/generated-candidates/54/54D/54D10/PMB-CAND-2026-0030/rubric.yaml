@@ -1,0 +1,27 @@
+rubric_id: RUB-CAND-0030
+query_id: PMB-CAND-2026-0030
+owning_area_code: 54Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Munkres, Topology.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should separate a point x notin K from each point of K by disjoint
+  neighborhoods, use compactness to pass to finitely many such neighborhoods,
+  and conclude that X \\ K is open.
+required_elements:
+  - use Hausdorff separation pointwise
+  - use compactness to extract a finite subcover
+alternate_valid_approaches: []
+fatal_errors:
+  - assuming metric structure
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0021
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Uniqueness for homogeneous heat data
+primary_msc_code: 35A02
+primary_msc_path:
+  - 35-XX
+  - 35Axx
+  - 35A02
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 35Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 35Axx
+  - 35-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.4
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Uniqueness for homogeneous heat data
+  body: >
+    Let u solve the heat equation u_t - Delta u = 0 on a bounded smooth domain
+    with zero initial data and zero Dirichlet boundary data. Explain why u must
+    vanish identically.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - heat equation
+    - energy method
+    - integration by parts
+goal:
+  success_criteria: >
+    The answer should use the standard energy identity for the L^2 norm of u and
+    the zero data to conclude uniqueness.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Lawrence C. Evans, Partial Differential Equations, 2nd ed., AMS, 2010.
+  year: 2010
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Evans, Partial Differential Equations; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: c323e133f2ce745e
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

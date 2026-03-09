@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0005
+query_id: PMB-CAND-2026-0005
+owning_area_code: 11Axx
+rubric_basis: Reference-grounded candidate rubric derived from Ireland-Rosen, Number Theory.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should invoke the standard structure theorem for finite subgroups
+  of a field's multiplicative group, or an equivalent classical argument, and
+  conclude the existence of an element of order p - 1.
+required_elements:
+  - identify a theorem or argument showing finite subgroups of a field are cyclic
+  - connect cyclicity to primitive roots
+alternate_valid_approaches: []
+fatal_errors:
+  - asserting cyclicity for arbitrary unit groups modulo n
+  - confusing additive and multiplicative structure
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

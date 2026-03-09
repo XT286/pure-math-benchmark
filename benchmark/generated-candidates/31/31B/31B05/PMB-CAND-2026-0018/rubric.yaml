@@ -1,0 +1,26 @@
+rubric_id: RUB-CAND-0018
+query_id: PMB-CAND-2026-0018
+owning_area_code: 31Bxx
+rubric_basis: Reference-grounded candidate rubric derived from Ransford, Potential Theory.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should invoke the strong maximum principle for harmonic functions
+  and note connectedness.
+required_elements:
+  - identify the strong maximum principle
+  - use connectedness of the domain
+alternate_valid_approaches: []
+fatal_errors:
+  - citing only a boundary maximum principle
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

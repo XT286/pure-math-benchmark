@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0023
+solution_id: SOL-CAND-0023
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The algebra of polynomials on [a, b] contains the constants and separates
+  points because x maps to x distinguishes any two points. Stone-Weierstrass
+  therefore implies that polynomials are uniformly dense in C([a, b]).
+required_ingredients:
+  - Stone-Weierstrass theorem
+common_failure_modes:
+  - confusing pointwise and uniform approximation
+verification_status: reference_grounded_candidate

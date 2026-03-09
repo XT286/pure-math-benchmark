@@ -1,0 +1,1336 @@
+schema_version: 1
+seeds:
+  - msc_code: 03C10
+    source_id: marker-model-theory
+    title: Quantifier elimination forces model completeness
+    difficulty_stage: phd
+    reviewer_score: 3.5
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let T be a complete first-order theory with quantifier elimination in a
+      language L. Explain why every embedding between models of T is elementary,
+      and conclude that T is model complete.
+    notation_conventions:
+      - embedding means an injective homomorphism of L-structures
+    prerequisites_assumed:
+      - quantifier elimination
+      - elementary embeddings
+      - model completeness
+    success_criteria: >
+      The answer should reduce arbitrary formulas to quantifier-free formulas,
+      note that embeddings preserve and reflect quantifier-free truth, and then
+      conclude that every embedding between models of T is elementary.
+    required_elements:
+      - explain how quantifier elimination replaces an arbitrary formula by a quantifier-free one
+      - state why embeddings preserve quantifier-free formulas
+      - connect elementary embeddings to model completeness
+    fatal_errors:
+      - confusing quantifier elimination with completeness alone
+      - claiming every homomorphism is elementary
+    outline_summary: >
+      If phi is any formula, quantifier elimination gives an equivalent
+      quantifier-free formula psi modulo T. Quantifier-free formulas are decided
+      purely by the interpretation of function and relation symbols, so
+      embeddings preserve and reflect them. Hence an embedding between models of
+      T preserves every formula and is elementary; therefore T is model complete.
+    required_ingredients:
+      - equivalence of formulas under quantifier elimination
+      - preservation of quantifier-free formulas by embeddings
+    common_failure_modes:
+      - omitting the role of completeness or equivalence modulo T
+      - asserting model completeness without discussing embeddings
+  - msc_code: 05D15
+    source_id: lovasz-plummer-matching
+    title: Hall condition as a certificate for a saturating matching
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.2
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let G = (X sqcup Y, E) be a finite bipartite graph. Assume that every
+      subset S of X satisfies |N(S)| >= |S|. Explain why G contains a matching
+      that saturates X.
+    notation_conventions:
+      - N(S) denotes the neighborhood of S in Y
+    prerequisites_assumed:
+      - bipartite graphs
+      - matchings
+      - Hall marriage theorem
+    success_criteria: >
+      The answer should identify Hall's condition and conclude, with a short
+      justification, that there is a matching covering every vertex of X.
+    required_elements:
+      - identify the theorem being applied
+      - state the role of the condition on all subsets S of X
+    fatal_errors:
+      - checking the condition only for singleton subsets
+      - concluding existence of a perfect matching when |X| need not equal |Y|
+    outline_summary: >
+      The given inequality is exactly Hall's condition for the left vertex class
+      X. Hall's theorem states that this condition is necessary and sufficient
+      for a matching saturating X, so the desired matching exists.
+    required_ingredients:
+      - Hall's theorem
+    common_failure_modes:
+      - mixing up a matching saturating X with a perfect matching of the whole graph
+  - msc_code: 06D05
+    source_id: davey-priestley
+    title: Finite distributive lattices from join-irreducibles
+    difficulty_stage: phd
+    reviewer_score: 3.6
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let L be a finite distributive lattice and J(L) the poset of its
+      join-irreducible elements. Explain why L is isomorphic to the lattice of
+      order ideals of J(L).
+    prerequisites_assumed:
+      - finite lattices
+      - distributive lattices
+      - join-irreducible elements
+    success_criteria: >
+      The answer should describe the map sending an element of L to the set of
+      join-irreducibles below it, show this lands in order ideals, and explain
+      why distributivity yields an inverse by taking joins.
+    required_elements:
+      - define the order-ideal map explicitly
+      - explain why every element is the join of join-irreducibles below it
+      - indicate why distributivity gives injectivity and surjectivity
+    fatal_errors:
+      - replacing order ideals by arbitrary subsets
+      - omitting finiteness when invoking joins of join-irreducibles
+    outline_summary: >
+      Send x in L to I_x = {j in J(L) : j <= x}. This is an order ideal. In a
+      finite distributive lattice every element is the join of the
+      join-irreducibles below it, so x can be recovered from I_x by taking that
+      join. Conversely each order ideal I determines an element by joining the
+      members of I, and distributivity shows these constructions are inverse
+      lattice homomorphisms.
+    required_ingredients:
+      - Birkhoff representation theorem for finite distributive lattices
+    common_failure_modes:
+      - confusing join-irreducible and join-prime without justification
+  - msc_code: 08A30
+    source_id: burris-sankappanavar
+    title: Quotients by kernel congruences in universal algebra
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let h: A -> B be a homomorphism of algebras of the same type. Explain why
+      the kernel relation ker(h) is a congruence on A and why h factors through
+      the quotient A / ker(h).
+    prerequisites_assumed:
+      - algebraic structures
+      - homomorphisms
+      - congruences
+      - quotients in universal algebra
+    success_criteria: >
+      The answer should check compatibility of ker(h) with each basic operation,
+      define the induced map on the quotient, and explain why the induced map is
+      well defined.
+    required_elements:
+      - define ker(h) as equality of images
+      - show operation compatibility
+      - explain the quotient factorization
+    fatal_errors:
+      - treating ker(h) as a subset instead of an equivalence relation
+      - failing to prove the induced quotient map is well defined
+    outline_summary: >
+      The relation a ~ a' iff h(a) = h(a') is an equivalence relation. Because h
+      respects each basic operation, applying any operation to equivalent tuples
+      gives equivalent outputs, so ker(h) is a congruence. Then [a] maps to h(a)
+      on A / ker(h), and well-definedness follows precisely from the definition
+      of ker(h).
+    required_ingredients:
+      - compatibility of homomorphisms with basic operations
+    common_failure_modes:
+      - proving only equivalence and not congruence compatibility
+  - msc_code: 11A07
+    source_id: ireland-rosen
+    title: Primitive roots modulo a prime
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let p be prime. Explain why the multiplicative group (Z / pZ)^times is
+      cyclic, and hence why a primitive root modulo p exists.
+    prerequisites_assumed:
+      - finite groups
+      - elementary number theory
+      - multiplicative groups modulo p
+    success_criteria: >
+      The answer should invoke the standard structure theorem for finite
+      subgroups of a field's multiplicative group, or an equivalent classical
+      argument, and conclude the existence of an element of order p - 1.
+    required_elements:
+      - identify a theorem or argument showing finite subgroups of a field are cyclic
+      - connect cyclicity to primitive roots
+    fatal_errors:
+      - asserting cyclicity for arbitrary unit groups modulo n
+      - confusing additive and multiplicative structure
+    outline_summary: >
+      The nonzero residue classes modulo p form a finite subgroup of the
+      multiplicative group of the field F_p. A standard theorem says every
+      finite subgroup of a field's multiplicative group is cyclic, so
+      (Z / pZ)^times is cyclic of order p - 1. Any generator is a primitive root
+      modulo p.
+    required_ingredients:
+      - cyclicity of finite multiplicative subgroups of fields
+    common_failure_modes:
+      - using Euler's theorem alone without establishing existence of an element of maximal order
+  - msc_code: 12F10
+    source_id: dummit-foote
+    title: Inclusion-reversing Galois correspondence
+    difficulty_stage: phd
+    reviewer_score: 3.6
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let L / K be a finite Galois extension with G = Gal(L / K). Explain why
+      the assignments H -> L^H and E -> Gal(L / E) define an inclusion-reversing
+      bijection between subgroups of G and intermediate fields E with
+      K subseteq E subseteq L.
+    prerequisites_assumed:
+      - finite Galois extensions
+      - fixed fields
+      - Galois groups
+    success_criteria: >
+      The answer should identify the two assignments, state why each lands in
+      the right class, and explain why normality and separability ensure the two
+      operations are inverse.
+    required_elements:
+      - define L^H and Gal(L / E)
+      - mention inclusion reversal
+      - explain why the constructions are inverse in the Galois case
+    fatal_errors:
+      - stating the correspondence for arbitrary finite extensions
+      - forgetting the Galois hypothesis
+    outline_summary: >
+      For a subgroup H of G, the fixed field L^H is intermediate. For an
+      intermediate field E, the subgroup Gal(L / E) consists of automorphisms
+      fixing E pointwise. These maps reverse inclusion because larger subgroups
+      fix fewer elements and larger fields admit fewer automorphisms fixing them.
+      In a finite Galois extension the fundamental theorem of Galois theory says
+      these assignments are inverse bijections.
+    required_ingredients:
+      - fundamental theorem of Galois theory
+    common_failure_modes:
+      - discussing fixed rings or fixed subsets instead of fixed fields
+  - msc_code: 13C10
+    source_id: atiyah-macdonald
+    title: Projective modules over local rings are free
+    difficulty_stage: phd
+    reviewer_score: 3.7
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let R be a local ring and P a finitely generated projective R-module.
+      Explain why P is free.
+    prerequisites_assumed:
+      - local rings
+      - projective modules
+      - Nakayama lemma
+    success_criteria: >
+      The answer should reduce P / mP to a vector space over the residue field,
+      lift a basis to generators of P, and use projectivity together with
+      Nakayama's lemma to show the resulting surjection from a free module splits
+      and is an isomorphism.
+    required_elements:
+      - pass to the residue field
+      - choose lifts of a basis of P / mP
+      - use Nakayama's lemma
+    fatal_errors:
+      - claiming every projective module over any ring is free
+      - omitting finite generation when invoking Nakayama
+    outline_summary: >
+      If m is the maximal ideal, then P / mP is a finite-dimensional vector space
+      over R / m. Lift a basis to elements of P; Nakayama implies these lifts
+      generate P, giving a surjection R^n -> P. Since P is projective the
+      surjection splits, so R^n is isomorphic to P direct sum Q. Modding out by m
+      and using minimality of n forces Q / mQ = 0, hence Q = 0 by Nakayama, so
+      P is free.
+    required_ingredients:
+      - residue-field reduction
+      - Nakayama lemma
+    common_failure_modes:
+      - failing to justify why the complementary summand vanishes
+  - msc_code: 14C20
+    source_id: hartshorne
+    title: Principal divisors have degree zero on a smooth projective curve
+    difficulty_stage: phd
+    reviewer_score: 3.8
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let C be a smooth projective curve over an algebraically closed field and
+      f a nonzero rational function on C. Explain why the principal divisor
+      div(f) has degree zero.
+    prerequisites_assumed:
+      - divisors on curves
+      - valuations at closed points
+      - projective curves
+    success_criteria: >
+      The answer should interpret div(f) as the difference between the zero and
+      pole divisors of f, then explain using the induced morphism C -> P^1 or an
+      equivalent valuation argument why total zeros and poles occur with equal
+      multiplicity.
+    required_elements:
+      - define degree as the sum of coefficients
+      - connect zeros and poles to a map to P^1 or a valuation identity
+      - conclude equality of total multiplicities
+    fatal_errors:
+      - arguing only for affine curves
+      - forgetting multiplicities of zeros and poles
+    outline_summary: >
+      A nonzero rational function f defines a morphism C -> P^1 away from
+      indeterminacy, and projectivity extends the relevant divisor computation.
+      The pullback of the divisor [0] - [infinity] on P^1 is exactly div(f).
+      Since [0] and [infinity] each have degree one, their pullbacks have equal
+      degree, so deg div(f) = 0.
+    required_ingredients:
+      - principal divisors
+      - degree of divisors on curves
+    common_failure_modes:
+      - concluding only linear equivalence to zero without mentioning degree
+  - msc_code: 15A18
+    source_id: dummit-foote
+    title: Distinct eigenvalues force linear independence
+    difficulty_stage: advanced_graduate
+    reviewer_score: 2.8
+    problem_type: proof
+    answer_format: short_justification
+    statement_body: >
+      Let T be a linear operator on a finite-dimensional vector space V. Explain
+      why eigenvectors corresponding to distinct eigenvalues of T are linearly
+      independent.
+    prerequisites_assumed:
+      - eigenvalues and eigenvectors
+      - linear independence
+    success_criteria: >
+      The answer should give the standard induction or annihilating-polynomial
+      argument showing that a nontrivial linear dependence contradicts
+      distinctness of the eigenvalues.
+    required_elements:
+      - start from a hypothetical minimal linear dependence
+      - apply T and subtract a scalar multiple
+    fatal_errors:
+      - treating generalized eigenvectors as ordinary eigenvectors
+      - arguing only for two eigenvectors
+    outline_summary: >
+      Suppose sum c_i v_i = 0 with distinct eigenvalues lambda_i and not all
+      c_i zero. Apply T and subtract lambda_1 times the original relation to get
+      a shorter dependence sum_{i>1} c_i (lambda_i - lambda_1) v_i = 0. By
+      minimality all coefficients vanish, forcing all c_i = 0. Hence the
+      eigenvectors are linearly independent.
+    required_ingredients:
+      - minimal dependence argument
+    common_failure_modes:
+      - writing a determinant argument without explaining the Vandermonde step
+  - msc_code: 16D40
+    source_id: lam-first-course
+    title: Projective modules as direct summands of free modules
+    difficulty_stage: phd
+    reviewer_score: 3.5
+    problem_type: framework_comparison
+    answer_format: proof_outline
+    statement_body: >
+      Let P be a left module over a ring R. Explain why P is projective if and
+      only if P is isomorphic to a direct summand of some free R-module.
+    prerequisites_assumed:
+      - projective modules
+      - free modules
+      - split exact sequences
+    success_criteria: >
+      The answer should prove both directions: a splitting of a surjection from a
+      free module yields a direct-summand decomposition, and a direct summand of
+      a free module has the lifting property.
+    required_elements:
+      - construct a surjection from a free module onto P
+      - use projectivity to split that surjection
+      - explain why a direct summand of a free module is projective
+    fatal_errors:
+      - proving only one implication
+      - confusing injective and projective lifting properties
+    outline_summary: >
+      If P is projective, choose a surjection F -> P from a free module F. The
+      identity map on P lifts through this surjection, giving a section P -> F,
+      hence F is isomorphic to P direct sum ker(pi). Conversely, if F is
+      isomorphic to P direct sum Q and F is free, then any lift to F can be
+      projected to P, so P inherits the lifting property and is projective.
+    required_ingredients:
+      - lifting property
+      - splitting of surjections
+    common_failure_modes:
+      - invoking bases for projective modules without justification
+  - msc_code: 17B05
+    source_id: humphreys-lie
+    title: Nilpotent Lie algebras have nontrivial center
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let g be a nonzero finite-dimensional nilpotent Lie algebra. Explain why
+      its center Z(g) is nonzero.
+    prerequisites_assumed:
+      - Lie algebras
+      - lower central series
+      - center of a Lie algebra
+    success_criteria: >
+      The answer should use the terminating lower central series to identify a
+      last nonzero term whose bracket with g vanishes, placing that term inside
+      the center.
+    required_elements:
+      - define or invoke the lower central series
+      - choose the last nonzero term
+      - show it lies in the center
+    fatal_errors:
+      - replacing nilpotent with solvable
+      - confusing the derived series with the lower central series without explanation
+    outline_summary: >
+      Because g is nilpotent, its lower central series g = g_1 supseteq g_2
+      supseteq ... with g_{i+1} = [g, g_i] eventually reaches zero. Let g_k be
+      the last nonzero term. Then [g, g_k] = g_{k+1} = 0, so every element of
+      g_k commutes with g and g_k is contained in Z(g). Since g_k is nonzero, so
+      is the center.
+    required_ingredients:
+      - lower central series
+    common_failure_modes:
+      - using Engel's theorem without making the central-series argument explicit
+  - msc_code: 18C15
+    source_id: mac-lane
+    title: Every adjunction yields a monad
+    difficulty_stage: phd
+    reviewer_score: 3.3
+    problem_type: construction
+    answer_format: structured_bullets
+    statement_body: >
+      Let F: C -> D be left adjoint to U: D -> C with unit eta and counit
+      epsilon. Explain how to construct the monad on C associated to this
+      adjunction, and state the formulas for its unit and multiplication.
+    prerequisites_assumed:
+      - adjoint functors
+      - unit and counit of an adjunction
+      - monads
+    success_criteria: >
+      The answer should identify the endofunctor UF, take eta as the unit, and
+      define multiplication by U epsilon F, with a brief indication that the
+      monad axioms follow from the triangle identities.
+    required_elements:
+      - specify the endofunctor
+      - specify the unit natural transformation
+      - specify the multiplication natural transformation
+    fatal_errors:
+      - putting the monad on D instead of C
+      - reversing the roles of unit and counit
+    outline_summary: >
+      The associated monad is T = U F on C. Its unit is the adjunction unit eta:
+      Id_C -> U F. Its multiplication is mu = U epsilon F: U F U F -> U F. The
+      monad axioms are exactly the adjunction triangle identities transported
+      through these formulas.
+    required_ingredients:
+      - unit and counit of an adjunction
+      - triangle identities
+    common_failure_modes:
+      - writing F U instead of U F
+  - msc_code: 20D15
+    source_id: rotman-groups
+    title: Finite p-groups have nontrivial center
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let G be a finite p-group. Explain why Z(G) is nontrivial.
+    prerequisites_assumed:
+      - finite groups
+      - conjugacy classes
+      - class equation
+    success_criteria: >
+      The answer should use the class equation to show that the contribution of
+      the noncentral conjugacy classes is divisible by p, forcing |Z(G)| to be
+      divisible by p and therefore greater than 1.
+    required_elements:
+      - write the class equation
+      - use divisibility of noncentral conjugacy class sizes by p
+      - conclude that the center has size divisible by p
+    fatal_errors:
+      - assuming the group is abelian
+      - omitting why noncentral class sizes are divisible by p
+    outline_summary: >
+      In a finite p-group, the size of every conjugacy class equals the index of
+      a centralizer and hence is a power of p. For noncentral elements that size
+      is greater than 1, so it is divisible by p. The class equation therefore
+      writes |G| as |Z(G)| plus multiples of p. Since |G| itself is a power of p,
+      |Z(G)| is divisible by p, so the center is nontrivial.
+    required_ingredients:
+      - class equation
+    common_failure_modes:
+      - confusing coset sizes with conjugacy class sizes
+  - msc_code: 22A05
+    source_id: hofmann-morris
+    title: Compact subgroups are closed in Hausdorff topological groups
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let G be a Hausdorff topological group and H a compact subgroup. Explain
+      why H is closed in G.
+    prerequisites_assumed:
+      - Hausdorff spaces
+      - compactness
+      - topological groups
+    success_criteria: >
+      The answer should use the general fact that compact subsets of Hausdorff
+      spaces are closed, noting that a subgroup being compact is enough.
+    required_elements:
+      - identify the Hausdorff plus compactness implication
+    fatal_errors:
+      - using subgroup structure in place of the topology
+    outline_summary: >
+      Every compact subset of a Hausdorff space is closed. Since G is Hausdorff
+      and H is compact as a subset, H is closed. No additional group-theoretic
+      input is required beyond viewing H as a subset of G.
+    required_ingredients:
+      - compact subsets are closed in Hausdorff spaces
+    common_failure_modes:
+      - trying to prove normality or completeness instead of closedness
+  - msc_code: 26A15
+    source_id: rudin-pma
+    title: Uniform continuity on a compact interval
+    difficulty_stage: advanced_graduate
+    reviewer_score: 2.7
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let f: [a, b] -> R be continuous. Explain why f is uniformly continuous on
+      [a, b].
+    prerequisites_assumed:
+      - continuity
+      - compactness
+      - uniform continuity
+    success_criteria: >
+      The answer should invoke the Heine-Cantor theorem or provide the standard
+      compactness contradiction argument.
+    required_elements:
+      - use compactness of [a, b]
+      - explain why pointwise continuity upgrades to a global delta
+    fatal_errors:
+      - giving an argument that works only on open intervals
+    outline_summary: >
+      The interval [a, b] is compact, and a continuous map from a compact metric
+      space to a metric space is uniformly continuous. Equivalently, if uniform
+      continuity failed one could construct sequences x_n, y_n with |x_n - y_n|
+      -> 0 but |f(x_n) - f(y_n)| bounded away from zero, contradicting continuity
+      at a convergent subsequence point.
+    required_ingredients:
+      - compactness of closed bounded intervals
+    common_failure_modes:
+      - asserting bounded derivative without such a hypothesis
+  - msc_code: 28A20
+    source_id: folland-real
+    title: Monotone convergence as a theorem-applicability check
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let (f_n) be a sequence of nonnegative measurable functions with
+      f_n(x) increasing pointwise to f(x). Explain why
+      integral f_n dmu increases to integral f dmu.
+    prerequisites_assumed:
+      - measurable functions
+      - Lebesgue integral
+      - monotone convergence theorem
+    success_criteria: >
+      The answer should identify the hypotheses of the monotone convergence
+      theorem and conclude convergence of the integrals.
+    required_elements:
+      - note measurability and pointwise monotone increase
+      - note nonnegativity
+      - invoke monotone convergence correctly
+    fatal_errors:
+      - replacing monotone convergence by dominated convergence without a dominating function
+      - forgetting nonnegativity
+    outline_summary: >
+      The monotone convergence theorem applies exactly to nonnegative measurable
+      functions increasing pointwise to a measurable limit. Therefore the
+      integrals of f_n form an increasing sequence and converge to the integral
+      of f.
+    required_ingredients:
+      - monotone convergence theorem
+    common_failure_modes:
+      - discussing almost-everywhere convergence without checking monotonicity
+  - msc_code: 30D20
+    source_id: conway-complex
+    title: Liouville's theorem for bounded entire functions
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let f be an entire function on C and suppose |f(z)| <= M for all z in C.
+      Explain why f must be constant.
+    prerequisites_assumed:
+      - Cauchy integral formula
+      - entire functions
+    success_criteria: >
+      The answer should use Cauchy estimates to show that f'(z_0) = 0 for every
+      z_0 and then conclude constancy.
+    required_elements:
+      - apply Cauchy estimates on large circles
+      - let the radius tend to infinity
+      - conclude all first derivatives vanish
+    fatal_errors:
+      - using the maximum modulus principle without explaining the global step
+    outline_summary: >
+      Fix z_0 and apply the Cauchy estimate to f on a circle of radius R centered
+      at z_0: |f'(z_0)| <= M / R. Since R is arbitrary, letting R -> infinity
+      gives f'(z_0) = 0. Hence f' is identically zero and f is constant.
+    required_ingredients:
+      - Cauchy estimates
+    common_failure_modes:
+      - confusing bounded entire with bounded on one disk
+  - msc_code: 31B05
+    source_id: ransford-potential
+    title: Interior maxima force harmonic functions to be constant
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let u be harmonic on a connected open set Omega in R^n. Suppose u attains
+      a maximum at an interior point of Omega. Explain why u is constant.
+    prerequisites_assumed:
+      - harmonic functions
+      - maximum principle
+    success_criteria: >
+      The answer should invoke the strong maximum principle for harmonic
+      functions and note connectedness.
+    required_elements:
+      - identify the strong maximum principle
+      - use connectedness of the domain
+    fatal_errors:
+      - citing only a boundary maximum principle
+    outline_summary: >
+      The strong maximum principle says that a harmonic function on a connected
+      open set cannot achieve a strict interior maximum unless it is constant.
+      Since u does attain an interior maximum, the only possibility is that u is
+      constant on Omega.
+    required_ingredients:
+      - strong maximum principle
+    common_failure_modes:
+      - treating subharmonic and harmonic cases as identical without comment
+  - msc_code: 32D20
+    source_id: krantz-scv
+    title: Isolated singularities disappear in several complex variables
+    difficulty_stage: phd
+    reviewer_score: 3.8
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let n >= 2 and let f be holomorphic on B(0, 1) \\ {0} in C^n. Explain why
+      f extends holomorphically across 0.
+    prerequisites_assumed:
+      - holomorphic functions in several complex variables
+      - Hartogs extension phenomenon
+    success_criteria: >
+      The answer should identify this as a Hartogs removable singularity
+      phenomenon specific to dimension at least 2 and conclude existence of a
+      holomorphic extension to the whole ball.
+    required_elements:
+      - mention that n >= 2 is essential
+      - identify Hartogs extension or an equivalent theorem
+    fatal_errors:
+      - applying one-variable isolated singularity trichotomy directly
+      - omitting the role of dimension
+    outline_summary: >
+      In several complex variables with n >= 2, isolated singularities are
+      removable: Hartogs' theorem implies any function holomorphic on a punctured
+      ball extends holomorphically to the full ball. The puncture at the origin
+      therefore causes no genuine singularity.
+    required_ingredients:
+      - Hartogs extension theorem
+    common_failure_modes:
+      - treating the statement as false because of one-variable examples like 1/z
+  - msc_code: 34A12
+    source_id: teschl-ode
+    title: Local uniqueness from a Lipschitz condition
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.2
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Consider the initial value problem x'(t) = F(t, x(t)), x(t_0) = x_0. Assume
+      F is continuous in t and locally Lipschitz in x near (t_0, x_0). Explain
+      why the problem has at most one local solution through (t_0, x_0).
+    prerequisites_assumed:
+      - initial value problems
+      - Picard-Lindelof theorem
+    success_criteria: >
+      The answer should identify the local Lipschitz hypothesis as the standard
+      uniqueness condition in Picard-Lindelof and conclude local uniqueness.
+    required_elements:
+      - mention continuity in t and local Lipschitz in x
+      - identify the relevant existence-uniqueness theorem
+    fatal_errors:
+      - claiming uniqueness from continuity alone
+    outline_summary: >
+      Picard-Lindelof states that continuity in t together with local Lipschitz
+      control in x yields a unique local solution to the initial value problem.
+      The hypotheses match that theorem exactly, so two distinct local solutions
+      through (t_0, x_0) cannot exist.
+    required_ingredients:
+      - Picard-Lindelof uniqueness theorem
+    common_failure_modes:
+      - invoking Peano's theorem, which gives existence but not uniqueness
+  - msc_code: 35A02
+    source_id: evans-pde
+    title: Uniqueness for homogeneous heat data
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let u solve the heat equation u_t - Delta u = 0 on a bounded smooth domain
+      with zero initial data and zero Dirichlet boundary data. Explain why u must
+      vanish identically.
+    prerequisites_assumed:
+      - heat equation
+      - energy method
+      - integration by parts
+    success_criteria: >
+      The answer should use the standard energy identity for the L^2 norm of u
+      and the zero data to conclude uniqueness.
+    required_elements:
+      - differentiate the L^2 norm in time
+      - integrate by parts using the boundary condition
+      - conclude the norm stays zero
+    fatal_errors:
+      - arguing by elliptic maximum principle only
+      - ignoring the boundary term in integration by parts
+    outline_summary: >
+      Compute d/dt int u^2 = 2 int u u_t = 2 int u Delta u. Integration by parts
+      and the zero boundary condition give d/dt int u^2 = -2 int |grad u|^2 <= 0.
+      Since the initial L^2 norm is zero, it stays zero for all times, forcing
+      u identically zero.
+    required_ingredients:
+      - energy identity
+      - zero initial and boundary data
+    common_failure_modes:
+      - concluding only that u is spatially constant
+  - msc_code: 37A05
+    source_id: walters-ergodic
+    title: Poincare recurrence in finite measure spaces
+    difficulty_stage: phd
+    reviewer_score: 3.3
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let T be a measure-preserving transformation of a finite measure space
+      (X, A, mu). Explain why almost every point of a measurable set A of
+      positive measure returns to A infinitely often.
+    prerequisites_assumed:
+      - measure-preserving transformations
+      - recurrence
+      - finite measure spaces
+    success_criteria: >
+      The answer should identify the statement as Poincare recurrence and explain
+      that infinitely many disjoint forward images of a positive-measure wandering
+      subset would contradict finiteness of the measure.
+    required_elements:
+      - identify the contradiction with finite total measure
+      - state that the exceptional set has measure zero
+    fatal_errors:
+      - claiming every point returns, rather than almost every point
+      - forgetting measure preservation
+    outline_summary: >
+      If a positive-measure subset of A consisted of points that eventually never
+      return to A, then forward iterates of that subset would be pairwise
+      disjoint. Because T preserves measure, each iterate would have the same
+      positive measure, contradicting finiteness of mu(X). Therefore almost every
+      point of A returns infinitely often.
+    required_ingredients:
+      - measure preservation
+      - finite total measure
+    common_failure_modes:
+      - proving only existence of one recurrent point
+  - msc_code: 41A10
+    source_id: devore-lorentz
+    title: Polynomial density on a compact interval
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Explain why every continuous real-valued function on [a, b] can be
+      approximated uniformly by polynomials.
+    prerequisites_assumed:
+      - compact Hausdorff spaces
+      - Stone-Weierstrass theorem
+    success_criteria: >
+      The answer should invoke Stone-Weierstrass, noting that polynomials form a
+      subalgebra containing constants and separating points of [a, b].
+    required_elements:
+      - mention constants
+      - mention point separation
+      - conclude density in C([a, b])
+    fatal_errors:
+      - using Weierstrass approximation without explaining the interval setting
+    outline_summary: >
+      The algebra of polynomials on [a, b] contains the constants and separates
+      points because x maps to x distinguishes any two points. Stone-Weierstrass
+      therefore implies that polynomials are uniformly dense in C([a, b]).
+    required_ingredients:
+      - Stone-Weierstrass theorem
+    common_failure_modes:
+      - confusing pointwise and uniform approximation
+  - msc_code: 42B10
+    source_id: grafakos
+    title: Differentiation becomes multiplication under the Fourier transform
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let f be a Schwartz function on R^n. Explain why the Fourier transform of
+      partial_j f is (2 pi i xi_j) times the Fourier transform of f, using the
+      standard Euclidean Fourier-transform convention.
+    prerequisites_assumed:
+      - Schwartz functions
+      - Fourier transform
+      - integration by parts
+    success_criteria: >
+      The answer should integrate by parts, use rapid decay to kill boundary
+      terms, and identify multiplication by the frequency variable.
+    required_elements:
+      - integrate by parts
+      - justify vanishing boundary terms
+      - identify the frequency multiplier
+    fatal_errors:
+      - missing the sign or frequency factor from the chosen convention
+      - applying the identity without decay assumptions
+    outline_summary: >
+      For Schwartz f, compute the Fourier transform of partial_j f and integrate
+      by parts against the exponential kernel. Rapid decay ensures the boundary
+      term vanishes, while differentiating the exponential brings down the factor
+      2 pi i xi_j. Hence differentiation in the spatial variable becomes
+      multiplication by 2 pi i xi_j in frequency space.
+    required_ingredients:
+      - integration by parts for Schwartz functions
+    common_failure_modes:
+      - using a different Fourier convention without saying so
+  - msc_code: 46A03
+    source_id: conway-functional
+    title: Hahn-Banach extension without increasing norm
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.2
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let X be a normed real vector space, Y a subspace of X, and phi a bounded
+      linear functional on Y. Explain why phi extends to a bounded linear
+      functional Phi on X with the same operator norm.
+    prerequisites_assumed:
+      - normed vector spaces
+      - bounded linear functionals
+      - Hahn-Banach theorem
+    success_criteria: >
+      The answer should identify the norm as a sublinear dominating function and
+      invoke Hahn-Banach to obtain an extension preserving the bound.
+    required_elements:
+      - define the dominating sublinear functional p(x) = ||phi|| ||x||
+      - show phi(y) <= p(y) on Y
+      - invoke Hahn-Banach
+    fatal_errors:
+      - claiming uniqueness of the extension
+      - omitting boundedness control
+    outline_summary: >
+      The functional phi satisfies |phi(y)| <= ||phi|| ||y|| on Y, so the
+      sublinear functional p(x) = ||phi|| ||x|| dominates phi there. Hahn-Banach
+      extends phi to a linear functional Phi on X with |Phi(x)| <= p(x) for all
+      x, which gives ||Phi|| <= ||phi||. Since Phi restricts to phi, equality of
+      norms follows.
+    required_ingredients:
+      - Hahn-Banach theorem
+    common_failure_modes:
+      - confusing algebraic extension with continuous extension
+  - msc_code: 47A10
+    source_id: conway-functional
+    title: Spectral radius is bounded by operator norm
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let T be a bounded linear operator on a complex Banach space. Explain why
+      every spectral value lambda of T satisfies |lambda| <= ||T||.
+    prerequisites_assumed:
+      - bounded operators
+      - spectrum and resolvent
+      - Neumann series
+    success_criteria: >
+      The answer should show that if |lambda| > ||T|| then lambda I - T is
+      invertible via a Neumann-series argument, so lambda cannot lie in the
+      spectrum.
+    required_elements:
+      - rewrite lambda I - T as lambda(I - T / lambda)
+      - invoke convergence of the Neumann series when ||T / lambda|| < 1
+    fatal_errors:
+      - treating norm bounds as exact spectral equalities
+    outline_summary: >
+      If |lambda| > ||T||, then ||T / lambda|| < 1. Hence I - T / lambda is
+      invertible by the Neumann series sum_{n>=0} (T / lambda)^n, so lambda I - T
+      is invertible. Therefore such lambda cannot belong to the spectrum, which
+      shows sigma(T) lies in the closed disk of radius ||T||.
+    required_ingredients:
+      - Neumann series
+    common_failure_modes:
+      - asserting the spectral radius formula when only the upper bound was requested
+  - msc_code: 49K05
+    source_id: liberzon
+    title: Euler-Lagrange equation for a smooth minimizer
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.2
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let J[x] = integral_a^b L(t, x(t), x'(t)) dt with fixed endpoint
+      conditions. Explain why any sufficiently smooth minimizer x satisfies the
+      Euler-Lagrange equation d/dt (partial L / partial v) = partial L / partial x.
+    prerequisites_assumed:
+      - calculus of variations
+      - first variation
+      - integration by parts
+    success_criteria: >
+      The answer should compute the first variation against compactly supported
+      endpoint-preserving perturbations, integrate by parts, and apply the
+      fundamental lemma of the calculus of variations.
+    required_elements:
+      - introduce endpoint-preserving variations
+      - compute the first variation
+      - apply the fundamental lemma
+    fatal_errors:
+      - omitting the boundary terms from integration by parts
+      - assuming the Euler-Lagrange equation without deriving it
+    outline_summary: >
+      Perturb x by x + epsilon eta with eta(a) = eta(b) = 0 and differentiate
+      J[x + epsilon eta] at epsilon = 0. This yields integral
+      (L_x eta + L_v eta') dt. Integration by parts moves the derivative off eta'
+      and kills the boundary term. Since the result vanishes for every such eta,
+      the fundamental lemma gives d/dt(L_v) = L_x.
+    required_ingredients:
+      - first variation
+      - fundamental lemma of the calculus of variations
+    common_failure_modes:
+      - ignoring endpoint conditions on variations
+  - msc_code: 52A05
+    source_id: rockafellar
+    title: Separating a compact convex set from a disjoint closed convex set
+    difficulty_stage: phd
+    reviewer_score: 3.5
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let K and C be disjoint nonempty convex subsets of R^n, with K compact and
+      C closed. Explain why there exists a nonzero linear functional ell and a
+      real number alpha such that ell(x) < alpha <= ell(y) for all x in K and
+      y in C.
+    prerequisites_assumed:
+      - convex sets
+      - Euclidean norm
+      - separating hyperplane theorem
+    success_criteria: >
+      The answer should use positive distance between K and C or cite the
+      corresponding strict separation theorem under the compact-plus-closed
+      hypotheses.
+    required_elements:
+      - explain why the sets have positive distance
+      - produce or invoke a supporting hyperplane from a closest-point argument
+    fatal_errors:
+      - claiming strict separation for arbitrary disjoint convex sets without extra hypotheses
+    outline_summary: >
+      Because K is compact and C is closed and disjoint from K, the distance
+      between them is positive and is attained by some x_0 in K and y_0 in C.
+      The linear functional determined by y_0 - x_0 strictly separates the two
+      sets: the midpoint hyperplane orthogonal to y_0 - x_0 places K on one side
+      and C on the other.
+    required_ingredients:
+      - attainment of distance between compact and closed sets
+      - geometric separating hyperplane argument
+    common_failure_modes:
+      - forgetting why strict inequality holds on the compact side
+  - msc_code: 53B20
+    source_id: lee-riemannian
+    title: Uniqueness of the Levi-Civita connection
+    difficulty_stage: phd
+    reviewer_score: 3.6
+    problem_type: framework_comparison
+    answer_format: proof_outline
+    statement_body: >
+      Let (M, g) be a Riemannian manifold. Explain why there is at most one
+      affine connection on M that is both torsion free and metric compatible.
+    prerequisites_assumed:
+      - affine connections
+      - torsion
+      - metric compatibility
+      - Koszul formula
+    success_criteria: >
+      The answer should invoke or derive the Koszul formula, showing that the
+      value of nabla_X Y is determined entirely by g, Lie brackets, and vector
+      fields, hence uniqueness.
+    required_elements:
+      - state the torsion-free and metric-compatibility inputs
+      - use the Koszul formula or an equivalent derivation
+    fatal_errors:
+      - proving only existence
+      - omitting one of the two defining properties
+    outline_summary: >
+      If a connection is torsion free and metric compatible, then the Koszul
+      formula expresses 2 g(nabla_X Y, Z) in terms of derivatives of g and Lie
+      brackets of vector fields. The right-hand side depends only on g and the
+      vector fields, so g(nabla_X Y, Z) is uniquely determined for every Z. By
+      nondegeneracy of g, nabla_X Y is therefore unique.
+    required_ingredients:
+      - Koszul formula
+    common_failure_modes:
+      - giving the coordinate Christoffel-symbol formula without connecting it to uniqueness
+  - msc_code: 54D10
+    source_id: munkres
+    title: Compact subsets of Hausdorff spaces are closed
+    difficulty_stage: advanced_graduate
+    reviewer_score: 2.8
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let X be Hausdorff and K subseteq X compact. Explain why K is closed.
+    prerequisites_assumed:
+      - Hausdorff spaces
+      - compactness
+    success_criteria: >
+      The answer should separate a point x notin K from each point of K by
+      disjoint neighborhoods, use compactness to pass to finitely many such
+      neighborhoods, and conclude that X \\ K is open.
+    required_elements:
+      - use Hausdorff separation pointwise
+      - use compactness to extract a finite subcover
+    fatal_errors:
+      - assuming metric structure
+    outline_summary: >
+      For x outside K and each y in K, choose disjoint open sets U_y containing y
+      and V_y containing x. The U_y cover K, so compactness gives finitely many.
+      The intersection of the corresponding finitely many V_y is an open
+      neighborhood of x disjoint from K. Thus every point outside K has an open
+      neighborhood disjoint from K, so X \\ K is open and K is closed.
+    required_ingredients:
+      - Hausdorff separation
+      - finite subcover argument
+    common_failure_modes:
+      - citing a metric-space theorem without adapting it to general topology
+  - msc_code: 55N10
+    source_id: hatcher
+    title: Chain-homotopic maps induce the same homology map
+    difficulty_stage: phd
+    reviewer_score: 3.3
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let f, g: X -> Y be continuous maps whose induced singular chain maps are
+      chain homotopic. Explain why f_* = g_* on singular homology.
+    prerequisites_assumed:
+      - singular chain complexes
+      - chain homotopy
+      - homology
+    success_criteria: >
+      The answer should use the relation f_sharp - g_sharp = partial H + H partial
+      to show that f_sharp and g_sharp differ by a boundary on cycles, hence
+      define the same homology class.
+    required_elements:
+      - write the chain-homotopy identity
+      - evaluate it on cycles
+      - conclude equality on homology classes
+    fatal_errors:
+      - confusing homotopy of maps with chain homotopy of chain maps without explanation
+    outline_summary: >
+      If H is a chain homotopy, then f_sharp - g_sharp = partial H + H partial.
+      On a cycle z, the term H partial z vanishes, so
+      f_sharp(z) - g_sharp(z) = partial H(z), which is a boundary. Therefore
+      f_sharp(z) and g_sharp(z) represent the same homology class, and the
+      induced maps on homology agree.
+    required_ingredients:
+      - chain homotopy identity
+    common_failure_modes:
+      - showing only that homologous cycles stay homologous, rather than comparing f and g
+  - msc_code: 60B10
+    source_id: durrett
+    title: Weak convergence controls bounded continuous test functions
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Let mu_n converge weakly to mu on a Polish space. Explain why
+      integral phi dmu_n converges to integral phi dmu for every bounded
+      continuous function phi.
+    prerequisites_assumed:
+      - weak convergence of probability measures
+      - bounded continuous functions
+    success_criteria: >
+      The answer should identify this as a standard characterization of weak
+      convergence, for example via the Portmanteau theorem.
+    required_elements:
+      - state the bounded continuous test-function criterion
+    fatal_errors:
+      - replacing bounded continuous by arbitrary measurable test functions
+    outline_summary: >
+      One of the equivalent formulations of weak convergence is precisely that
+      integrals against every bounded continuous test function converge. Thus the
+      stated limit is immediate from the Portmanteau characterization.
+    required_ingredients:
+      - Portmanteau theorem
+    common_failure_modes:
+      - omitting boundedness or continuity of the test function
+  - msc_code: 62B05
+    source_id: casella-berger
+    title: Factorization criterion for sufficiency
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.2
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let X have density p_theta(x) with respect to a fixed measure. Explain why
+      a statistic T(X) is sufficient for theta if the density factors as
+      p_theta(x) = g_theta(T(x)) h(x).
+    prerequisites_assumed:
+      - sufficient statistics
+      - conditional distributions
+      - Fisher-Neyman factorization theorem
+    success_criteria: >
+      The answer should connect the stated factorization to the fact that the
+      conditional distribution of X given T(X) no longer depends on theta.
+    required_elements:
+      - identify the factorization theorem
+      - explain the parameter-free conditional law given T
+    fatal_errors:
+      - claiming factorization with h depending on theta
+    outline_summary: >
+      The Fisher-Neyman factorization theorem states that if the joint density can
+      be written as g_theta(T(x)) h(x), then all theta-dependence is funneled
+      through T. Consequently the conditional distribution of X given T(X) = t
+      is determined by h and the fiber T^{-1}(t), not by theta, so T is
+      sufficient.
+    required_ingredients:
+      - factorization criterion
+    common_failure_modes:
+      - describing sufficiency only informally, without the conditional-law criterion
+  - msc_code: 65D05
+    source_id: trefethen-bau
+    title: Uniqueness of polynomial interpolation at distinct nodes
+    difficulty_stage: advanced_graduate
+    reviewer_score: 2.9
+    benchmark_track: adjacent_theory
+    problem_type: proof
+    answer_format: short_justification
+    statement_body: >
+      Let x_0, ..., x_n be distinct scalars. Explain why there is at most one
+      polynomial of degree at most n that takes prescribed values at these n+1
+      nodes.
+    prerequisites_assumed:
+      - polynomials
+      - roots of polynomials
+    success_criteria: >
+      The answer should subtract two such polynomials and use the fact that a
+      nonzero polynomial of degree at most n cannot have n+1 distinct roots.
+    required_elements:
+      - compare two hypothetical interpolants
+      - count roots of their difference
+    fatal_errors:
+      - proving existence instead of uniqueness
+    outline_summary: >
+      If p and q are two interpolating polynomials of degree at most n, then
+      r = p - q has degree at most n and vanishes at each x_i. Since the nodes
+      are distinct, r has n + 1 roots. The only polynomial of degree at most n
+      with that many roots is the zero polynomial, so p = q.
+    required_ingredients:
+      - root bound for nonzero polynomials
+    common_failure_modes:
+      - confusing distinct nodes with multiplicity conditions
+  - msc_code: 68Q25
+    source_id: sipser
+    title: Many-one reductions preserve hardness
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let A and B be decision problems with a polynomial-time many-one reduction
+      A <=_m^p B. Explain why NP-hardness of A implies NP-hardness of B.
+    prerequisites_assumed:
+      - polynomial-time reductions
+      - NP-hardness
+      - transitivity of reductions
+    success_criteria: >
+      The answer should use transitivity: any problem in NP reduces to A, and A
+      reduces to B, so every problem in NP reduces to B.
+    required_elements:
+      - state the definition of NP-hardness in reduction form
+      - compose reductions
+    fatal_errors:
+      - assuming membership of B in NP
+      - reversing the direction of the reduction
+    outline_summary: >
+      If A is NP-hard, then for every language L in NP there is a polynomial-time
+      reduction L <=_m^p A. Given also A <=_m^p B, transitivity of polynomial-time
+      many-one reductions yields L <=_m^p B. Since this holds for every L in NP,
+      B is NP-hard.
+    required_ingredients:
+      - definition of NP-hardness
+      - transitivity of polynomial-time many-one reductions
+    common_failure_modes:
+      - concluding NP-completeness instead of NP-hardness
+  - msc_code: 81Q10
+    source_id: reed-simon
+    title: Selfadjoint operators have real spectrum
+    difficulty_stage: phd
+    reviewer_score: 3.5
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let A be a selfadjoint bounded operator on a complex Hilbert space. Explain
+      why every spectral value of A is real.
+    prerequisites_assumed:
+      - bounded operators on Hilbert spaces
+      - adjoints
+      - spectrum and resolvent
+    success_criteria: >
+      The answer should show that A - lambda I is bounded below when
+      Im(lambda) != 0, hence invertible, so nonreal lambda lie in the resolvent.
+    required_elements:
+      - use selfadjointness in the inner-product computation
+      - explain why nonreal lambda implies invertibility
+    fatal_errors:
+      - appealing to finite-dimensional diagonalization only
+    outline_summary: >
+      If lambda = a + i b with b != 0, then for any x one computes
+      ||(A - lambda I)x||^2 >= b^2 ||x||^2 because A is selfadjoint. Thus
+      A - lambda I is injective with closed range and bounded inverse on its
+      range; a standard Hilbert-space argument shows the range is all of H. So
+      nonreal lambda belong to the resolvent and sigma(A) is contained in R.
+    required_ingredients:
+      - selfadjointness
+      - lower bound for A - lambda I when Im(lambda) != 0
+    common_failure_modes:
+      - assuming compactness or finite dimension
+  - msc_code: 90C05
+    source_id: boyd-vandenberghe
+    title: Weak duality for linear programming
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.0
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: short_justification
+    statement_body: >
+      Consider the primal maximization problem max c^T x subject to A x <= b and
+      x >= 0, and the corresponding dual minimization problem min b^T y subject
+      to A^T y >= c and y >= 0. Explain why every primal feasible x and dual
+      feasible y satisfy c^T x <= b^T y.
+    prerequisites_assumed:
+      - linear programming
+      - matrix inequalities
+    success_criteria: >
+      The answer should chain the inequalities c^T x <= y^T A x <= y^T b,
+      explaining each step from feasibility and nonnegativity.
+    required_elements:
+      - use A^T y >= c and x >= 0
+      - use A x <= b and y >= 0
+    fatal_errors:
+      - reversing the primal and dual objective directions
+    outline_summary: >
+      Dual feasibility gives c <= A^T y componentwise, so c^T x <= y^T A x
+      because x >= 0. Primal feasibility gives A x <= b, so y^T A x <= y^T b
+      because y >= 0. Combining these yields c^T x <= b^T y.
+    required_ingredients:
+      - componentwise monotonicity under multiplication by nonnegative vectors
+    common_failure_modes:
+      - omitting the sign conditions on x or y
+  - msc_code: 93B05
+    source_id: zhou-doyle-glover
+    title: Kalman rank condition for controllability
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    benchmark_track: adjacent_theory
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Consider the linear control system x' = A x + B u on R^n. Explain why full
+      rank of the controllability matrix [B AB ... A^{n-1}B] implies
+      controllability on a finite time interval.
+    prerequisites_assumed:
+      - linear systems
+      - controllability
+      - matrix exponential
+    success_criteria: >
+      The answer should identify the reachable subspace as the span of the
+      columns of B, AB, ..., A^{n-1}B and conclude that full rank means the whole
+      state space is reachable.
+    required_elements:
+      - state the controllability matrix
+      - connect it to the reachable subspace
+      - conclude reachability of every target state
+    fatal_errors:
+      - confusing controllability with stability
+      - using observability criteria
+    outline_summary: >
+      For a linear time-invariant system, the reachable subspace from the origin
+      is the smallest A-invariant subspace containing the columns of B, which is
+      exactly the span of the columns of B, AB, ..., A^{n-1}B. If the
+      controllability matrix has full rank n, that span is all of R^n, so every
+      state is reachable in finite time and the system is controllable.
+    required_ingredients:
+      - reachable subspace characterization
+      - Cayley-Hamilton reduction to powers up to n - 1
+    common_failure_modes:
+      - treating a rank computation as sufficient without explaining the reachable subspace
+  - msc_code: 94B05
+    source_id: huffman-pless
+    title: Dimension of a code and its dual
+    difficulty_stage: advanced_graduate
+    reviewer_score: 3.1
+    benchmark_track: adjacent_theory
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let C be a linear code of length n over a finite field F_q. Explain why
+      dim(C) + dim(C^perp) = n.
+    prerequisites_assumed:
+      - finite-dimensional vector spaces
+      - duality and orthogonality
+      - linear codes
+    success_criteria: >
+      The answer should interpret C^perp as the orthogonal complement of C in
+      F_q^n with respect to the standard bilinear form and use the general
+      dimension formula for a subspace plus its orthogonal complement.
+    required_elements:
+      - define the dual code as an orthogonal complement
+      - invoke the vector-space dimension formula
+    fatal_errors:
+      - confusing the coding-theoretic dual with the abstract dual space
+    outline_summary: >
+      The ambient space F_q^n carries the standard nondegenerate bilinear form
+      x dot y = sum x_i y_i. The dual code C^perp is exactly the orthogonal
+      complement of C for this form. In a finite-dimensional space with a
+      nondegenerate bilinear form, any subspace satisfies dim(C) + dim(C^perp) =
+      dim(F_q^n) = n.
+    required_ingredients:
+      - orthogonal-complement dimension formula
+    common_failure_modes:
+      - using generator and parity-check matrices without linking them to orthogonality

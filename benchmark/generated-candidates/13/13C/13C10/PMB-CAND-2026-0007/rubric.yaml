@@ -1,0 +1,31 @@
+rubric_id: RUB-CAND-0007
+query_id: PMB-CAND-2026-0007
+owning_area_code: 13Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Atiyah-Macdonald,
+  Commutative Algebra.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should reduce P / mP to a vector space over the residue field, lift
+  a basis to generators of P, and use projectivity together with Nakayama's
+  lemma to show the resulting surjection from a free module splits and is an
+  isomorphism.
+required_elements:
+  - pass to the residue field
+  - choose lifts of a basis of P / mP
+  - use Nakayama's lemma
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming every projective module over any ring is free
+  - omitting finite generation when invoking Nakayama
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

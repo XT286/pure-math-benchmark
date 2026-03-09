@@ -6,6 +6,7 @@
     "msc:import": "node scripts/import_msc2020.mjs",
     "queries:migrate": "node scripts/migrate_queries.mjs",
     "catalog:prepare": "node scripts/prepare_catalog_data.mjs",
+    "candidates:generate": "node scripts/generate_reference_candidates.mjs",
     "site:dev": "astro dev",
     "site:build": "npm run catalog:prepare && astro build",
     "build": "npm run msc:import && npm run queries:migrate && npm run site:build"

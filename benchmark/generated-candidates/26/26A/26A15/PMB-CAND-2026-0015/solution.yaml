@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0015
+solution_id: SOL-CAND-0015
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The interval [a, b] is compact, and a continuous map from a compact metric
+  space to a metric space is uniformly continuous. Equivalently, if uniform
+  continuity failed one could construct sequences x_n, y_n with |x_n - y_n| -> 0
+  but |f(x_n) - f(y_n)| bounded away from zero, contradicting continuity at a
+  convergent subsequence point.
+required_ingredients:
+  - compactness of closed bounded intervals
+common_failure_modes:
+  - asserting bounded derivative without such a hypothesis
+verification_status: reference_grounded_candidate

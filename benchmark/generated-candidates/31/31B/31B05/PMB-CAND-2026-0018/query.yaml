@@ -1,0 +1,61 @@
+id: PMB-CAND-2026-0018
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Interior maxima force harmonic functions to be constant
+primary_msc_code: 31B05
+primary_msc_path:
+  - 31-XX
+  - 31Bxx
+  - 31B05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 31Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 31Bxx
+  - 31-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.1
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Interior maxima force harmonic functions to be constant
+  body: >
+    Let u be harmonic on a connected open set Omega in R^n. Suppose u attains a
+    maximum at an interior point of Omega. Explain why u is constant.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - harmonic functions
+    - maximum principle
+goal:
+  success_criteria: >
+    The answer should invoke the strong maximum principle for harmonic functions
+    and note connectedness.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Thomas Ransford, Potential Theory in the Complex Plane, Cambridge
+    University Press, 1995.
+  year: 1995
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Ransford, Potential Theory; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: fd580cd6ecc341e9
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

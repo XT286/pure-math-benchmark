@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0029
+generation_method: reference_grounded_seed_spec
+source_id: lee-riemannian
+source_citation: "John M. Lee, Riemannian Manifolds: An Introduction to
+  Curvature, Springer, 1997."
+source_scope_notes: Standard source for Levi-Civita connection and foundational
+  Riemannian geometry.
+msc_path:
+  - "53"
+  - 53B
+  - 53B20
+adaptation_notes: Candidate adapted from a standard theorem-level fact in Lee,
+  Riemannian Manifolds; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

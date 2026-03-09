@@ -1,0 +1,31 @@
+rubric_id: RUB-CAND-0011
+query_id: PMB-CAND-2026-0011
+owning_area_code: 17Bxx
+rubric_basis: Reference-grounded candidate rubric derived from Humphreys,
+  Introduction to Lie Algebras.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use the terminating lower central series to identify a last
+  nonzero term whose bracket with g vanishes, placing that term inside the
+  center.
+required_elements:
+  - define or invoke the lower central series
+  - choose the last nonzero term
+  - show it lies in the center
+alternate_valid_approaches: []
+fatal_errors:
+  - replacing nilpotent with solvable
+  - confusing the derived series with the lower central series without
+    explanation
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

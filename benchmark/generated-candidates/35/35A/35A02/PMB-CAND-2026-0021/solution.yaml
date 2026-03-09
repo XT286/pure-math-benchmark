@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0021
+solution_id: SOL-CAND-0021
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Compute d/dt int u^2 = 2 int u u_t = 2 int u Delta u. Integration by parts and
+  the zero boundary condition give d/dt int u^2 = -2 int |grad u|^2 <= 0. Since
+  the initial L^2 norm is zero, it stays zero for all times, forcing u
+  identically zero.
+required_ingredients:
+  - energy identity
+  - zero initial and boundary data
+common_failure_modes:
+  - concluding only that u is spatially constant
+verification_status: reference_grounded_candidate

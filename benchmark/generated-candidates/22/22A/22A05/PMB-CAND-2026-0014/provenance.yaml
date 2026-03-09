@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0014
+generation_method: reference_grounded_seed_spec
+source_id: hofmann-morris
+source_citation: Karl H. Hofmann and Sidney A. Morris, The Structure of Compact
+  Groups, 3rd ed., De Gruyter, 2013.
+source_scope_notes: Reliable reference for compactness arguments in topological groups.
+msc_path:
+  - "22"
+  - 22A
+  - 22A05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Hofmann-Morris, Structure of Compact Groups; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

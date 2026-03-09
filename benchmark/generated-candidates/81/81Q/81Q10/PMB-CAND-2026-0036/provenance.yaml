@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0036
+generation_method: reference_grounded_seed_spec
+source_id: reed-simon
+source_citation: "Michael Reed and Barry Simon, Methods of Modern Mathematical
+  Physics I: Functional Analysis, Academic Press, 1980."
+source_scope_notes: Standard source for spectral facts about selfadjoint operators.
+msc_path:
+  - "81"
+  - 81Q
+  - 81Q10
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Reed-Simon, Methods of Modern Mathematical Physics I; explicit expert review
+  required before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

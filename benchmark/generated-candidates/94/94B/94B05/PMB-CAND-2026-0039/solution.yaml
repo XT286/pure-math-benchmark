@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0039
+solution_id: SOL-CAND-0039
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The ambient space F_q^n carries the standard nondegenerate bilinear form x dot
+  y = sum x_i y_i. The dual code C^perp is exactly the orthogonal complement of
+  C for this form. In a finite-dimensional space with a nondegenerate bilinear
+  form, any subspace satisfies dim(C) + dim(C^perp) = dim(F_q^n) = n.
+required_ingredients:
+  - orthogonal-complement dimension formula
+common_failure_modes:
+  - using generator and parity-check matrices without linking them to
+    orthogonality
+verification_status: reference_grounded_candidate

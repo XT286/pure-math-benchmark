@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0016
+query_id: PMB-CAND-2026-0016
+owning_area_code: 28Axx
+rubric_basis: Reference-grounded candidate rubric derived from Folland, Real Analysis.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the hypotheses of the monotone convergence theorem
+  and conclude convergence of the integrals.
+required_elements:
+  - note measurability and pointwise monotone increase
+  - note nonnegativity
+  - invoke monotone convergence correctly
+alternate_valid_approaches: []
+fatal_errors:
+  - replacing monotone convergence by dominated convergence without a dominating
+    function
+  - forgetting nonnegativity
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

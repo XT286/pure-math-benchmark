@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0035
+version: 0.0.0
+status: draft
+benchmark_track: adjacent_theory
+title: Many-one reductions preserve hardness
+primary_msc_code: 68Q25
+primary_msc_path:
+  - 68-XX
+  - 68Qxx
+  - 68Q25
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 68Qxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 68Qxx
+  - 68-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3.1
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Many-one reductions preserve hardness
+  body: >
+    Let A and B be decision problems with a polynomial-time many-one reduction A
+    <=_m^p B. Explain why NP-hardness of A implies NP-hardness of B.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - polynomial-time reductions
+    - NP-hardness
+    - transitivity of reductions
+goal:
+  success_criteria: >
+    The answer should use transitivity: any problem in NP reduces to A, and A
+    reduces to B, so every problem in NP reduces to B.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Michael Sipser, Introduction to the Theory of Computation, 3rd ed.,
+    Cengage Learning, 2012.
+  year: 2012
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Sipser, Introduction to the Theory of Computation; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: ab881d6be6d9a205
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

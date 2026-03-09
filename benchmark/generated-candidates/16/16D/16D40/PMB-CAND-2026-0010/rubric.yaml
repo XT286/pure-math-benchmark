@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0010
+query_id: PMB-CAND-2026-0010
+owning_area_code: 16Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Lam, First Course
+  in Noncommutative Rings.
+rubric_focus:
+  problem_type: framework_comparison
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should prove both directions: a splitting of a surjection from a
+  free module yields a direct-summand decomposition, and a direct summand of a
+  free module has the lifting property.
+required_elements:
+  - construct a surjection from a free module onto P
+  - use projectivity to split that surjection
+  - explain why a direct summand of a free module is projective
+alternate_valid_approaches: []
+fatal_errors:
+  - proving only one implication
+  - confusing injective and projective lifting properties
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

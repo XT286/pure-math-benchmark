@@ -1,0 +1,61 @@
+id: PMB-CAND-2026-0023
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Polynomial density on a compact interval
+primary_msc_code: 41A10
+primary_msc_path:
+  - 41-XX
+  - 41Axx
+  - 41A10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 41Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 41Axx
+  - 41-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: advanced_graduate
+  reviewer_score: 3
+problem_type: theorem_applicability
+answer_format: short_justification
+statement:
+  title: Polynomial density on a compact interval
+  body: >
+    Explain why every continuous real-valued function on [a, b] can be
+    approximated uniformly by polynomials.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - compact Hausdorff spaces
+    - Stone-Weierstrass theorem
+goal:
+  success_criteria: >
+    The answer should invoke Stone-Weierstrass, noting that polynomials form a
+    subalgebra containing constants and separating points of [a, b].
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Ronald A. DeVore and George G. Lorentz, Constructive Approximation,
+    Springer, 1993.
+  year: 1993
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    DeVore-Lorentz, Constructive Approximation; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 9bd4c9d888a9fabe
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

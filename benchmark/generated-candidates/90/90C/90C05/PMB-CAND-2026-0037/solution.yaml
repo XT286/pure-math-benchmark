@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0037
+solution_id: SOL-CAND-0037
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Dual feasibility gives c <= A^T y componentwise, so c^T x <= y^T A x because x
+  >= 0. Primal feasibility gives A x <= b, so y^T A x <= y^T b because y >= 0.
+  Combining these yields c^T x <= b^T y.
+required_ingredients:
+  - componentwise monotonicity under multiplication by nonnegative vectors
+common_failure_modes:
+  - omitting the sign conditions on x or y
+verification_status: reference_grounded_candidate

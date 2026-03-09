@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0009
+solution_id: SOL-CAND-0009
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Suppose sum c_i v_i = 0 with distinct eigenvalues lambda_i and not all c_i
+  zero. Apply T and subtract lambda_1 times the original relation to get a
+  shorter dependence sum_{i>1} c_i (lambda_i - lambda_1) v_i = 0. By minimality
+  all coefficients vanish, forcing all c_i = 0. Hence the eigenvectors are
+  linearly independent.
+required_ingredients:
+  - minimal dependence argument
+common_failure_modes:
+  - writing a determinant argument without explaining the Vandermonde step
+verification_status: reference_grounded_candidate

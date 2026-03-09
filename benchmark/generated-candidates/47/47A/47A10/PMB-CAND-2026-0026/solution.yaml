@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0026
+solution_id: SOL-CAND-0026
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If |lambda| > ||T||, then ||T / lambda|| < 1. Hence I - T / lambda is
+  invertible by the Neumann series sum_{n>=0} (T / lambda)^n, so lambda I - T is
+  invertible. Therefore such lambda cannot belong to the spectrum, which shows
+  sigma(T) lies in the closed disk of radius ||T||.
+required_ingredients:
+  - Neumann series
+common_failure_modes:
+  - asserting the spectral radius formula when only the upper bound was requested
+verification_status: reference_grounded_candidate

@@ -1,0 +1,199 @@
+generated_at: 2026-03-09T06:49:49.496Z
+generation_method: reference_grounded_seed_spec
+query_count: 39
+queries:
+  - id: PMB-CAND-2026-0001
+    title: Quantifier elimination forces model completeness
+    primary_msc_code: 03C10
+    source_id: marker-model-theory
+    output_path: benchmark/generated-candidates/03/03C/03C10/PMB-CAND-2026-0001
+  - id: PMB-CAND-2026-0002
+    title: Hall condition as a certificate for a saturating matching
+    primary_msc_code: 05D15
+    source_id: lovasz-plummer-matching
+    output_path: benchmark/generated-candidates/05/05D/05D15/PMB-CAND-2026-0002
+  - id: PMB-CAND-2026-0003
+    title: Finite distributive lattices from join-irreducibles
+    primary_msc_code: 06D05
+    source_id: davey-priestley
+    output_path: benchmark/generated-candidates/06/06D/06D05/PMB-CAND-2026-0003
+  - id: PMB-CAND-2026-0004
+    title: Quotients by kernel congruences in universal algebra
+    primary_msc_code: 08A30
+    source_id: burris-sankappanavar
+    output_path: benchmark/generated-candidates/08/08A/08A30/PMB-CAND-2026-0004
+  - id: PMB-CAND-2026-0005
+    title: Primitive roots modulo a prime
+    primary_msc_code: 11A07
+    source_id: ireland-rosen
+    output_path: benchmark/generated-candidates/11/11A/11A07/PMB-CAND-2026-0005
+  - id: PMB-CAND-2026-0006
+    title: Inclusion-reversing Galois correspondence
+    primary_msc_code: 12F10
+    source_id: dummit-foote
+    output_path: benchmark/generated-candidates/12/12F/12F10/PMB-CAND-2026-0006
+  - id: PMB-CAND-2026-0007
+    title: Projective modules over local rings are free
+    primary_msc_code: 13C10
+    source_id: atiyah-macdonald
+    output_path: benchmark/generated-candidates/13/13C/13C10/PMB-CAND-2026-0007
+  - id: PMB-CAND-2026-0008
+    title: Principal divisors have degree zero on a smooth projective curve
+    primary_msc_code: 14C20
+    source_id: hartshorne
+    output_path: benchmark/generated-candidates/14/14C/14C20/PMB-CAND-2026-0008
+  - id: PMB-CAND-2026-0009
+    title: Distinct eigenvalues force linear independence
+    primary_msc_code: 15A18
+    source_id: dummit-foote
+    output_path: benchmark/generated-candidates/15/15A/15A18/PMB-CAND-2026-0009
+  - id: PMB-CAND-2026-0010
+    title: Projective modules as direct summands of free modules
+    primary_msc_code: 16D40
+    source_id: lam-first-course
+    output_path: benchmark/generated-candidates/16/16D/16D40/PMB-CAND-2026-0010
+  - id: PMB-CAND-2026-0011
+    title: Nilpotent Lie algebras have nontrivial center
+    primary_msc_code: 17B05
+    source_id: humphreys-lie
+    output_path: benchmark/generated-candidates/17/17B/17B05/PMB-CAND-2026-0011
+  - id: PMB-CAND-2026-0012
+    title: Every adjunction yields a monad
+    primary_msc_code: 18C15
+    source_id: mac-lane
+    output_path: benchmark/generated-candidates/18/18C/18C15/PMB-CAND-2026-0012
+  - id: PMB-CAND-2026-0013
+    title: Finite p-groups have nontrivial center
+    primary_msc_code: 20D15
+    source_id: rotman-groups
+    output_path: benchmark/generated-candidates/20/20D/20D15/PMB-CAND-2026-0013
+  - id: PMB-CAND-2026-0014
+    title: Compact subgroups are closed in Hausdorff topological groups
+    primary_msc_code: 22A05
+    source_id: hofmann-morris
+    output_path: benchmark/generated-candidates/22/22A/22A05/PMB-CAND-2026-0014
+  - id: PMB-CAND-2026-0015
+    title: Uniform continuity on a compact interval
+    primary_msc_code: 26A15
+    source_id: rudin-pma
+    output_path: benchmark/generated-candidates/26/26A/26A15/PMB-CAND-2026-0015
+  - id: PMB-CAND-2026-0016
+    title: Monotone convergence as a theorem-applicability check
+    primary_msc_code: 28A20
+    source_id: folland-real
+    output_path: benchmark/generated-candidates/28/28A/28A20/PMB-CAND-2026-0016
+  - id: PMB-CAND-2026-0017
+    title: Liouville's theorem for bounded entire functions
+    primary_msc_code: 30D20
+    source_id: conway-complex
+    output_path: benchmark/generated-candidates/30/30D/30D20/PMB-CAND-2026-0017
+  - id: PMB-CAND-2026-0018
+    title: Interior maxima force harmonic functions to be constant
+    primary_msc_code: 31B05
+    source_id: ransford-potential
+    output_path: benchmark/generated-candidates/31/31B/31B05/PMB-CAND-2026-0018
+  - id: PMB-CAND-2026-0019
+    title: Isolated singularities disappear in several complex variables
+    primary_msc_code: 32D20
+    source_id: krantz-scv
+    output_path: benchmark/generated-candidates/32/32D/32D20/PMB-CAND-2026-0019
+  - id: PMB-CAND-2026-0020
+    title: Local uniqueness from a Lipschitz condition
+    primary_msc_code: 34A12
+    source_id: teschl-ode
+    output_path: benchmark/generated-candidates/34/34A/34A12/PMB-CAND-2026-0020
+  - id: PMB-CAND-2026-0021
+    title: Uniqueness for homogeneous heat data
+    primary_msc_code: 35A02
+    source_id: evans-pde
+    output_path: benchmark/generated-candidates/35/35A/35A02/PMB-CAND-2026-0021
+  - id: PMB-CAND-2026-0022
+    title: Poincare recurrence in finite measure spaces
+    primary_msc_code: 37A05
+    source_id: walters-ergodic
+    output_path: benchmark/generated-candidates/37/37A/37A05/PMB-CAND-2026-0022
+  - id: PMB-CAND-2026-0023
+    title: Polynomial density on a compact interval
+    primary_msc_code: 41A10
+    source_id: devore-lorentz
+    output_path: benchmark/generated-candidates/41/41A/41A10/PMB-CAND-2026-0023
+  - id: PMB-CAND-2026-0024
+    title: Differentiation becomes multiplication under the Fourier transform
+    primary_msc_code: 42B10
+    source_id: grafakos
+    output_path: benchmark/generated-candidates/42/42B/42B10/PMB-CAND-2026-0024
+  - id: PMB-CAND-2026-0025
+    title: Hahn-Banach extension without increasing norm
+    primary_msc_code: 46A03
+    source_id: conway-functional
+    output_path: benchmark/generated-candidates/46/46A/46A03/PMB-CAND-2026-0025
+  - id: PMB-CAND-2026-0026
+    title: Spectral radius is bounded by operator norm
+    primary_msc_code: 47A10
+    source_id: conway-functional
+    output_path: benchmark/generated-candidates/47/47A/47A10/PMB-CAND-2026-0026
+  - id: PMB-CAND-2026-0027
+    title: Euler-Lagrange equation for a smooth minimizer
+    primary_msc_code: 49K05
+    source_id: liberzon
+    output_path: benchmark/generated-candidates/49/49K/49K05/PMB-CAND-2026-0027
+  - id: PMB-CAND-2026-0028
+    title: Separating a compact convex set from a disjoint closed convex set
+    primary_msc_code: 52A05
+    source_id: rockafellar
+    output_path: benchmark/generated-candidates/52/52A/52A05/PMB-CAND-2026-0028
+  - id: PMB-CAND-2026-0029
+    title: Uniqueness of the Levi-Civita connection
+    primary_msc_code: 53B20
+    source_id: lee-riemannian
+    output_path: benchmark/generated-candidates/53/53B/53B20/PMB-CAND-2026-0029
+  - id: PMB-CAND-2026-0030
+    title: Compact subsets of Hausdorff spaces are closed
+    primary_msc_code: 54D10
+    source_id: munkres
+    output_path: benchmark/generated-candidates/54/54D/54D10/PMB-CAND-2026-0030
+  - id: PMB-CAND-2026-0031
+    title: Chain-homotopic maps induce the same homology map
+    primary_msc_code: 55N10
+    source_id: hatcher
+    output_path: benchmark/generated-candidates/55/55N/55N10/PMB-CAND-2026-0031
+  - id: PMB-CAND-2026-0032
+    title: Weak convergence controls bounded continuous test functions
+    primary_msc_code: 60B10
+    source_id: durrett
+    output_path: benchmark/generated-candidates/60/60B/60B10/PMB-CAND-2026-0032
+  - id: PMB-CAND-2026-0033
+    title: Factorization criterion for sufficiency
+    primary_msc_code: 62B05
+    source_id: casella-berger
+    output_path: benchmark/generated-candidates/62/62B/62B05/PMB-CAND-2026-0033
+  - id: PMB-CAND-2026-0034
+    title: Uniqueness of polynomial interpolation at distinct nodes
+    primary_msc_code: 65D05
+    source_id: trefethen-bau
+    output_path: benchmark/generated-candidates/65/65D/65D05/PMB-CAND-2026-0034
+  - id: PMB-CAND-2026-0035
+    title: Many-one reductions preserve hardness
+    primary_msc_code: 68Q25
+    source_id: sipser
+    output_path: benchmark/generated-candidates/68/68Q/68Q25/PMB-CAND-2026-0035
+  - id: PMB-CAND-2026-0036
+    title: Selfadjoint operators have real spectrum
+    primary_msc_code: 81Q10
+    source_id: reed-simon
+    output_path: benchmark/generated-candidates/81/81Q/81Q10/PMB-CAND-2026-0036
+  - id: PMB-CAND-2026-0037
+    title: Weak duality for linear programming
+    primary_msc_code: 90C05
+    source_id: boyd-vandenberghe
+    output_path: benchmark/generated-candidates/90/90C/90C05/PMB-CAND-2026-0037
+  - id: PMB-CAND-2026-0038
+    title: Kalman rank condition for controllability
+    primary_msc_code: 93B05
+    source_id: zhou-doyle-glover
+    output_path: benchmark/generated-candidates/93/93B/93B05/PMB-CAND-2026-0038
+  - id: PMB-CAND-2026-0039
+    title: Dimension of a code and its dual
+    primary_msc_code: 94B05
+    source_id: huffman-pless
+    output_path: benchmark/generated-candidates/94/94B/94B05/PMB-CAND-2026-0039

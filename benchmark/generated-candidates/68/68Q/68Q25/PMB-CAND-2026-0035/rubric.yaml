@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0035
+query_id: PMB-CAND-2026-0035
+owning_area_code: 68Qxx
+rubric_basis: Reference-grounded candidate rubric derived from Sipser,
+  Introduction to the Theory of Computation.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use transitivity: any problem in NP reduces to A, and A
+  reduces to B, so every problem in NP reduces to B.
+required_elements:
+  - state the definition of NP-hardness in reduction form
+  - compose reductions
+alternate_valid_approaches: []
+fatal_errors:
+  - assuming membership of B in NP
+  - reversing the direction of the reduction
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0003
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Finite distributive lattices from join-irreducibles
+primary_msc_code: 06D05
+primary_msc_path:
+  - 06-XX
+  - 06Dxx
+  - 06D05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 06Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 06Dxx
+  - 06-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.6
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Finite distributive lattices from join-irreducibles
+  body: >
+    Let L be a finite distributive lattice and J(L) the poset of its
+    join-irreducible elements. Explain why L is isomorphic to the lattice of
+    order ideals of J(L).
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - finite lattices
+    - distributive lattices
+    - join-irreducible elements
+goal:
+  success_criteria: >
+    The answer should describe the map sending an element of L to the set of
+    join-irreducibles below it, show this lands in order ideals, and explain why
+    distributivity yields an inverse by taking joins.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: B. A. Davey and H. A. Priestley, Introduction to Lattices and Order,
+    2nd ed., Cambridge University Press, 2002.
+  year: 2002
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Davey-Priestley, Lattices and Order; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: cb7676638e2c1ebe
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

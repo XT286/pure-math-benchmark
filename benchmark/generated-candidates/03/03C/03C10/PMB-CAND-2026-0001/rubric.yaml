@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0001
+query_id: PMB-CAND-2026-0001
+owning_area_code: 03Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Marker, Model Theory.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should reduce arbitrary formulas to quantifier-free formulas, note
+  that embeddings preserve and reflect quantifier-free truth, and then conclude
+  that every embedding between models of T is elementary.
+required_elements:
+  - explain how quantifier elimination replaces an arbitrary formula by a
+    quantifier-free one
+  - state why embeddings preserve quantifier-free formulas
+  - connect elementary embeddings to model completeness
+alternate_valid_approaches: []
+fatal_errors:
+  - confusing quantifier elimination with completeness alone
+  - claiming every homomorphism is elementary
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

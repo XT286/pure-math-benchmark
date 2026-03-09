@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0021
+generation_method: reference_grounded_seed_spec
+source_id: evans-pde
+source_citation: Lawrence C. Evans, Partial Differential Equations, 2nd ed., AMS, 2010.
+source_scope_notes: Standard graduate reference for uniqueness and energy arguments in PDE.
+msc_path:
+  - "35"
+  - 35A
+  - 35A02
+adaptation_notes: Candidate adapted from a standard theorem-level fact in Evans,
+  Partial Differential Equations; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

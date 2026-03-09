@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0007
+solution_id: SOL-CAND-0007
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If m is the maximal ideal, then P / mP is a finite-dimensional vector space
+  over R / m. Lift a basis to elements of P; Nakayama implies these lifts
+  generate P, giving a surjection R^n -> P. Since P is projective the surjection
+  splits, so R^n is isomorphic to P direct sum Q. Modding out by m and using
+  minimality of n forces Q / mQ = 0, hence Q = 0 by Nakayama, so P is free.
+required_ingredients:
+  - residue-field reduction
+  - Nakayama lemma
+common_failure_modes:
+  - failing to justify why the complementary summand vanishes
+verification_status: reference_grounded_candidate

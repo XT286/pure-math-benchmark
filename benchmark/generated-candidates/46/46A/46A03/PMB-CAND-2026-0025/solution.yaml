@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0025
+solution_id: SOL-CAND-0025
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The functional phi satisfies |phi(y)| <= ||phi|| ||y|| on Y, so the sublinear
+  functional p(x) = ||phi|| ||x|| dominates phi there. Hahn-Banach extends phi
+  to a linear functional Phi on X with |Phi(x)| <= p(x) for all x, which gives
+  ||Phi|| <= ||phi||. Since Phi restricts to phi, equality of norms follows.
+required_ingredients:
+  - Hahn-Banach theorem
+common_failure_modes:
+  - confusing algebraic extension with continuous extension
+verification_status: reference_grounded_candidate

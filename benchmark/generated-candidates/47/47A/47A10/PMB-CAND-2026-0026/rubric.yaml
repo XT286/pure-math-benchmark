@@ -1,0 +1,27 @@
+rubric_id: RUB-CAND-0026
+query_id: PMB-CAND-2026-0026
+owning_area_code: 47Axx
+rubric_basis: Reference-grounded candidate rubric derived from Conway, Functional Analysis.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should show that if |lambda| > ||T|| then lambda I - T is
+  invertible via a Neumann-series argument, so lambda cannot lie in the
+  spectrum.
+required_elements:
+  - rewrite lambda I - T as lambda(I - T / lambda)
+  - invoke convergence of the Neumann series when ||T / lambda|| < 1
+alternate_valid_approaches: []
+fatal_errors:
+  - treating norm bounds as exact spectral equalities
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

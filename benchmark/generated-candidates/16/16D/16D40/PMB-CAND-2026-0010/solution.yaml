@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0010
+solution_id: SOL-CAND-0010
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If P is projective, choose a surjection F -> P from a free module F. The
+  identity map on P lifts through this surjection, giving a section P -> F,
+  hence F is isomorphic to P direct sum ker(pi). Conversely, if F is isomorphic
+  to P direct sum Q and F is free, then any lift to F can be projected to P, so
+  P inherits the lifting property and is projective.
+required_ingredients:
+  - lifting property
+  - splitting of surjections
+common_failure_modes:
+  - invoking bases for projective modules without justification
+verification_status: reference_grounded_candidate

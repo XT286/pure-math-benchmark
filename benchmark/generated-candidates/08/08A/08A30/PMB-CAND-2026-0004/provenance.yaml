@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0004
+generation_method: reference_grounded_seed_spec
+source_id: burris-sankappanavar
+source_citation: Stanley Burris and H. P. Sankappanavar, A Course in Universal
+  Algebra, Springer, 1981.
+source_scope_notes: Standard source for congruences, quotients, and homomorphism
+  theorems in universal algebra.
+msc_path:
+  - "08"
+  - 08A
+  - 08A30
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Burris-Sankappanavar, Universal Algebra; explicit expert review required
+  before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

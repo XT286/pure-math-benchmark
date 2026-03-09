@@ -1,0 +1,27 @@
+rubric_id: RUB-CAND-0034
+query_id: PMB-CAND-2026-0034
+owning_area_code: 65Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Trefethen-Bau,
+  Numerical Linear Algebra.
+rubric_focus:
+  problem_type: proof
+  answer_format: short_justification
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should subtract two such polynomials and use the fact that a
+  nonzero polynomial of degree at most n cannot have n+1 distinct roots.
+required_elements:
+  - compare two hypothetical interpolants
+  - count roots of their difference
+alternate_valid_approaches: []
+fatal_errors:
+  - proving existence instead of uniqueness
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

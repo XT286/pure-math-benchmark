@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0006
+query_id: PMB-CAND-2026-0006
+owning_area_code: 12Fxx
+rubric_basis: Reference-grounded candidate rubric derived from Dummit-Foote,
+  Abstract Algebra.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the two assignments, state why each lands in the
+  right class, and explain why normality and separability ensure the two
+  operations are inverse.
+required_elements:
+  - define L^H and Gal(L / E)
+  - mention inclusion reversal
+  - explain why the constructions are inverse in the Galois case
+alternate_valid_approaches: []
+fatal_errors:
+  - stating the correspondence for arbitrary finite extensions
+  - forgetting the Galois hypothesis
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

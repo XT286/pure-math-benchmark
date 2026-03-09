@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0038
+query_id: PMB-CAND-2026-0038
+owning_area_code: 93Bxx
+rubric_basis: Reference-grounded candidate rubric derived from
+  Zhou-Doyle-Glover, Robust and Optimal Control.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the reachable subspace as the span of the columns
+  of B, AB, ..., A^{n-1}B and conclude that full rank means the whole state
+  space is reachable.
+required_elements:
+  - state the controllability matrix
+  - connect it to the reachable subspace
+  - conclude reachability of every target state
+alternate_valid_approaches: []
+fatal_errors:
+  - confusing controllability with stability
+  - using observability criteria
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0012
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Every adjunction yields a monad
+primary_msc_code: 18C15
+primary_msc_path:
+  - 18-XX
+  - 18Cxx
+  - 18C15
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 18Cxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 18Cxx
+  - 18-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.3
+problem_type: construction
+answer_format: structured_bullets
+statement:
+  title: Every adjunction yields a monad
+  body: >
+    Let F: C -> D be left adjoint to U: D -> C with unit eta and counit epsilon.
+    Explain how to construct the monad on C associated to this adjunction, and
+    state the formulas for its unit and multiplication.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - adjoint functors
+    - unit and counit of an adjunction
+    - monads
+goal:
+  success_criteria: >
+    The answer should identify the endofunctor UF, take eta as the unit, and
+    define multiplication by U epsilon F, with a brief indication that the monad
+    axioms follow from the triangle identities.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Saunders Mac Lane, Categories for the Working Mathematician, 2nd ed.,
+    Springer, 1998.
+  year: 1998
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from Mac
+    Lane, Categories; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 317a450908af4c17
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

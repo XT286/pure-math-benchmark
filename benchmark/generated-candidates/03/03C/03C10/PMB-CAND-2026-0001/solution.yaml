@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0001
+solution_id: SOL-CAND-0001
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If phi is any formula, quantifier elimination gives an equivalent
+  quantifier-free formula psi modulo T. Quantifier-free formulas are decided
+  purely by the interpretation of function and relation symbols, so embeddings
+  preserve and reflect them. Hence an embedding between models of T preserves
+  every formula and is elementary; therefore T is model complete.
+required_ingredients:
+  - equivalence of formulas under quantifier elimination
+  - preservation of quantifier-free formulas by embeddings
+common_failure_modes:
+  - omitting the role of completeness or equivalence modulo T
+  - asserting model completeness without discussing embeddings
+verification_status: reference_grounded_candidate

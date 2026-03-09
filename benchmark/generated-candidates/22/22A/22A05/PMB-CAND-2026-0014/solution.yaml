@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0014
+solution_id: SOL-CAND-0014
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Every compact subset of a Hausdorff space is closed. Since G is Hausdorff and
+  H is compact as a subset, H is closed. No additional group-theoretic input is
+  required beyond viewing H as a subset of G.
+required_ingredients:
+  - compact subsets are closed in Hausdorff spaces
+common_failure_modes:
+  - trying to prove normality or completeness instead of closedness
+verification_status: reference_grounded_candidate

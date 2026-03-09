@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0003
+solution_id: SOL-CAND-0003
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Send x in L to I_x = {j in J(L) : j <= x}. This is an order ideal. In a finite
+  distributive lattice every element is the join of the join-irreducibles below
+  it, so x can be recovered from I_x by taking that join. Conversely each order
+  ideal I determines an element by joining the members of I, and distributivity
+  shows these constructions are inverse lattice homomorphisms.
+required_ingredients:
+  - Birkhoff representation theorem for finite distributive lattices
+common_failure_modes:
+  - confusing join-irreducible and join-prime without justification
+verification_status: reference_grounded_candidate

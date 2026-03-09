@@ -1,0 +1,261 @@
+schema_version: 1
+sources:
+  - id: marker-model-theory
+    short_title: Marker, Model Theory
+    citation: "David Marker, Model Theory: An Introduction, Springer, 2002."
+    source_type: monograph
+    year: 2002
+    license_status: restricted
+    scope_notes: Standard graduate reference for quantifier elimination and model completeness.
+  - id: lovasz-plummer-matching
+    short_title: Lovasz-Plummer, Matching Theory
+    citation: "Laszlo Lovasz and Michael D. Plummer, Matching Theory, AMS Chelsea Publishing, 2009."
+    source_type: monograph
+    year: 2009
+    license_status: restricted
+    scope_notes: Standard reference for Hall-type matching theorems.
+  - id: davey-priestley
+    short_title: Davey-Priestley, Lattices and Order
+    citation: "B. A. Davey and H. A. Priestley, Introduction to Lattices and Order, 2nd ed., Cambridge University Press, 2002."
+    source_type: monograph
+    year: 2002
+    license_status: restricted
+    scope_notes: Standard reference for distributive lattices and representation theorems.
+  - id: burris-sankappanavar
+    short_title: Burris-Sankappanavar, Universal Algebra
+    citation: "Stanley Burris and H. P. Sankappanavar, A Course in Universal Algebra, Springer, 1981."
+    source_type: monograph
+    year: 1981
+    license_status: restricted
+    scope_notes: Standard source for congruences, quotients, and homomorphism theorems in universal algebra.
+  - id: ireland-rosen
+    short_title: Ireland-Rosen, Number Theory
+    citation: "Kenneth Ireland and Michael Rosen, A Classical Introduction to Modern Number Theory, 2nd ed., Springer, 1990."
+    source_type: monograph
+    year: 1990
+    license_status: restricted
+    scope_notes: Standard source for primitive roots and basic algebraic number theory facts.
+  - id: dummit-foote
+    short_title: Dummit-Foote, Abstract Algebra
+    citation: "David S. Dummit and Richard M. Foote, Abstract Algebra, 3rd ed., Wiley, 2004."
+    source_type: monograph
+    year: 2004
+    license_status: restricted
+    scope_notes: Standard graduate algebra reference used for field theory, linear algebra, and group theory items.
+  - id: atiyah-macdonald
+    short_title: Atiyah-Macdonald, Commutative Algebra
+    citation: "M. F. Atiyah and I. G. Macdonald, Introduction to Commutative Algebra, Addison-Wesley, 1969."
+    source_type: monograph
+    year: 1969
+    license_status: restricted
+    scope_notes: Standard source for local rings, projective modules, and Nakayama-style arguments.
+  - id: hartshorne
+    short_title: Hartshorne, Algebraic Geometry
+    citation: "Robin Hartshorne, Algebraic Geometry, Springer, 1977."
+    source_type: monograph
+    year: 1977
+    license_status: restricted
+    scope_notes: Standard graduate reference for divisors, curves, and foundational scheme-theoretic arguments.
+  - id: lam-first-course
+    short_title: Lam, First Course in Noncommutative Rings
+    citation: "T. Y. Lam, A First Course in Noncommutative Rings, 2nd ed., Springer, 2001."
+    source_type: monograph
+    year: 2001
+    license_status: restricted
+    scope_notes: Standard reference for projective modules and associative ring basics.
+  - id: humphreys-lie
+    short_title: Humphreys, Introduction to Lie Algebras
+    citation: "James E. Humphreys, Introduction to Lie Algebras and Representation Theory, Springer, 1972."
+    source_type: monograph
+    year: 1972
+    license_status: restricted
+    scope_notes: Standard reference for nilpotent Lie algebras and basic structural results.
+  - id: mac-lane
+    short_title: Mac Lane, Categories
+    citation: "Saunders Mac Lane, Categories for the Working Mathematician, 2nd ed., Springer, 1998."
+    source_type: monograph
+    year: 1998
+    license_status: restricted
+    scope_notes: Canonical reference for adjunctions, monads, and categorical constructions.
+  - id: rotman-groups
+    short_title: Rotman, Group Theory
+    citation: "Joseph J. Rotman, An Introduction to the Theory of Groups, 4th ed., Springer, 1995."
+    source_type: monograph
+    year: 1995
+    license_status: restricted
+    scope_notes: Standard reference for finite p-groups and basic finite-group structure.
+  - id: hofmann-morris
+    short_title: Hofmann-Morris, Structure of Compact Groups
+    citation: "Karl H. Hofmann and Sidney A. Morris, The Structure of Compact Groups, 3rd ed., De Gruyter, 2013."
+    source_type: monograph
+    year: 2013
+    license_status: restricted
+    scope_notes: Reliable reference for compactness arguments in topological groups.
+  - id: rudin-pma
+    short_title: Rudin, Principles of Mathematical Analysis
+    citation: "Walter Rudin, Principles of Mathematical Analysis, 3rd ed., McGraw-Hill, 1976."
+    source_type: monograph
+    year: 1976
+    license_status: restricted
+    scope_notes: Standard source for uniform continuity and compactness arguments in real analysis.
+  - id: folland-real
+    short_title: Folland, Real Analysis
+    citation: "Gerald B. Folland, Real Analysis: Modern Techniques and Their Applications, 2nd ed., Wiley, 1999."
+    source_type: monograph
+    year: 1999
+    license_status: restricted
+    scope_notes: Standard source for measure theory, convergence theorems, and weak convergence prerequisites.
+  - id: conway-complex
+    short_title: Conway, Functions of One Complex Variable
+    citation: "John B. Conway, Functions of One Complex Variable I, 2nd ed., Springer, 1978."
+    source_type: monograph
+    year: 1978
+    license_status: restricted
+    scope_notes: Standard source for Liouville's theorem and basic one-variable complex analysis.
+  - id: ransford-potential
+    short_title: Ransford, Potential Theory
+    citation: "Thomas Ransford, Potential Theory in the Complex Plane, Cambridge University Press, 1995."
+    source_type: monograph
+    year: 1995
+    license_status: restricted
+    scope_notes: Standard source for maximum principles and harmonic function arguments.
+  - id: krantz-scv
+    short_title: Krantz, Several Complex Variables
+    citation: "Steven G. Krantz, Function Theory of Several Complex Variables, 2nd ed., AMS Chelsea Publishing, 2001."
+    source_type: monograph
+    year: 2001
+    license_status: restricted
+    scope_notes: Standard reference for Hartogs extension and removable singularity phenomena.
+  - id: teschl-ode
+    short_title: Teschl, Ordinary Differential Equations
+    citation: "Gerald Teschl, Ordinary Differential Equations and Dynamical Systems, AMS, 2012."
+    source_type: monograph
+    year: 2012
+    license_status: restricted
+    scope_notes: Standard source for existence and uniqueness in ODEs.
+  - id: evans-pde
+    short_title: Evans, Partial Differential Equations
+    citation: "Lawrence C. Evans, Partial Differential Equations, 2nd ed., AMS, 2010."
+    source_type: monograph
+    year: 2010
+    license_status: restricted
+    scope_notes: Standard graduate reference for uniqueness and energy arguments in PDE.
+  - id: walters-ergodic
+    short_title: Walters, Ergodic Theory
+    citation: "Peter Walters, An Introduction to Ergodic Theory, Springer, 1982."
+    source_type: monograph
+    year: 1982
+    license_status: restricted
+    scope_notes: Standard source for Poincare recurrence and basic ergodic arguments.
+  - id: devore-lorentz
+    short_title: DeVore-Lorentz, Constructive Approximation
+    citation: "Ronald A. DeVore and George G. Lorentz, Constructive Approximation, Springer, 1993."
+    source_type: monograph
+    year: 1993
+    license_status: restricted
+    scope_notes: Standard source for polynomial approximation and Stone-Weierstrass-style results.
+  - id: grafakos
+    short_title: Grafakos, Classical Fourier Analysis
+    citation: "Loukas Grafakos, Classical Fourier Analysis, 3rd ed., Springer, 2014."
+    source_type: monograph
+    year: 2014
+    license_status: restricted
+    scope_notes: Standard source for Fourier-transform arguments and singular integral basics.
+  - id: conway-functional
+    short_title: Conway, Functional Analysis
+    citation: "John B. Conway, A Course in Functional Analysis, 2nd ed., Springer, 1990."
+    source_type: monograph
+    year: 1990
+    license_status: restricted
+    scope_notes: Standard source for Hahn-Banach and operator-theoretic basics.
+  - id: liberzon
+    short_title: Liberzon, Calculus of Variations and Optimal Control
+    citation: "Daniel Liberzon, Calculus of Variations and Optimal Control Theory, Princeton University Press, 2012."
+    source_type: monograph
+    year: 2012
+    license_status: restricted
+    scope_notes: Standard source for Euler-Lagrange necessary conditions.
+  - id: rockafellar
+    short_title: Rockafellar, Convex Analysis
+    citation: "R. Tyrrell Rockafellar, Convex Analysis, Princeton University Press, 1970."
+    source_type: monograph
+    year: 1970
+    license_status: restricted
+    scope_notes: Standard source for separating hyperplane arguments.
+  - id: lee-riemannian
+    short_title: Lee, Riemannian Manifolds
+    citation: "John M. Lee, Riemannian Manifolds: An Introduction to Curvature, Springer, 1997."
+    source_type: monograph
+    year: 1997
+    license_status: restricted
+    scope_notes: Standard source for Levi-Civita connection and foundational Riemannian geometry.
+  - id: munkres
+    short_title: Munkres, Topology
+    citation: "James R. Munkres, Topology, 2nd ed., Prentice Hall, 2000."
+    source_type: monograph
+    year: 2000
+    license_status: restricted
+    scope_notes: Standard source for compactness and Hausdorff separation facts.
+  - id: hatcher
+    short_title: Hatcher, Algebraic Topology
+    citation: "Allen Hatcher, Algebraic Topology, Cambridge University Press, 2002."
+    source_type: monograph
+    year: 2002
+    license_status: restricted
+    scope_notes: Standard source for chain homotopy and singular homology basics.
+  - id: durrett
+    short_title: Durrett, Probability
+    citation: "Rick Durrett, Probability: Theory and Examples, 5th ed., Cambridge University Press, 2019."
+    source_type: monograph
+    year: 2019
+    license_status: restricted
+    scope_notes: Standard source for weak convergence and bounded continuous test functions.
+  - id: casella-berger
+    short_title: Casella-Berger, Statistical Inference
+    citation: "George Casella and Roger L. Berger, Statistical Inference, 2nd ed., Duxbury, 2002."
+    source_type: monograph
+    year: 2002
+    license_status: restricted
+    scope_notes: Standard source for factorization criteria and sufficiency.
+  - id: trefethen-bau
+    short_title: Trefethen-Bau, Numerical Linear Algebra
+    citation: "Lloyd N. Trefethen and David Bau III, Numerical Linear Algebra, SIAM, 1997."
+    source_type: monograph
+    year: 1997
+    license_status: restricted
+    scope_notes: Standard source for interpolation and numerical linear algebra fundamentals.
+  - id: sipser
+    short_title: Sipser, Introduction to the Theory of Computation
+    citation: "Michael Sipser, Introduction to the Theory of Computation, 3rd ed., Cengage Learning, 2012."
+    source_type: monograph
+    year: 2012
+    license_status: restricted
+    scope_notes: Standard source for reductions, NP-hardness, and classical complexity arguments.
+  - id: reed-simon
+    short_title: Reed-Simon, Methods of Modern Mathematical Physics I
+    citation: "Michael Reed and Barry Simon, Methods of Modern Mathematical Physics I: Functional Analysis, Academic Press, 1980."
+    source_type: monograph
+    year: 1980
+    license_status: restricted
+    scope_notes: Standard source for spectral facts about selfadjoint operators.
+  - id: boyd-vandenberghe
+    short_title: Boyd-Vandenberghe, Convex Optimization
+    citation: "Stephen Boyd and Lieven Vandenberghe, Convex Optimization, Cambridge University Press, 2004."
+    source_type: monograph
+    year: 2004
+    license_status: restricted
+    scope_notes: Standard source for linear programming duality.
+  - id: zhou-doyle-glover
+    short_title: Zhou-Doyle-Glover, Robust and Optimal Control
+    citation: "Kemin Zhou, John C. Doyle, and Keith Glover, Robust and Optimal Control, Prentice Hall, 1996."
+    source_type: monograph
+    year: 1996
+    license_status: restricted
+    scope_notes: Standard reference for controllability criteria in linear systems.
+  - id: huffman-pless
+    short_title: Huffman-Pless, Fundamentals of Error-Correcting Codes
+    citation: "W. Cary Huffman and Vera Pless, Fundamentals of Error-Correcting Codes, Cambridge University Press, 2003."
+    source_type: monograph
+    year: 2003
+    license_status: restricted
+    scope_notes: Standard source for dual codes and basic linear-code dimension arguments.

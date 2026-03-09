@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0030
+generation_method: reference_grounded_seed_spec
+source_id: munkres
+source_citation: James R. Munkres, Topology, 2nd ed., Prentice Hall, 2000.
+source_scope_notes: Standard source for compactness and Hausdorff separation facts.
+msc_path:
+  - "54"
+  - 54D
+  - 54D10
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Munkres, Topology; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

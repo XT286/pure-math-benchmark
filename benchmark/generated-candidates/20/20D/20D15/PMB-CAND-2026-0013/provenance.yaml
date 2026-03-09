@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0013
+generation_method: reference_grounded_seed_spec
+source_id: rotman-groups
+source_citation: Joseph J. Rotman, An Introduction to the Theory of Groups, 4th
+  ed., Springer, 1995.
+source_scope_notes: Standard reference for finite p-groups and basic finite-group structure.
+msc_path:
+  - "20"
+  - 20D
+  - 20D15
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Rotman, Group Theory; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

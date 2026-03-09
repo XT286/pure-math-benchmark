@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0032
+solution_id: SOL-CAND-0032
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  One of the equivalent formulations of weak convergence is precisely that
+  integrals against every bounded continuous test function converge. Thus the
+  stated limit is immediate from the Portmanteau characterization.
+required_ingredients:
+  - Portmanteau theorem
+common_failure_modes:
+  - omitting boundedness or continuity of the test function
+verification_status: reference_grounded_candidate

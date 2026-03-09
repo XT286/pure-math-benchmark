@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0027
+solution_id: SOL-CAND-0027
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Perturb x by x + epsilon eta with eta(a) = eta(b) = 0 and differentiate J[x +
+  epsilon eta] at epsilon = 0. This yields integral (L_x eta + L_v eta') dt.
+  Integration by parts moves the derivative off eta' and kills the boundary
+  term. Since the result vanishes for every such eta, the fundamental lemma
+  gives d/dt(L_v) = L_x.
+required_ingredients:
+  - first variation
+  - fundamental lemma of the calculus of variations
+common_failure_modes:
+  - ignoring endpoint conditions on variations
+verification_status: reference_grounded_candidate

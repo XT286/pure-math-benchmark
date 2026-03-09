@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0031
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Chain-homotopic maps induce the same homology map
+primary_msc_code: 55N10
+primary_msc_path:
+  - 55-XX
+  - 55Nxx
+  - 55N10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 55Nxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 55Nxx
+  - 55-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.3
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Chain-homotopic maps induce the same homology map
+  body: >
+    Let f, g: X -> Y be continuous maps whose induced singular chain maps are
+    chain homotopic. Explain why f_* = g_* on singular homology.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - singular chain complexes
+    - chain homotopy
+    - homology
+goal:
+  success_criteria: >
+    The answer should use the relation f_sharp - g_sharp = partial H + H partial
+    to show that f_sharp and g_sharp differ by a boundary on cycles, hence
+    define the same homology class.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Allen Hatcher, Algebraic Topology, Cambridge University Press, 2002.
+  year: 2002
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Hatcher, Algebraic Topology; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 1c41a91c3d9dbed5
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

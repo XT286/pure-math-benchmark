@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0035
+solution_id: SOL-CAND-0035
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If A is NP-hard, then for every language L in NP there is a polynomial-time
+  reduction L <=_m^p A. Given also A <=_m^p B, transitivity of polynomial-time
+  many-one reductions yields L <=_m^p B. Since this holds for every L in NP, B
+  is NP-hard.
+required_ingredients:
+  - definition of NP-hardness
+  - transitivity of polynomial-time many-one reductions
+common_failure_modes:
+  - concluding NP-completeness instead of NP-hardness
+verification_status: reference_grounded_candidate

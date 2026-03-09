@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0006
+generation_method: reference_grounded_seed_spec
+source_id: dummit-foote
+source_citation: David S. Dummit and Richard M. Foote, Abstract Algebra, 3rd ed., Wiley, 2004.
+source_scope_notes: Standard graduate algebra reference used for field theory,
+  linear algebra, and group theory items.
+msc_path:
+  - "12"
+  - 12F
+  - 12F10
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Dummit-Foote, Abstract Algebra; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

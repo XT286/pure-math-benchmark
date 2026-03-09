@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0027
+generation_method: reference_grounded_seed_spec
+source_id: liberzon
+source_citation: Daniel Liberzon, Calculus of Variations and Optimal Control
+  Theory, Princeton University Press, 2012.
+source_scope_notes: Standard source for Euler-Lagrange necessary conditions.
+msc_path:
+  - "49"
+  - 49K
+  - 49K05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Liberzon, Calculus of Variations and Optimal Control; explicit expert review
+  required before promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

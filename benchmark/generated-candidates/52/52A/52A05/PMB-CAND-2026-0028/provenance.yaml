@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0028
+generation_method: reference_grounded_seed_spec
+source_id: rockafellar
+source_citation: R. Tyrrell Rockafellar, Convex Analysis, Princeton University Press, 1970.
+source_scope_notes: Standard source for separating hyperplane arguments.
+msc_path:
+  - "52"
+  - 52A
+  - 52A05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Rockafellar, Convex Analysis; explicit expert review required before promotion
+  into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

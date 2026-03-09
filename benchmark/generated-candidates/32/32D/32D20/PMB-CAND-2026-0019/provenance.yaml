@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0019
+generation_method: reference_grounded_seed_spec
+source_id: krantz-scv
+source_citation: Steven G. Krantz, Function Theory of Several Complex Variables,
+  2nd ed., AMS Chelsea Publishing, 2001.
+source_scope_notes: Standard reference for Hartogs extension and removable singularity phenomena.
+msc_path:
+  - "32"
+  - 32D
+  - 32D20
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Krantz, Several Complex Variables; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

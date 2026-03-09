@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0029
+solution_id: SOL-CAND-0029
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If a connection is torsion free and metric compatible, then the Koszul formula
+  expresses 2 g(nabla_X Y, Z) in terms of derivatives of g and Lie brackets of
+  vector fields. The right-hand side depends only on g and the vector fields, so
+  g(nabla_X Y, Z) is uniquely determined for every Z. By nondegeneracy of g,
+  nabla_X Y is therefore unique.
+required_ingredients:
+  - Koszul formula
+common_failure_modes:
+  - giving the coordinate Christoffel-symbol formula without connecting it to
+    uniqueness
+verification_status: reference_grounded_candidate

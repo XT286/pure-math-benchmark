@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0016
+solution_id: SOL-CAND-0016
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The monotone convergence theorem applies exactly to nonnegative measurable
+  functions increasing pointwise to a measurable limit. Therefore the integrals
+  of f_n form an increasing sequence and converge to the integral of f.
+required_ingredients:
+  - monotone convergence theorem
+common_failure_modes:
+  - discussing almost-everywhere convergence without checking monotonicity
+verification_status: reference_grounded_candidate

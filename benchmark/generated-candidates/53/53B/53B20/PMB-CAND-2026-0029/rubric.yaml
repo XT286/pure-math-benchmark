@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0029
+query_id: PMB-CAND-2026-0029
+owning_area_code: 53Bxx
+rubric_basis: Reference-grounded candidate rubric derived from Lee, Riemannian Manifolds.
+rubric_focus:
+  problem_type: framework_comparison
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should invoke or derive the Koszul formula, showing that the value
+  of nabla_X Y is determined entirely by g, Lie brackets, and vector fields,
+  hence uniqueness.
+required_elements:
+  - state the torsion-free and metric-compatibility inputs
+  - use the Koszul formula or an equivalent derivation
+alternate_valid_approaches: []
+fatal_errors:
+  - proving only existence
+  - omitting one of the two defining properties
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

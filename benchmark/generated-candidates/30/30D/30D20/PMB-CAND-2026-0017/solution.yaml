@@ -1,0 +1,14 @@
+query_id: PMB-CAND-2026-0017
+solution_id: SOL-CAND-0017
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Fix z_0 and apply the Cauchy estimate to f on a circle of radius R centered at
+  z_0: |f'(z_0)| <= M / R. Since R is arbitrary, letting R -> infinity gives
+  f'(z_0) = 0. Hence f' is identically zero and f is constant.
+required_ingredients:
+  - Cauchy estimates
+common_failure_modes:
+  - confusing bounded entire with bounded on one disk
+verification_status: reference_grounded_candidate
