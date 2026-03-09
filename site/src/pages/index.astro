@@ -4,6 +4,7 @@ import MscNavigator from "../components/MscNavigator.astro";
 import { getCatalog } from "../lib/catalog.js";
 
 const catalog = getCatalog();
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <BaseLayout title="Pure Math Benchmark Catalog">
@@ -55,4 +56,8 @@ const catalog = getCatalog();
       <p class="muted">See where benchmark coverage is thin and propose stronger field-specific additions.</p>
     </div>
   </div>
+  <p class="muted" style="margin-top:18px;">
+    Prefer the direct field selector above, or browse the full MSC index at
+    <a href={`${basePath}/msc/`}>the MSC page</a>.
+  </p>
 </BaseLayout>

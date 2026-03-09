@@ -16,15 +16,15 @@ const solution = getSolutionById(query.solution_id);
 const reviews = getReviewsForQuery(id);
 const section = shortSectionCode(query.primary_msc_code);
 const subclass = shortSubclassCode(query.primary_msc_code);
-const base = import.meta.env.BASE_URL;
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <BaseLayout title={`${query.title} | Query`}>
   <div class="breadcrumbs">
-    Home / <a href={`${base}msc/`}>MSC</a> /
-    <a href={`${base}msc/${section}/`}>{section}</a> /
-    <a href={`${base}msc/${section}/${subclass}/`}>{subclass}</a> /
-    <a href={`${base}msc/${section}/${subclass}/${query.primary_msc_code}/`}>{query.primary_msc_code}</a> /
+    Home / <a href={`${basePath}/msc/`}>MSC</a> /
+    <a href={`${basePath}/msc/${section}/`}>{section}</a> /
+    <a href={`${basePath}/msc/${section}/${subclass}/`}>{subclass}</a> /
+    <a href={`${basePath}/msc/${section}/${subclass}/${query.primary_msc_code}/`}>{query.primary_msc_code}</a> /
     {query.id}
   </div>
 
@@ -62,7 +62,7 @@ const base = import.meta.env.BASE_URL;
 
   <h2 class="section-title">Answer rubric</h2>
   <div class="card">
-    <p><a href={`${base}rubrics/${rubric.rubric_id}/`}>Open dedicated rubric page</a></p>
+    <p><a href={`${basePath}/rubrics/${rubric.rubric_id}/`}>Open dedicated rubric page</a></p>
     <h3>Required elements</h3>
     <ul>
       {rubric.required_elements.map((item) => <li>{item}</li>)}
