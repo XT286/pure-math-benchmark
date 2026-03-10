@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0040
+generation_method: reference_grounded_seed_spec
+source_id: marker-model-theory
+source_citation: "David Marker, Model Theory: An Introduction, Springer, 2002."
+source_scope_notes: Standard graduate reference for quantifier elimination and model completeness.
+msc_path:
+  - "03"
+  - 03C
+  - 03C64
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Marker, Model Theory; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

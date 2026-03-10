@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0043
+query_id: PMB-CAND-2026-0043
+owning_area_code: 18Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Mac Lane, Categories.
+rubric_focus:
+  problem_type: construction
+  answer_format: structured_bullets
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should describe the objects and morphisms in the Grothendieck
+  construction, identify the projection to C, and explain why the coherence
+  isomorphisms supply the cartesian-lift behavior.
+required_elements:
+  - define the category produced by the Grothendieck construction
+  - identify the projection functor to C
+  - explain how coherence controls composition of pullbacks
+alternate_valid_approaches: []
+fatal_errors:
+  - treating a pseudofunctor as an ordinary strict functor without comment
+  - omitting the projection to the base category
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

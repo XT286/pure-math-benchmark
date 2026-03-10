@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0052
+solution_id: SOL-CAND-0052
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For a connected smooth projective curve, genus is the dimension of H^1 of the
+  structure sheaf and also determines the Euler characteristic of O_C. In a
+  smooth proper family these invariants behave locally constantly under base
+  change, so each fiber has the same genus. This is why smooth families of
+  curves naturally map into a fixed genus-g moduli problem rather than mixing
+  genera.
+required_ingredients:
+  - genus as h^1(O_C)
+  - base-change stability in smooth proper families
+common_failure_modes:
+  - discussing singular fibers when the hypothesis is smooth
+verification_status: reference_grounded_candidate

@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0051
+generation_method: reference_grounded_seed_spec
+source_id: lazarsfeld-positivity
+source_citation: Robert Lazarsfeld, Positivity in Algebraic Geometry I, Springer, 2004.
+source_scope_notes: Standard reference for vanishing theorems, positivity, and
+  line-bundle techniques in algebraic geometry.
+msc_path:
+  - "14"
+  - 14F
+  - 14F17
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Lazarsfeld, Positivity; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

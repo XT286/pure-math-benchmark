@@ -1,0 +1,28 @@
+rubric_id: RUB-CAND-0049
+query_id: PMB-CAND-2026-0049
+owning_area_code: 14Dxx
+rubric_basis: Reference-grounded candidate rubric derived from Vakil, The Rising Sea.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should connect smooth proper base change or constancy of the Euler
+  characteristic to local constancy of the fiber genus.
+required_elements:
+  - identify a cohomological or Euler-characteristic invariant controlling genus
+  - explain why it is locally constant in a smooth proper family
+  - conclude constancy of genus
+alternate_valid_approaches: []
+fatal_errors:
+  - treating genus as arbitrary under smooth proper deformation
+  - using only topological intuition without an algebro-geometric argument
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

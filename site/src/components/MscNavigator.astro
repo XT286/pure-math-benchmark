@@ -1,5 +1,5 @@
 ---
-import { getCatalog, getNodeByCode, getQueriesForCode } from "../lib/catalog.js";
+import { getCatalog, getCandidateQueriesForCode, getNodeByCode, getQueriesForCode } from "../lib/catalog.js";
 
 const {
   title = "Find your field",
@@ -13,7 +13,9 @@ const sections = catalog.sections.map((section) => ({
   code: section.code,
   shortCode: section.short_code,
   label: section.label,
-  queryCount: section.query_count,
+  canonicalQueryCount: section.canonical_query_count ?? section.query_count ?? 0,
+  candidateQueryCount: section.candidate_query_count ?? 0,
+  totalQueryCount: section.total_query_count ?? section.query_count ?? 0,
 }));
 
 const subclasses = sections.flatMap((section) => {
@@ -26,7 +28,9 @@ const subclasses = sections.flatMap((section) => {
       shortCode: node.short_code,
       label: node.label,
       parentCode: section.code,
-      queryCount: getQueriesForCode(node.code).length,
+      canonicalQueryCount: getQueriesForCode(node.code).length,
+      candidateQueryCount: getCandidateQueriesForCode(node.code).length,
+      totalQueryCount: getQueriesForCode(node.code).length + getCandidateQueriesForCode(node.code).length,
     }));
 });
 
@@ -40,21 +44,36 @@ const leaves = subclasses.flatMap((subclass) => {
       shortCode: node.short_code,
       label: node.label,
       parentCode: subclass.code,
-      queryCount: getQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length,
+      canonicalQueryCount: getQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length,
+      candidateQueryCount: getCandidateQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length,
+      totalQueryCount:
+        getQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length +
+        getCandidateQueriesForCode(node.code).filter((query) => query.primary_msc_code === node.code).length,
     }));
 });
 
 const queryIndex = leaves.map((leaf) => {
-  const queries = getQueriesForCode(leaf.code).filter((query) => query.primary_msc_code === leaf.code);
+  const canonicalQueries = getQueriesForCode(leaf.code).filter((query) => query.primary_msc_code === leaf.code);
+  const candidateQueries = getCandidateQueriesForCode(leaf.code).filter((query) => query.primary_msc_code === leaf.code);
   return {
     leafCode: leaf.code,
-    queries: queries.map((query) => ({
+    canonicalQueries: canonicalQueries.map((query) => ({
       id: query.id,
       title: query.title,
       status: query.status,
       problemType: query.problem_type,
       answerFormat: query.answer_format,
-      rubricId: query.rubric_id,
+      routePath: query.route_path,
+      layerLabel: "reviewed",
+    })),
+    candidateQueries: candidateQueries.map((query) => ({
+      id: query.id,
+      title: query.title,
+      status: query.status,
+      problemType: query.problem_type,
+      answerFormat: query.answer_format,
+      routePath: query.route_path,
+      layerLabel: "candidate",
     })),
   };
 });
@@ -64,7 +83,7 @@ const queryIndex = leaves.map((leaf) => {
   <h2 style="margin-top:0;">{title}</h2>
   <p class="muted">{description}</p>
   <p class="muted" style="margin-top:-4px;">
-    The dropdowns show the full official MSC hierarchy. A selected field may legitimately have zero public queries so far.
+    The dropdowns show the full official MSC hierarchy. Counts distinguish reviewed benchmark items from draft candidate items.
   </p>
 
   <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
@@ -134,7 +153,7 @@ const queryIndex = leaves.map((leaf) => {
     results.innerHTML = "";
 
     if (!leafCode) {
-      selection.textContent = "Select all three levels to view the queries in that field.";
+      selection.textContent = "Select all three levels to view reviewed and candidate queries in that field.";
       return;
     }
 
@@ -144,35 +163,63 @@ const queryIndex = leaves.map((leaf) => {
     selection.textContent = `${section.shortCode} ${section.label} -> ${subclass.shortCode} ${subclass.label} -> ${leaf.shortCode} ${leaf.label}`;
 
     const queryGroup = queryIndex.find((item) => item.leafCode === leafCode);
-    if (!queryGroup || queryGroup.queries.length === 0) {
-      results.innerHTML = `<div class="list-item">No public queries for this leaf code yet.</div>`;
+    if (!queryGroup) {
+      results.innerHTML = `<div class="list-item">No visible content for this leaf code yet.</div>`;
       return;
     }
 
-    results.innerHTML = queryGroup.queries
-      .map(
-        (query) => `
+    const renderQuery = (query) => `
           <article class="list-item">
             <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
               <div>
-                <h3 style="margin:0 0 8px;"><a href="${basePath}/queries/${query.id}/">${query.title}</a></h3>
+                <h3 style="margin:0 0 8px;"><a href="${basePath}${query.routePath}">${query.title}</a></h3>
                 <div class="muted"><code>${query.id}</code></div>
               </div>
               <span class="badge">${query.status}</span>
             </div>
             <div class="badge-row" style="margin-top:12px;">
+              <span class="badge">${query.layerLabel}</span>
               <span class="badge">${query.problemType}</span>
               <span class="badge">${query.answerFormat}</span>
             </div>
-            <p style="margin:12px 0 0;"><a href="${basePath}/rubrics/${query.rubricId}/">Open answer rubric</a></p>
           </article>
-        `,
-      )
-      .join("");
+        `;
+
+    const reviewedQueries = queryGroup.canonicalQueries ?? [];
+    const candidateQueries = queryGroup.candidateQueries ?? [];
+
+    if (reviewedQueries.length === 0 && candidateQueries.length === 0) {
+      results.innerHTML = `<div class="list-item">No reviewed or candidate queries for this leaf code yet.</div>`;
+      return;
+    }
+
+    const blocks = [];
+
+    if (reviewedQueries.length > 0) {
+      blocks.push(`
+        <div class="list-item">
+          <strong>Reviewed benchmark queries</strong>
+          <div class="muted" style="margin-top:6px;">Canonical items in the expert-reviewed benchmark tree.</div>
+        </div>
+        ${reviewedQueries.map((query) => renderQuery(query)).join("")}
+      `);
+    }
+
+    if (candidateQueries.length > 0) {
+      blocks.push(`
+        <div class="list-item">
+          <strong>Draft candidate queries</strong>
+          <div class="muted" style="margin-top:6px;">Publicly visible candidates that are not yet expert-reviewed benchmark items.</div>
+        </div>
+        ${candidateQueries.map((query) => renderQuery(query)).join("")}
+      `);
+    }
+
+    results.innerHTML = blocks.join("");
   }
 
   resetSelect(sectionSelect, "Choose section");
-  addOptions(sectionSelect, sections, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
+  addOptions(sectionSelect, sections, (item) => `${item.shortCode} ${item.label} (${item.canonicalQueryCount} reviewed, ${item.candidateQueryCount} candidate)`);
   resetSelect(subclassSelect, "Choose subclass");
   resetSelect(leafSelect, "Choose leaf code");
   renderResults();
@@ -183,7 +230,7 @@ const queryIndex = leaves.map((leaf) => {
     resetSelect(leafSelect, "Choose leaf code");
     subclassSelect.disabled = matchingSubclasses.length === 0;
     leafSelect.disabled = true;
-    addOptions(subclassSelect, matchingSubclasses, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
+    addOptions(subclassSelect, matchingSubclasses, (item) => `${item.shortCode} ${item.label} (${item.canonicalQueryCount} reviewed, ${item.candidateQueryCount} candidate)`);
     renderResults();
   });
 
@@ -191,7 +238,7 @@ const queryIndex = leaves.map((leaf) => {
     const matchingLeaves = leaves.filter((item) => item.parentCode === subclassSelect.value);
     resetSelect(leafSelect, "Choose leaf code");
     leafSelect.disabled = matchingLeaves.length === 0;
-    addOptions(leafSelect, matchingLeaves, (item) => `${item.shortCode} ${item.label} (${item.queryCount})`);
+    addOptions(leafSelect, matchingLeaves, (item) => `${item.shortCode} ${item.label} (${item.canonicalQueryCount} reviewed, ${item.candidateQueryCount} candidate)`);
     renderResults();
   });
 

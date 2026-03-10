@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0046
+solution_id: SOL-CAND-0046
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For a hypersurface, the Jacobian matrix is the row of partial derivatives of
+  f. If at least one partial derivative is nonzero at p, then the rank of the
+  Jacobian at p is one, so the Zariski tangent space has the expected
+  codimension one. By the Jacobian criterion, p is therefore a smooth point of
+  X.
+required_ingredients:
+  - Jacobian criterion for hypersurfaces
+common_failure_modes:
+  - not localizing the argument at the chosen point
+verification_status: reference_grounded_candidate

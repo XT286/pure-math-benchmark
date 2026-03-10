@@ -1,6 +1,6 @@
-generated_at: 2026-03-09T06:49:49.496Z
+generated_at: 2026-03-10T03:48:41.393Z
 generation_method: reference_grounded_seed_spec
-query_count: 39
+query_count: 54
 queries:
   - id: PMB-CAND-2026-0001
     title: Quantifier elimination forces model completeness
@@ -197,3 +197,78 @@ queries:
     primary_msc_code: 94B05
     source_id: huffman-pless
     output_path: benchmark/generated-candidates/94/94B/94B05/PMB-CAND-2026-0039
+  - id: PMB-CAND-2026-0040
+    title: Monotonicity on a definable interval in an o-minimal structure
+    primary_msc_code: 03C64
+    source_id: marker-model-theory
+    output_path: benchmark/generated-candidates/03/03C/03C64/PMB-CAND-2026-0040
+  - id: PMB-CAND-2026-0041
+    title: Minkowski bounds and finite generation of the class group
+    primary_msc_code: 11R29
+    source_id: neukirch-ant
+    output_path: benchmark/generated-candidates/11/11R/11R29/PMB-CAND-2026-0041
+  - id: PMB-CAND-2026-0042
+    title: Prime avoidance as a hypothesis-checking tool
+    primary_msc_code: 13A15
+    source_id: atiyah-macdonald
+    output_path: benchmark/generated-candidates/13/13A/13A15/PMB-CAND-2026-0042
+  - id: PMB-CAND-2026-0043
+    title: A pseudofunctor gives rise to a fibered category
+    primary_msc_code: 18D30
+    source_id: mac-lane
+    output_path: benchmark/generated-candidates/18/18D/18D30/PMB-CAND-2026-0043
+  - id: PMB-CAND-2026-0044
+    title: Compact operators are not invertible on infinite-dimensional Banach spaces
+    primary_msc_code: 47B07
+    source_id: conway-functional
+    output_path: benchmark/generated-candidates/47/47B/47B07/PMB-CAND-2026-0044
+  - id: PMB-CAND-2026-0045
+    title: Whitehead theorem as a research-use equivalence test
+    primary_msc_code: 55P10
+    source_id: hatcher
+    output_path: benchmark/generated-candidates/55/55P/55P10/PMB-CAND-2026-0045
+  - id: PMB-CAND-2026-0046
+    title: Jacobian criterion at a hypersurface point
+    primary_msc_code: 14B05
+    source_id: hartshorne
+    output_path: benchmark/generated-candidates/14/14B/14B05/PMB-CAND-2026-0046
+  - id: PMB-CAND-2026-0047
+    title: What a point of the Hilbert scheme actually parametrizes
+    primary_msc_code: 14C05
+    source_id: vakil-rising-sea
+    output_path: benchmark/generated-candidates/14/14C/14C05/PMB-CAND-2026-0047
+  - id: PMB-CAND-2026-0048
+    title: Exceptional divisors on a surface blowup have self-intersection minus one
+    primary_msc_code: 14C17
+    source_id: hartshorne
+    output_path: benchmark/generated-candidates/14/14C/14C17/PMB-CAND-2026-0048
+  - id: PMB-CAND-2026-0049
+    title: Genus constancy in a smooth proper family of curves
+    primary_msc_code: 14D05
+    source_id: vakil-rising-sea
+    output_path: benchmark/generated-candidates/14/14D/14D05/PMB-CAND-2026-0049
+  - id: PMB-CAND-2026-0050
+    title: Birational morphisms of smooth projective curves are isomorphisms
+    primary_msc_code: "14E05"
+    source_id: hartshorne
+    output_path: benchmark/generated-candidates/14/14E/14E05/PMB-CAND-2026-0050
+  - id: PMB-CAND-2026-0051
+    title: When Kodaira vanishing can actually be invoked
+    primary_msc_code: 14F17
+    source_id: lazarsfeld-positivity
+    output_path: benchmark/generated-candidates/14/14F/14F17/PMB-CAND-2026-0051
+  - id: PMB-CAND-2026-0052
+    title: A moduli-minded reason genus is constant in a smooth family of curves
+    primary_msc_code: 14H10
+    source_id: harris-first-course
+    output_path: benchmark/generated-candidates/14/14H/14H10/PMB-CAND-2026-0052
+  - id: PMB-CAND-2026-0053
+    title: Why the Grassmannian has dimension k(n-k)
+    primary_msc_code: 14M15
+    source_id: harris-first-course
+    output_path: benchmark/generated-candidates/14/14M/14M15/PMB-CAND-2026-0053
+  - id: PMB-CAND-2026-0054
+    title: Bertini smoothness away from the base locus
+    primary_msc_code: 14N05
+    source_id: harris-first-course
+    output_path: benchmark/generated-candidates/14/14N/14N05/PMB-CAND-2026-0054

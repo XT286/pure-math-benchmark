@@ -1,0 +1,15 @@
+query_id: PMB-CAND-2026-0045
+solution_id: SOL-CAND-0045
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  For connected CW complexes, Whitehead's theorem states that a weak homotopy
+  equivalence is a homotopy equivalence. The assumption that f induces
+  isomorphisms on all homotopy groups says exactly that f is a weak equivalence,
+  so the theorem applies and yields a genuine homotopy equivalence.
+required_ingredients:
+  - Whitehead theorem
+common_failure_modes:
+  - silently replacing the CW hypothesis by a homology condition
+verification_status: reference_grounded_candidate

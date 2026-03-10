@@ -56,6 +56,27 @@ sources:
     year: 1977
     license_status: restricted
     scope_notes: Standard graduate reference for divisors, curves, and foundational scheme-theoretic arguments.
+  - id: vakil-rising-sea
+    short_title: Vakil, The Rising Sea
+    citation: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry, lecture notes."
+    source_type: lecture_notes
+    year: 2024
+    license_status: restricted
+    scope_notes: Broad modern reference for schemes, families, Hilbert schemes, and foundational algebro-geometric constructions.
+  - id: lazarsfeld-positivity
+    short_title: Lazarsfeld, Positivity
+    citation: "Robert Lazarsfeld, Positivity in Algebraic Geometry I, Springer, 2004."
+    source_type: monograph
+    year: 2004
+    license_status: restricted
+    scope_notes: Standard reference for vanishing theorems, positivity, and line-bundle techniques in algebraic geometry.
+  - id: harris-first-course
+    short_title: Harris, A First Course
+    citation: "Joe Harris, Algebraic Geometry: A First Course, Springer, 1992."
+    source_type: monograph
+    year: 1992
+    license_status: restricted
+    scope_notes: Standard reference for projective techniques, Grassmannians, families of curves, and classical research-oriented examples.
   - id: lam-first-course
     short_title: Lam, First Course in Noncommutative Rings
     citation: "T. Y. Lam, A First Course in Noncommutative Rings, 2nd ed., Springer, 2001."
@@ -203,6 +224,13 @@ sources:
     year: 2002
     license_status: restricted
     scope_notes: Standard source for chain homotopy and singular homology basics.
+  - id: neukirch-ant
+    short_title: Neukirch, Algebraic Number Theory
+    citation: "Jürgen Neukirch, Algebraic Number Theory, Springer, 1999."
+    source_type: monograph
+    year: 1999
+    license_status: restricted
+    scope_notes: Standard graduate reference for class groups, discriminants, Minkowski bounds, and structural arguments in algebraic number theory.
   - id: durrett
     short_title: Durrett, Probability
     citation: "Rick Durrett, Probability: Theory and Examples, 5th ed., Cambridge University Press, 2019."

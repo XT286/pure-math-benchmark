@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0050
+generation_method: reference_grounded_seed_spec
+source_id: hartshorne
+source_citation: Robin Hartshorne, Algebraic Geometry, Springer, 1977.
+source_scope_notes: Standard graduate reference for divisors, curves, and
+  foundational scheme-theoretic arguments.
+msc_path:
+  - "14"
+  - 14E
+  - "14E05"
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Hartshorne, Algebraic Geometry; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0045
+query_id: PMB-CAND-2026-0045
+owning_area_code: 55Pxx
+rubric_basis: Reference-grounded candidate rubric derived from Hatcher, Algebraic Topology.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the exact theorem being applied, note the CW
+  hypotheses, and explain why weak equivalence upgrades to homotopy equivalence
+  in this setting.
+required_elements:
+  - mention the CW complex hypothesis
+  - identify isomorphisms on all homotopy groups as weak equivalence data
+  - conclude homotopy equivalence by Whitehead's theorem
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming the conclusion for arbitrary spaces without the CW hypothesis
+  - confusing homology isomorphisms with homotopy-group isomorphisms
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,65 @@
+id: PMB-CAND-2026-0051
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: When Kodaira vanishing can actually be invoked
+primary_msc_code: 14F17
+primary_msc_path:
+  - 14-XX
+  - 14Fxx
+  - 14F17
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 14Fxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 14Fxx
+  - 14-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: postdoc
+  reviewer_score: 4.2
+problem_type: hypothesis_sensitivity
+answer_format: proof_outline
+statement:
+  title: When Kodaira vanishing can actually be invoked
+  body: >
+    A collaborator wants to apply Kodaira vanishing to conclude that H^i(X, K_X
+    tensor L) = 0 for i > 0. Explain the standard hypotheses needed for this
+    inference and why dropping characteristic-zero smoothness or ampleness can
+    invalidate the step.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - canonical bundles
+    - ample line bundles
+    - coherent cohomology
+    - Kodaira vanishing
+goal:
+  success_criteria: >
+    The answer should state the usual version of Kodaira vanishing and identify
+    the role of smoothness, projectivity, characteristic zero, and ampleness in
+    legitimizing the conclusion.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Robert Lazarsfeld, Positivity in Algebraic Geometry I, Springer, 2004.
+  year: 2004
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Lazarsfeld, Positivity; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: b36a75179088f365
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

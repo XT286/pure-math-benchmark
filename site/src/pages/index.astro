@@ -25,12 +25,20 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
         <div class="muted">Official MSC nodes imported</div>
       </div>
       <div class="card">
-        <strong>{catalog.counts.queries}</strong>
-        <div class="muted">Queries currently migrated</div>
+        <strong>{catalog.counts.canonical_queries ?? catalog.counts.queries}</strong>
+        <div class="muted">Reviewed canonical queries</div>
+      </div>
+      <div class="card">
+        <strong>{catalog.counts.candidate_queries ?? 0}</strong>
+        <div class="muted">Draft candidate queries</div>
       </div>
       <div class="card">
         <strong>{catalog.counts.reviewed_queries}</strong>
         <div class="muted">Queries with both area and rubric review artifacts</div>
+      </div>
+      <div class="card">
+        <strong>{catalog.counts.total_visible_queries ?? catalog.counts.queries}</strong>
+        <div class="muted">Total visible query packages</div>
       </div>
     </div>
   </section>

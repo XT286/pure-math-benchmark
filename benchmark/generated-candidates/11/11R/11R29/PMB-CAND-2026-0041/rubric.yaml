@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0041
+query_id: PMB-CAND-2026-0041
+owning_area_code: 11Rxx
+rubric_basis: Reference-grounded candidate rubric derived from Neukirch,
+  Algebraic Number Theory.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should explain how geometry of numbers gives a bounded-norm
+  representative in each ideal class and then use finiteness of the set of
+  ideals below a fixed norm bound to conclude that the class group is finite.
+required_elements:
+  - identify the role of Minkowski's bound
+  - explain why each class has a bounded representative
+  - explain why only finitely many integral ideals have bounded norm
+alternate_valid_approaches: []
+fatal_errors:
+  - proving finiteness of units instead of the class group
+  - omitting the bounded-representative step
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

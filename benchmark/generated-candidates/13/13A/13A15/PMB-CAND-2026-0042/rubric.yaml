@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0042
+query_id: PMB-CAND-2026-0042
+owning_area_code: 13Axx
+rubric_basis: Reference-grounded candidate rubric derived from Atiyah-Macdonald,
+  Commutative Algebra.
+rubric_focus:
+  problem_type: hypothesis_sensitivity
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should state the prime avoidance conclusion in the finite case,
+  explain the containment result, and note that the statement can fail for
+  infinite unions or without the correct structural hypotheses.
+required_elements:
+  - identify prime avoidance
+  - conclude I subseteq p_i for some i
+  - comment on why the finite union condition is important
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming the lemma holds for arbitrary infinite unions
+  - confusing ideal membership of elements with containment of ideals
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

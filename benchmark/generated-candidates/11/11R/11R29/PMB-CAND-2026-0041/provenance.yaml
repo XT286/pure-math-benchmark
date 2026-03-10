@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0041
+generation_method: reference_grounded_seed_spec
+source_id: neukirch-ant
+source_citation: Jürgen Neukirch, Algebraic Number Theory, Springer, 1999.
+source_scope_notes: Standard graduate reference for class groups, discriminants,
+  Minkowski bounds, and structural arguments in algebraic number theory.
+msc_path:
+  - "11"
+  - 11R
+  - 11R29
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Neukirch, Algebraic Number Theory; explicit expert review required before
+  promotion into benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

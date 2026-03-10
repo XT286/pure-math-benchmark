@@ -1,0 +1,65 @@
+id: PMB-CAND-2026-0042
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Prime avoidance as a hypothesis-checking tool
+primary_msc_code: 13A15
+primary_msc_path:
+  - 13-XX
+  - 13Axx
+  - 13A15
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 13Axx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 13Axx
+  - 13-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.5
+problem_type: hypothesis_sensitivity
+answer_format: proof_outline
+statement:
+  title: Prime avoidance as a hypothesis-checking tool
+  body: >
+    Let R be a commutative ring and let I be an ideal contained in the union of
+    finitely many prime ideals p_1, ..., p_n. Explain why prime avoidance
+    implies that I is contained in one of the p_i, and indicate why the
+    finiteness hypothesis matters in research use.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - ideals in commutative rings
+    - prime ideals
+    - prime avoidance lemma
+goal:
+  success_criteria: >
+    The answer should state the prime avoidance conclusion in the finite case,
+    explain the containment result, and note that the statement can fail for
+    infinite unions or without the correct structural hypotheses.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: M. F. Atiyah and I. G. Macdonald, Introduction to Commutative Algebra,
+    Addison-Wesley, 1969.
+  year: 1969
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Atiyah-Macdonald, Commutative Algebra; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 4a179d45bea6e4d2
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

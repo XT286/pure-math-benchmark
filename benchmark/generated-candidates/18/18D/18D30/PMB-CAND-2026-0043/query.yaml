@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0043
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: A pseudofunctor gives rise to a fibered category
+primary_msc_code: 18D30
+primary_msc_path:
+  - 18-XX
+  - 18Dxx
+  - 18D30
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 18Dxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 18Dxx
+  - 18-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.7
+problem_type: construction
+answer_format: structured_bullets
+statement:
+  title: A pseudofunctor gives rise to a fibered category
+  body: >
+    Let F: C^op -> Cat be a pseudofunctor. Explain how the Grothendieck
+    construction produces a category fibred over C, and identify the role of the
+    coherence data in making pullback along morphisms behave correctly.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - categories and functors
+    - pseudofunctors
+    - fibered categories
+goal:
+  success_criteria: >
+    The answer should describe the objects and morphisms in the Grothendieck
+    construction, identify the projection to C, and explain why the coherence
+    isomorphisms supply the cartesian-lift behavior.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Saunders Mac Lane, Categories for the Working Mathematician, 2nd ed.,
+    Springer, 1998.
+  year: 1998
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from Mac
+    Lane, Categories; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: a4fd6787f1ac6286
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

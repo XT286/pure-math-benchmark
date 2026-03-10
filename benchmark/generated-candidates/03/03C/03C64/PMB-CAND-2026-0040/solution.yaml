@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0040
+solution_id: SOL-CAND-0040
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  In an o-minimal structure, the graph of a definable one-variable function
+  admits a finite cell decomposition. The monotonicity theorem derived from this
+  shows that after removing finitely many points, the domain splits into
+  finitely many intervals on which the function is continuous and either
+  constant or strictly monotone. This gives the desired finite analysis scheme.
+required_ingredients:
+  - one-dimensional cell decomposition
+  - monotonicity theorem in o-minimality
+common_failure_modes:
+  - arguing only that the function is piecewise continuous without monotonicity
+verification_status: reference_grounded_candidate

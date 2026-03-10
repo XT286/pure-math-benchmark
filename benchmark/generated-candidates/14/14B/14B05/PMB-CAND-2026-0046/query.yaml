@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0046
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Jacobian criterion at a hypersurface point
+primary_msc_code: 14B05
+primary_msc_path:
+  - 14-XX
+  - 14Bxx
+  - 14B05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 14Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 14Bxx
+  - 14-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.7
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Jacobian criterion at a hypersurface point
+  body: >
+    Let X subseteq A^n_k be the hypersurface defined by f = 0 over an
+    algebraically closed field k, and let p in X. Explain why a nonzero gradient
+    of f at p implies that p is a smooth point of X.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - affine varieties
+    - tangent spaces
+    - Jacobian criterion
+goal:
+  success_criteria: >
+    The answer should identify the Jacobian criterion, explain how the
+    nonvanishing gradient gives codimension one tangent behavior, and conclude
+    that the local ring is regular at p.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Robin Hartshorne, Algebraic Geometry, Springer, 1977.
+  year: 1977
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Hartshorne, Algebraic Geometry; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 520cfe83cc2021b3
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

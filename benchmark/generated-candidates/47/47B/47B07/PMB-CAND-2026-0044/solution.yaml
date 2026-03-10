@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0044
+solution_id: SOL-CAND-0044
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  If T were boundedly invertible, then B_X would be contained in ||T^{-1}||
+  times T(B_X). But T(B_X) has compact closure because T is compact, so this
+  would imply that the unit ball of X is relatively compact. That cannot happen
+  in an infinite-dimensional Banach space. Hence a compact operator on such a
+  space cannot be boundedly invertible.
+required_ingredients:
+  - relative compactness of the image of the unit ball
+  - noncompactness of the unit ball in infinite dimension
+common_failure_modes:
+  - forgetting to use invertibility to compare the unit ball with the image
+verification_status: reference_grounded_candidate

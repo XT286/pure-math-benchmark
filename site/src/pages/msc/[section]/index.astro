@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import QueryCard from "../../../components/QueryCard.astro";
-import { getCatalog, getChildren, getNodeByCode, getQueriesForCode, getSectionByShortCode } from "../../../lib/catalog.js";
+import { getCandidateQueriesForCode, getCatalog, getChildren, getNodeByCode, getQueriesForCode, getSectionByShortCode } from "../../../lib/catalog.js";
 
 export function getStaticPaths() {
   const catalog = getCatalog();
@@ -15,6 +15,7 @@ const sectionRecord = getSectionByShortCode(section);
 const node = getNodeByCode(`${section}-XX`);
 const subclasses = getChildren(node);
 const queries = getQueriesForCode(node.code);
+const candidateQueries = getCandidateQueriesForCode(node.code);
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
@@ -28,7 +29,8 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
         <p class="muted">Coverage status: <span class="badge">{sectionRecord.coverage_status}</span></p>
       </div>
       <div class="badge-row">
-        <span class="badge">{queries.length} queries</span>
+        <span class="badge">{queries.length} reviewed</span>
+        <span class="badge">{candidateQueries.length} candidate</span>
         <span class="badge">{subclasses.length} subclasses</span>
       </div>
     </div>
@@ -40,13 +42,22 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
       <a class="card" href={`${basePath}/msc/${sectionRecord.short_code}/${subclass.short_code}/`}>
         <strong>{subclass.short_code}</strong>
         <h3 style="margin:12px 0 8px;">{subclass.label}</h3>
-        <div class="muted">{getQueriesForCode(subclass.code).length} visible queries</div>
+        <div class="muted">
+          {getQueriesForCode(subclass.code).length} reviewed, {getCandidateQueriesForCode(subclass.code).length} candidate
+        </div>
       </a>
     ))}
   </div>
 
-  <h2 class="section-title">Visible queries in this section</h2>
+  <h2 class="section-title">Reviewed queries in this section</h2>
   <div class="list">
     {queries.length > 0 ? queries.map((query) => <QueryCard query={query} />) : <div class="card">No public queries in this section yet.</div>}
+  </div>
+
+  <h2 class="section-title">Draft candidate queries in this section</h2>
+  <div class="list">
+    {candidateQueries.length > 0
+      ? candidateQueries.map((query) => <QueryCard query={query} />)
+      : <div class="card">No draft candidate queries in this section yet.</div>}
   </div>
 </BaseLayout>

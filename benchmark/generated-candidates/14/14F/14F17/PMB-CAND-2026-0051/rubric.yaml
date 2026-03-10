@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0051
+query_id: PMB-CAND-2026-0051
+owning_area_code: 14Fxx
+rubric_basis: Reference-grounded candidate rubric derived from Lazarsfeld, Positivity.
+rubric_focus:
+  problem_type: hypothesis_sensitivity
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should state the usual version of Kodaira vanishing and identify
+  the role of smoothness, projectivity, characteristic zero, and ampleness in
+  legitimizing the conclusion.
+required_elements:
+  - state a standard Kodaira vanishing theorem accurately
+  - identify the hypotheses that matter
+  - explain why the theorem is not a free black box outside that regime
+alternate_valid_approaches: []
+fatal_errors:
+  - stating Kodaira vanishing with no characteristic or smoothness assumptions
+  - confusing nef or big hypotheses with the classical statement without
+    qualification
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

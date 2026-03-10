@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0050
+solution_id: SOL-CAND-0050
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  A smooth curve is normal, and the normalization of an integral projective
+  curve is unique. Since f is birational and proper, it factors through the
+  normalization of D. But D is already smooth and hence normal, so its
+  normalization is D itself. Therefore the birational morphism cannot modify the
+  curve and must be an isomorphism.
+required_ingredients:
+  - normality of smooth curves
+  - normalization of curves
+common_failure_modes:
+  - importing surface-style blowup intuition into the curve case
+verification_status: reference_grounded_candidate

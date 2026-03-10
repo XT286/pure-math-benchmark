@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0053
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Why the Grassmannian has dimension k(n-k)
+primary_msc_code: 14M15
+primary_msc_path:
+  - 14-XX
+  - 14Mxx
+  - 14M15
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 14Mxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 14Mxx
+  - 14-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.6
+problem_type: proof_strategy
+answer_format: proof_outline
+statement:
+  title: Why the Grassmannian has dimension k(n-k)
+  body: >
+    Explain why the Grassmannian Gr(k, n) of k-dimensional subspaces of an
+    n-dimensional vector space has dimension k(n-k), using a geometric parameter
+    count that would be acceptable in algebraic-geometry work.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - Grassmannians
+    - local charts or Schubert cells
+    - dimension in algebraic geometry
+goal:
+  success_criteria: >
+    The answer should give a chart-based or Schubert-cell-based dimension
+    calculation and justify why the resulting parameter count reflects the
+    dimension of the variety.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "Joe Harris, Algebraic Geometry: A First Course, Springer, 1992."
+  year: 1992
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Harris, A First Course; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: f601836fb2d5c6f0
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

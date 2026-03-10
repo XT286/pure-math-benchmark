@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0043
+solution_id: SOL-CAND-0043
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The Grothendieck construction builds a category whose objects are pairs (U, x)
+  with U in C and x in F(U), and whose morphisms consist of a base morphism f: U
+  -> V together with a morphism x -> F(f)(y) in F(U). The projection sends (U,
+  x) to U. The pseudofunctor's coherence isomorphisms are exactly what make
+  iterated pullback along composable morphisms behave associatively up to the
+  cartesian structure required for a fibred category.
+required_ingredients:
+  - Grothendieck construction
+  - coherence data for pseudofunctors
+common_failure_modes:
+  - describing only presheaves of sets rather than categories
+verification_status: reference_grounded_candidate

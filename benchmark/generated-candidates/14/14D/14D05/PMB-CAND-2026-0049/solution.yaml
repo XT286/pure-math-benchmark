@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0049
+solution_id: SOL-CAND-0049
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  In a smooth proper family of connected curves, cohomological invariants such
+  as h^1(O_{X_s}) vary well under base change, and the Euler characteristic of
+  O_{X_s} is locally constant. Since the genus satisfies g = h^1(O_{X_s}) = 1 -
+  chi(O_{X_s}) for a connected smooth projective curve, the genus is locally
+  constant on the base.
+required_ingredients:
+  - smooth proper base change or constancy of Euler characteristic
+common_failure_modes:
+  - arguing from visual deformation of curves without invariant control
+verification_status: reference_grounded_candidate

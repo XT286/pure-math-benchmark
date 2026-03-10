@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0047
+generation_method: reference_grounded_seed_spec
+source_id: vakil-rising-sea
+source_citation: "Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry, lecture notes."
+source_scope_notes: Broad modern reference for schemes, families, Hilbert
+  schemes, and foundational algebro-geometric constructions.
+msc_path:
+  - "14"
+  - 14C
+  - 14C05
+adaptation_notes: Candidate adapted from a standard theorem-level fact in Vakil,
+  The Rising Sea; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

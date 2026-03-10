@@ -1,0 +1,31 @@
+rubric_id: RUB-CAND-0050
+query_id: PMB-CAND-2026-0050
+owning_area_code: 14Exx
+rubric_basis: Reference-grounded candidate rubric derived from Hartshorne,
+  Algebraic Geometry.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should use regularity and normality of smooth curves, together with
+  the universal property of normalization or an equivalent argument, to conclude
+  that no nontrivial birational modification is possible.
+required_elements:
+  - identify the role of normality/smoothness
+  - explain why a birational finite morphism between smooth curves is an
+    isomorphism
+  - connect the argument to normalization
+alternate_valid_approaches: []
+fatal_errors:
+  - claiming the statement for higher-dimensional varieties
+  - forgetting projectivity or properness when controlling birational maps
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

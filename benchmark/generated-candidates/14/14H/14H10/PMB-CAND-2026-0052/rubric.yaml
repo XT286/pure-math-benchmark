@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0052
+query_id: PMB-CAND-2026-0052
+owning_area_code: 14Hxx
+rubric_basis: Reference-grounded candidate rubric derived from Harris, A First Course.
+rubric_focus:
+  problem_type: invariant_interpretation
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should explain that genus is controlled by a cohomological
+  invariant stable in smooth proper families, so the family lies over one fixed
+  moduli stratum by genus.
+required_elements:
+  - identify the invariant controlling genus
+  - explain constancy in families
+  - connect the conclusion to the moduli interpretation
+alternate_valid_approaches: []
+fatal_errors:
+  - treating genus as a visibly varying topological feature in a smooth family
+  - ignoring connectedness of the fibers
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

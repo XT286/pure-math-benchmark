@@ -1,0 +1,63 @@
+id: PMB-CAND-2026-0044
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Compact operators are not invertible on infinite-dimensional Banach spaces
+primary_msc_code: 47B07
+primary_msc_path:
+  - 47-XX
+  - 47Bxx
+  - 47B07
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 47Bxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 47Bxx
+  - 47-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.4
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Compact operators are not invertible on infinite-dimensional Banach spaces
+  body: >
+    Let X be an infinite-dimensional Banach space and T: X -> X a compact
+    operator. Explain why T cannot be boundedly invertible.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - Banach spaces
+    - compact operators
+    - Riesz lemma or compactness of the unit ball image
+goal:
+  success_criteria: >
+    The answer should show that bounded invertibility would force the image of
+    the unit ball to contain a scaled copy of the unit ball, contradicting the
+    compactness properties of bounded sets in infinite-dimensional Banach
+    spaces.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: John B. Conway, A Course in Functional Analysis, 2nd ed., Springer, 1990.
+  year: 1990
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Conway, Functional Analysis; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: b9c1450a224da0f2
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0053
+generation_method: reference_grounded_seed_spec
+source_id: harris-first-course
+source_citation: "Joe Harris, Algebraic Geometry: A First Course, Springer, 1992."
+source_scope_notes: Standard reference for projective techniques, Grassmannians,
+  families of curves, and classical research-oriented examples.
+msc_path:
+  - "14"
+  - 14M
+  - 14M15
+adaptation_notes: Candidate adapted from a standard theorem-level fact in
+  Harris, A First Course; explicit expert review required before promotion into
+  benchmark/queries.
+review_gate:
+  - area expert must confirm the query statement is mathematically sound
+  - area expert must confirm the rubric accepts standard valid approaches
+  - editor must assess contamination and novelty before any release

@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0054
+solution_id: SOL-CAND-0054
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Bertini's theorem says that on a smooth projective variety over an
+  algebraically closed field of characteristic zero, a general member of a
+  base-point-free linear system is smooth. The base-point-free hypothesis
+  ensures there is no forced singularity at a fixed base locus, and the theorem
+  underwrites many research arguments that pass to general sections to simplify
+  dimension or positivity questions.
+required_ingredients:
+  - Bertini smoothness theorem
+common_failure_modes:
+  - substituting an arbitrary special divisor for a general member
+verification_status: reference_grounded_candidate

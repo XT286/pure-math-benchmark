@@ -1,0 +1,18 @@
+query_id: PMB-CAND-2026-0051
+solution_id: SOL-CAND-0051
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Classical Kodaira vanishing applies to a smooth projective variety over a
+  field of characteristic zero together with an ample line bundle L, yielding
+  H^i(X, K_X tensor L) = 0 for i > 0. In research use one must check those
+  hypotheses carefully: singularities, positive characteristic, or weakened
+  positivity assumptions can require different vanishing theorems or can
+  invalidate the argument entirely.
+required_ingredients:
+  - classical Kodaira vanishing theorem
+  - sensitivity to characteristic, singularities, and positivity assumptions
+common_failure_modes:
+  - applying Kodaira vanishing in positive characteristic without qualification
+verification_status: reference_grounded_candidate

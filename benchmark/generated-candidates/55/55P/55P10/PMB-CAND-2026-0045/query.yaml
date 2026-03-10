@@ -1,0 +1,64 @@
+id: PMB-CAND-2026-0045
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Whitehead theorem as a research-use equivalence test
+primary_msc_code: 55P10
+primary_msc_path:
+  - 55-XX
+  - 55Pxx
+  - 55P10
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 55Pxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 55Pxx
+  - 55-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.6
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Whitehead theorem as a research-use equivalence test
+  body: >
+    Let f: X -> Y be a map between connected CW complexes that induces
+    isomorphisms on all homotopy groups. Explain why Whitehead's theorem allows
+    one to conclude that f is a homotopy equivalence.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - CW complexes
+    - homotopy groups
+    - homotopy equivalence
+    - Whitehead theorem
+goal:
+  success_criteria: >
+    The answer should identify the exact theorem being applied, note the CW
+    hypotheses, and explain why weak equivalence upgrades to homotopy
+    equivalence in this setting.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Allen Hatcher, Algebraic Topology, Cambridge University Press, 2002.
+  year: 2002
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Hatcher, Algebraic Topology; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 056a43c0c7812736
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

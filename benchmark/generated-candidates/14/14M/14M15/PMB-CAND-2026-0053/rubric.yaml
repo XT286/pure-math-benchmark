@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0053
+query_id: PMB-CAND-2026-0053
+owning_area_code: 14Mxx
+rubric_basis: Reference-grounded candidate rubric derived from Harris, A First Course.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should give a chart-based or Schubert-cell-based dimension
+  calculation and justify why the resulting parameter count reflects the
+  dimension of the variety.
+required_elements:
+  - identify a local chart or cell decomposition
+  - count the free parameters
+  - conclude the dimension formula
+alternate_valid_approaches: []
+fatal_errors:
+  - giving only a naive linear-algebra count with no geometric justification
+  - confusing Gr(k, n) with projective space
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

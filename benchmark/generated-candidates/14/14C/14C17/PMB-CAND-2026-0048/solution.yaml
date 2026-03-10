@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0048
+solution_id: SOL-CAND-0048
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  On the blowup of a smooth surface at a point, the exceptional divisor is
+  isomorphic to P^1 and its normal bundle is O_{P^1}(-1). The degree of this
+  normal bundle equals the self-intersection number of E, so E^2 = -1. This
+  identifies E as an exceptional curve of the first kind, the basic contractible
+  curve in birational surface geometry.
+required_ingredients:
+  - normal bundle of the exceptional divisor
+  - intersection-theoretic interpretation of self-intersection
+common_failure_modes:
+  - asserting E^2 = -1 from memory without geometric justification
+verification_status: reference_grounded_candidate

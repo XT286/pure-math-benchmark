@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0047
+solution_id: SOL-CAND-0047
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  The Hilbert scheme represents the functor of flat families of closed
+  subschemes of P^n with fixed Hilbert polynomial P. Evaluating that functor on
+  Spec k shows that a k-point of Hilb^P(P^n) corresponds to a closed subscheme Z
+  subseteq P^n_k whose Hilbert polynomial is P. The point thus records the full
+  scheme structure, not just the underlying set.
+required_ingredients:
+  - Hilbert functor
+  - representability viewpoint
+common_failure_modes:
+  - collapsing scheme structure to set-theoretic support
+verification_status: reference_grounded_candidate

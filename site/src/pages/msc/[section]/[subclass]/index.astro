@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../../../layouts/BaseLayout.astro";
 import QueryCard from "../../../../components/QueryCard.astro";
-import { getCatalog, getChildren, getNodeByCode, getQueriesForCode } from "../../../../lib/catalog.js";
+import { getCandidateQueriesForCode, getCatalog, getChildren, getNodeByCode, getQueriesForCode } from "../../../../lib/catalog.js";
 
 export function getStaticPaths() {
   const catalog = getCatalog();
@@ -24,6 +24,7 @@ const { section, subclass } = Astro.params;
 const node = getNodeByCode(`${subclass}xx`);
 const leafNodes = getChildren(node);
 const queries = getQueriesForCode(node.code);
+const candidateQueries = getCandidateQueriesForCode(node.code);
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
@@ -46,13 +47,20 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
       <a class="card" href={`${basePath}/msc/${section}/${subclass}/${leaf.short_code}/`}>
         <strong>{leaf.short_code}</strong>
         <h3 style="margin:12px 0 8px;">{leaf.label}</h3>
-        <div class="muted">{getQueriesForCode(leaf.code).length} visible queries</div>
+        <div class="muted">{getQueriesForCode(leaf.code).length} reviewed, {getCandidateQueriesForCode(leaf.code).length} candidate</div>
       </a>
     ))}
   </div>
 
-  <h2 class="section-title">Visible queries in this area</h2>
+  <h2 class="section-title">Reviewed queries in this area</h2>
   <div class="list">
     {queries.length > 0 ? queries.map((query) => <QueryCard query={query} />) : <div class="card">No public queries in this subclass yet.</div>}
+  </div>
+
+  <h2 class="section-title">Draft candidate queries in this area</h2>
+  <div class="list">
+    {candidateQueries.length > 0
+      ? candidateQueries.map((query) => <QueryCard query={query} />)
+      : <div class="card">No draft candidate queries in this subclass yet.</div>}
   </div>
 </BaseLayout>

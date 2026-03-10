@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0048
+query_id: PMB-CAND-2026-0048
+owning_area_code: 14Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Hartshorne,
+  Algebraic Geometry.
+rubric_focus:
+  problem_type: proof_strategy
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should justify the self-intersection calculation and connect it to
+  the role of exceptional curves in birational transformations of surfaces.
+required_elements:
+  - identify E as the exceptional divisor of the blowup
+  - explain or compute the self-intersection E^2 = -1
+  - connect the calculation to birational surface geometry
+alternate_valid_approaches: []
+fatal_errors:
+  - giving only a set-theoretic description of E
+  - confusing the normal bundle degree with a positive intersection number
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import {
+  getCatalog,
+  getCandidateProvenanceByQueryId,
+  getCandidateQueryById,
+  getCandidateRubricByQueryId,
+  getCandidateSolutionByQueryId,
+  shortSectionCode,
+  shortSubclassCode,
+} from "../../../lib/catalog.js";
+
+export function getStaticPaths() {
+  const catalog = getCatalog();
+  return (catalog.candidate_queries ?? []).map((query) => ({
+    params: { id: query.id },
+  }));
+}
+
+const { id } = Astro.params;
+const query = getCandidateQueryById(id);
+const rubric = getCandidateRubricByQueryId(id);
+const solution = getCandidateSolutionByQueryId(id);
+const provenance = getCandidateProvenanceByQueryId(id);
+const section = shortSectionCode(query.primary_msc_code);
+const subclass = shortSubclassCode(query.primary_msc_code);
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<BaseLayout title={`${query.title} | Candidate`}>
+  <div class="breadcrumbs">
+    Home / <a href={`${basePath}/msc/`}>MSC</a> /
+    <a href={`${basePath}/msc/${section}/`}>{section}</a> /
+    <a href={`${basePath}/msc/${section}/${subclass}/`}>{subclass}</a> /
+    <a href={`${basePath}/msc/${section}/${subclass}/${query.primary_msc_code}/`}>{query.primary_msc_code}</a> /
+    {query.id}
+  </div>
+
+  <section class="hero">
+    <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;">
+      <div>
+        <h2 style="margin-top:0;">{query.title}</h2>
+        <div class="muted"><code>{query.id}</code></div>
+      </div>
+      <div class="badge-row">
+        <span class="badge">candidate</span>
+        <span class="badge">{query.status}</span>
+      </div>
+    </div>
+    <p class="muted" style="margin-bottom:0;">
+      This is a draft candidate query package. It is publicly visible for coverage and review planning, but it is not yet a canonical expert-reviewed benchmark item.
+    </p>
+    <div class="badge-row">
+      <span class="badge">Primary MSC {query.primary_msc_code}</span>
+      <span class="badge">Owning area {query.owning_area_code}</span>
+      <span class="badge">{query.problem_type}</span>
+      <span class="badge">{query.answer_format}</span>
+      <span class="badge">{query.difficulty.stage}</span>
+    </div>
+  </section>
+
+  <h2 class="section-title">Candidate query</h2>
+  <div class="card">
+    <p>{query.statement.body}</p>
+    <h3>Prerequisites</h3>
+    <ul>
+      {query.statement.prerequisites_assumed.map((item) => <li>{item}</li>)}
+    </ul>
+    <h3>Success criteria</h3>
+    <p>{query.goal.success_criteria}</p>
+  </div>
+
+  <h2 class="section-title">Candidate rubric</h2>
+  <div class="card">
+    <h3>Required elements</h3>
+    <ul>
+      {rubric.required_elements.map((item) => <li>{item}</li>)}
+    </ul>
+    <h3>Fatal errors</h3>
+    <ul>
+      {rubric.fatal_errors.map((item) => <li>{item}</li>)}
+    </ul>
+    <h3>Partial credit guidance</h3>
+    <ul>
+      {rubric.partial_credit_guidance.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  <h2 class="section-title">Solution outline</h2>
+  <div class="card">
+    <p>{solution.outline_summary}</p>
+    <h3>Required ingredients</h3>
+    <ul>
+      {solution.required_ingredients.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+
+  <h2 class="section-title">Provenance</h2>
+  <div class="card">
+    <p><strong>Source:</strong> {provenance.source_citation}</p>
+    <p><strong>Scope notes:</strong> {provenance.source_scope_notes}</p>
+    <p><strong>Adaptation notes:</strong> {provenance.adaptation_notes}</p>
+    <h3>Review gate</h3>
+    <ul>
+      {provenance.review_gate.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</BaseLayout>

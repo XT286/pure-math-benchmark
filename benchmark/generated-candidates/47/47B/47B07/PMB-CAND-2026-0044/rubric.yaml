@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0044
+query_id: PMB-CAND-2026-0044
+owning_area_code: 47Bxx
+rubric_basis: Reference-grounded candidate rubric derived from Conway, Functional Analysis.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should show that bounded invertibility would force the image of the
+  unit ball to contain a scaled copy of the unit ball, contradicting the
+  compactness properties of bounded sets in infinite-dimensional Banach spaces.
+required_elements:
+  - use the compactness of T(B_X)
+  - explain what bounded invertibility would imply for B_X
+  - identify the contradiction with infinite-dimensionality
+alternate_valid_approaches: []
+fatal_errors:
+  - appealing to finite-dimensional determinant arguments
+  - using compactness of the unit ball in an infinite-dimensional Banach space
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

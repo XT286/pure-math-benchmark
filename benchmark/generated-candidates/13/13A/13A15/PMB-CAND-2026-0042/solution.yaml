@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0042
+solution_id: SOL-CAND-0042
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Prime avoidance says that if an ideal is contained in a finite union of prime
+  ideals, then it must already be contained in one of them. The proof proceeds
+  by induction on the number of primes and uses primality to force a
+  contradiction if no single containment holds. In applications, the finite
+  union condition is essential; without it, the conclusion can fail.
+required_ingredients:
+  - prime avoidance lemma
+common_failure_modes:
+  - arguing only elementwise and never concluding containment of the whole ideal
+verification_status: reference_grounded_candidate

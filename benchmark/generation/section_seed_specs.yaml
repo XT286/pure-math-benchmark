@@ -1334,3 +1334,567 @@ seeds:
       - orthogonal-complement dimension formula
     common_failure_modes:
       - using generator and parity-check matrices without linking them to orthogonality
+  - msc_code: 03C64
+    source_id: marker-model-theory
+    title: Monotonicity on a definable interval in an o-minimal structure
+    difficulty_stage: phd
+    reviewer_score: 3.7
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let M be an o-minimal expansion of a real closed field and let
+      f: (a, b) -> M be definable. A collaborator wants to analyze f by cutting
+      the interval into finitely many pieces on which f has controlled behavior.
+      Explain why o-minimality guarantees a finite partition of (a, b) into
+      subintervals on each of which f is continuous and either constant or
+      strictly monotone.
+    prerequisites_assumed:
+      - o-minimality
+      - definable sets in one variable
+      - cell decomposition or monotonicity theorem
+    success_criteria: >
+      The answer should identify the o-minimal monotonicity theorem and explain
+      why one-variable definability forces only finitely many intervals of
+      discontinuity or changes of monotonic behavior.
+    required_elements:
+      - identify the monotonicity theorem for o-minimal structures
+      - explain the finiteness of the partition
+      - describe the allowed behaviors on each interval
+    fatal_errors:
+      - allowing infinitely many oscillations on a definable interval
+      - treating the conclusion as true for arbitrary measurable functions
+    outline_summary: >
+      In an o-minimal structure, the graph of a definable one-variable function
+      admits a finite cell decomposition. The monotonicity theorem derived from
+      this shows that after removing finitely many points, the domain splits into
+      finitely many intervals on which the function is continuous and either
+      constant or strictly monotone. This gives the desired finite analysis
+      scheme.
+    required_ingredients:
+      - one-dimensional cell decomposition
+      - monotonicity theorem in o-minimality
+    common_failure_modes:
+      - arguing only that the function is piecewise continuous without monotonicity
+  - msc_code: 11R29
+    source_id: neukirch-ant
+    title: Minkowski bounds and finite generation of the class group
+    difficulty_stage: phd
+    reviewer_score: 3.9
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let K be a number field. Explain why Minkowski's bound implies that every
+      ideal class of O_K contains an integral ideal of bounded norm, and why this
+      yields finiteness of the ideal class group.
+    prerequisites_assumed:
+      - ideals in number fields
+      - Minkowski's theorem
+      - norm of an ideal
+      - ideal class group
+    success_criteria: >
+      The answer should explain how geometry of numbers gives a bounded-norm
+      representative in each ideal class and then use finiteness of the set of
+      ideals below a fixed norm bound to conclude that the class group is finite.
+    required_elements:
+      - identify the role of Minkowski's bound
+      - explain why each class has a bounded representative
+      - explain why only finitely many integral ideals have bounded norm
+    fatal_errors:
+      - proving finiteness of units instead of the class group
+      - omitting the bounded-representative step
+    outline_summary: >
+      Minkowski's theorem shows that for each fractional ideal class there is an
+      integral ideal in that class whose norm is bounded by a constant depending
+      only on K. Since there are only finitely many nonzero integral ideals of
+      bounded norm, only finitely many ideal classes can occur. Hence the ideal
+      class group is finite.
+    required_ingredients:
+      - Minkowski bound
+      - finiteness of ideals with bounded norm
+    common_failure_modes:
+      - confusing representatives of classes with generators of principal ideals
+  - msc_code: 13A15
+    source_id: atiyah-macdonald
+    title: Prime avoidance as a hypothesis-checking tool
+    difficulty_stage: phd
+    reviewer_score: 3.5
+    problem_type: hypothesis_sensitivity
+    answer_format: proof_outline
+    statement_body: >
+      Let R be a commutative ring and let I be an ideal contained in the union of
+      finitely many prime ideals p_1, ..., p_n. Explain why prime avoidance
+      implies that I is contained in one of the p_i, and indicate why the
+      finiteness hypothesis matters in research use.
+    prerequisites_assumed:
+      - ideals in commutative rings
+      - prime ideals
+      - prime avoidance lemma
+    success_criteria: >
+      The answer should state the prime avoidance conclusion in the finite case,
+      explain the containment result, and note that the statement can fail for
+      infinite unions or without the correct structural hypotheses.
+    required_elements:
+      - identify prime avoidance
+      - conclude I subseteq p_i for some i
+      - comment on why the finite union condition is important
+    fatal_errors:
+      - claiming the lemma holds for arbitrary infinite unions
+      - confusing ideal membership of elements with containment of ideals
+    outline_summary: >
+      Prime avoidance says that if an ideal is contained in a finite union of
+      prime ideals, then it must already be contained in one of them. The proof
+      proceeds by induction on the number of primes and uses primality to force a
+      contradiction if no single containment holds. In applications, the finite
+      union condition is essential; without it, the conclusion can fail.
+    required_ingredients:
+      - prime avoidance lemma
+    common_failure_modes:
+      - arguing only elementwise and never concluding containment of the whole ideal
+  - msc_code: 18D30
+    source_id: mac-lane
+    title: A pseudofunctor gives rise to a fibered category
+    difficulty_stage: phd
+    reviewer_score: 3.7
+    problem_type: construction
+    answer_format: structured_bullets
+    statement_body: >
+      Let F: C^op -> Cat be a pseudofunctor. Explain how the Grothendieck
+      construction produces a category fibred over C, and identify the role of
+      the coherence data in making pullback along morphisms behave correctly.
+    prerequisites_assumed:
+      - categories and functors
+      - pseudofunctors
+      - fibered categories
+    success_criteria: >
+      The answer should describe the objects and morphisms in the Grothendieck
+      construction, identify the projection to C, and explain why the coherence
+      isomorphisms supply the cartesian-lift behavior.
+    required_elements:
+      - define the category produced by the Grothendieck construction
+      - identify the projection functor to C
+      - explain how coherence controls composition of pullbacks
+    fatal_errors:
+      - treating a pseudofunctor as an ordinary strict functor without comment
+      - omitting the projection to the base category
+    outline_summary: >
+      The Grothendieck construction builds a category whose objects are pairs
+      (U, x) with U in C and x in F(U), and whose morphisms consist of a base
+      morphism f: U -> V together with a morphism x -> F(f)(y) in F(U). The
+      projection sends (U, x) to U. The pseudofunctor's coherence isomorphisms
+      are exactly what make iterated pullback along composable morphisms behave
+      associatively up to the cartesian structure required for a fibred category.
+    required_ingredients:
+      - Grothendieck construction
+      - coherence data for pseudofunctors
+    common_failure_modes:
+      - describing only presheaves of sets rather than categories
+  - msc_code: 47B07
+    source_id: conway-functional
+    title: Compact operators are not invertible on infinite-dimensional Banach spaces
+    difficulty_stage: phd
+    reviewer_score: 3.4
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let X be an infinite-dimensional Banach space and T: X -> X a compact
+      operator. Explain why T cannot be boundedly invertible.
+    prerequisites_assumed:
+      - Banach spaces
+      - compact operators
+      - Riesz lemma or compactness of the unit ball image
+    success_criteria: >
+      The answer should show that bounded invertibility would force the image of
+      the unit ball to contain a scaled copy of the unit ball, contradicting the
+      compactness properties of bounded sets in infinite-dimensional Banach
+      spaces.
+    required_elements:
+      - use the compactness of T(B_X)
+      - explain what bounded invertibility would imply for B_X
+      - identify the contradiction with infinite-dimensionality
+    fatal_errors:
+      - appealing to finite-dimensional determinant arguments
+      - using compactness of the unit ball in an infinite-dimensional Banach space
+    outline_summary: >
+      If T were boundedly invertible, then B_X would be contained in ||T^{-1}||
+      times T(B_X). But T(B_X) has compact closure because T is compact, so this
+      would imply that the unit ball of X is relatively compact. That cannot
+      happen in an infinite-dimensional Banach space. Hence a compact operator on
+      such a space cannot be boundedly invertible.
+    required_ingredients:
+      - relative compactness of the image of the unit ball
+      - noncompactness of the unit ball in infinite dimension
+    common_failure_modes:
+      - forgetting to use invertibility to compare the unit ball with the image
+  - msc_code: 55P10
+    source_id: hatcher
+    title: Whitehead theorem as a research-use equivalence test
+    difficulty_stage: phd
+    reviewer_score: 3.6
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let f: X -> Y be a map between connected CW complexes that induces
+      isomorphisms on all homotopy groups. Explain why Whitehead's theorem
+      allows one to conclude that f is a homotopy equivalence.
+    prerequisites_assumed:
+      - CW complexes
+      - homotopy groups
+      - homotopy equivalence
+      - Whitehead theorem
+    success_criteria: >
+      The answer should identify the exact theorem being applied, note the CW
+      hypotheses, and explain why weak equivalence upgrades to homotopy
+      equivalence in this setting.
+    required_elements:
+      - mention the CW complex hypothesis
+      - identify isomorphisms on all homotopy groups as weak equivalence data
+      - conclude homotopy equivalence by Whitehead's theorem
+    fatal_errors:
+      - claiming the conclusion for arbitrary spaces without the CW hypothesis
+      - confusing homology isomorphisms with homotopy-group isomorphisms
+    outline_summary: >
+      For connected CW complexes, Whitehead's theorem states that a weak
+      homotopy equivalence is a homotopy equivalence. The assumption that f
+      induces isomorphisms on all homotopy groups says exactly that f is a weak
+      equivalence, so the theorem applies and yields a genuine homotopy
+      equivalence.
+    required_ingredients:
+      - Whitehead theorem
+    common_failure_modes:
+      - silently replacing the CW hypothesis by a homology condition
+  - msc_code: 14B05
+    source_id: hartshorne
+    title: Jacobian criterion at a hypersurface point
+    difficulty_stage: phd
+    reviewer_score: 3.7
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let X subseteq A^n_k be the hypersurface defined by f = 0 over an
+      algebraically closed field k, and let p in X. Explain why a nonzero
+      gradient of f at p implies that p is a smooth point of X.
+    prerequisites_assumed:
+      - affine varieties
+      - tangent spaces
+      - Jacobian criterion
+    success_criteria: >
+      The answer should identify the Jacobian criterion, explain how the
+      nonvanishing gradient gives codimension one tangent behavior, and conclude
+      that the local ring is regular at p.
+    required_elements:
+      - identify the Jacobian criterion
+      - explain the role of the nonzero partial derivative
+      - conclude smoothness at p
+    fatal_errors:
+      - treating nonzero gradient as a global smoothness statement
+      - confusing singularity of the polynomial with singularity of the point
+    outline_summary: >
+      For a hypersurface, the Jacobian matrix is the row of partial derivatives
+      of f. If at least one partial derivative is nonzero at p, then the rank of
+      the Jacobian at p is one, so the Zariski tangent space has the expected
+      codimension one. By the Jacobian criterion, p is therefore a smooth point
+      of X.
+    required_ingredients:
+      - Jacobian criterion for hypersurfaces
+    common_failure_modes:
+      - not localizing the argument at the chosen point
+  - msc_code: 14C05
+    source_id: vakil-rising-sea
+    title: What a point of the Hilbert scheme actually parametrizes
+    difficulty_stage: phd
+    reviewer_score: 3.8
+    problem_type: invariant_interpretation
+    answer_format: proof_outline
+    statement_body: >
+      Let P be a fixed Hilbert polynomial. Explain why a closed point of the
+      Hilbert scheme Hilb^P(P^n) should be interpreted as a closed subscheme of
+      P^n with Hilbert polynomial P, rather than merely as a subset of points.
+    prerequisites_assumed:
+      - projective schemes
+      - Hilbert polynomial
+      - Hilbert scheme
+    success_criteria: >
+      The answer should identify the functor represented by the Hilbert scheme
+      and explain that the represented objects are families of closed subschemes,
+      so a closed point corresponds to a single closed subscheme with the given
+      Hilbert polynomial.
+    required_elements:
+      - mention representability of the Hilbert functor
+      - identify the object represented at a closed point
+      - distinguish subschemes from mere finite or set-theoretic point data
+    fatal_errors:
+      - interpreting the Hilbert scheme as only parameterizing reduced sets of points
+      - omitting the Hilbert polynomial condition
+    outline_summary: >
+      The Hilbert scheme represents the functor of flat families of closed
+      subschemes of P^n with fixed Hilbert polynomial P. Evaluating that functor
+      on Spec k shows that a k-point of Hilb^P(P^n) corresponds to a closed
+      subscheme Z subseteq P^n_k whose Hilbert polynomial is P. The point thus
+      records the full scheme structure, not just the underlying set.
+    required_ingredients:
+      - Hilbert functor
+      - representability viewpoint
+    common_failure_modes:
+      - collapsing scheme structure to set-theoretic support
+  - msc_code: 14C17
+    source_id: hartshorne
+    title: Exceptional divisors on a surface blowup have self-intersection minus one
+    difficulty_stage: phd
+    reviewer_score: 4.0
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Let pi: Bl_p(S) -> S be the blowup of a smooth surface S at a point p, and
+      let E be the exceptional divisor. Explain why E^2 = -1 and why this
+      numerical fact matters in birational surface geometry.
+    prerequisites_assumed:
+      - blowups of smooth surfaces
+      - exceptional divisors
+      - intersection theory on surfaces
+    success_criteria: >
+      The answer should justify the self-intersection calculation and connect it
+      to the role of exceptional curves in birational transformations of
+      surfaces.
+    required_elements:
+      - identify E as the exceptional divisor of the blowup
+      - explain or compute the self-intersection E^2 = -1
+      - connect the calculation to birational surface geometry
+    fatal_errors:
+      - giving only a set-theoretic description of E
+      - confusing the normal bundle degree with a positive intersection number
+    outline_summary: >
+      On the blowup of a smooth surface at a point, the exceptional divisor is
+      isomorphic to P^1 and its normal bundle is O_{P^1}(-1). The degree of this
+      normal bundle equals the self-intersection number of E, so E^2 = -1. This
+      identifies E as an exceptional curve of the first kind, the basic
+      contractible curve in birational surface geometry.
+    required_ingredients:
+      - normal bundle of the exceptional divisor
+      - intersection-theoretic interpretation of self-intersection
+    common_failure_modes:
+      - asserting E^2 = -1 from memory without geometric justification
+  - msc_code: 14D05
+    source_id: vakil-rising-sea
+    title: Genus constancy in a smooth proper family of curves
+    difficulty_stage: phd
+    reviewer_score: 3.9
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let f: X -> S be a smooth proper morphism whose fibers are connected curves.
+      Explain why the genus of the fibers is locally constant on S, and why this
+      is the kind of fact one checks before treating the family as a moduli
+      object.
+    prerequisites_assumed:
+      - smooth proper morphisms
+      - families of curves
+      - genus and Euler characteristic
+    success_criteria: >
+      The answer should connect smooth proper base change or constancy of the
+      Euler characteristic to local constancy of the fiber genus.
+    required_elements:
+      - identify a cohomological or Euler-characteristic invariant controlling genus
+      - explain why it is locally constant in a smooth proper family
+      - conclude constancy of genus
+    fatal_errors:
+      - treating genus as arbitrary under smooth proper deformation
+      - using only topological intuition without an algebro-geometric argument
+    outline_summary: >
+      In a smooth proper family of connected curves, cohomological invariants
+      such as h^1(O_{X_s}) vary well under base change, and the Euler
+      characteristic of O_{X_s} is locally constant. Since the genus satisfies
+      g = h^1(O_{X_s}) = 1 - chi(O_{X_s}) for a connected smooth projective
+      curve, the genus is locally constant on the base.
+    required_ingredients:
+      - smooth proper base change or constancy of Euler characteristic
+    common_failure_modes:
+      - arguing from visual deformation of curves without invariant control
+  - msc_code: "14E05"
+    source_id: hartshorne
+    title: Birational morphisms of smooth projective curves are isomorphisms
+    difficulty_stage: phd
+    reviewer_score: 3.8
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let f: C -> D be a birational morphism between smooth projective curves.
+      Explain why f must already be an isomorphism.
+    prerequisites_assumed:
+      - smooth projective curves
+      - birational morphisms
+      - normalization
+    success_criteria: >
+      The answer should use regularity and normality of smooth curves, together
+      with the universal property of normalization or an equivalent argument, to
+      conclude that no nontrivial birational modification is possible.
+    required_elements:
+      - identify the role of normality/smoothness
+      - explain why a birational finite morphism between smooth curves is an isomorphism
+      - connect the argument to normalization
+    fatal_errors:
+      - claiming the statement for higher-dimensional varieties
+      - forgetting projectivity or properness when controlling birational maps
+    outline_summary: >
+      A smooth curve is normal, and the normalization of an integral projective
+      curve is unique. Since f is birational and proper, it factors through the
+      normalization of D. But D is already smooth and hence normal, so its
+      normalization is D itself. Therefore the birational morphism cannot modify
+      the curve and must be an isomorphism.
+    required_ingredients:
+      - normality of smooth curves
+      - normalization of curves
+    common_failure_modes:
+      - importing surface-style blowup intuition into the curve case
+  - msc_code: 14F17
+    source_id: lazarsfeld-positivity
+    title: When Kodaira vanishing can actually be invoked
+    difficulty_stage: postdoc
+    reviewer_score: 4.2
+    problem_type: hypothesis_sensitivity
+    answer_format: proof_outline
+    statement_body: >
+      A collaborator wants to apply Kodaira vanishing to conclude that
+      H^i(X, K_X tensor L) = 0 for i > 0. Explain the standard hypotheses needed
+      for this inference and why dropping characteristic-zero smoothness or
+      ampleness can invalidate the step.
+    prerequisites_assumed:
+      - canonical bundles
+      - ample line bundles
+      - coherent cohomology
+      - Kodaira vanishing
+    success_criteria: >
+      The answer should state the usual version of Kodaira vanishing and identify
+      the role of smoothness, projectivity, characteristic zero, and ampleness in
+      legitimizing the conclusion.
+    required_elements:
+      - state a standard Kodaira vanishing theorem accurately
+      - identify the hypotheses that matter
+      - explain why the theorem is not a free black box outside that regime
+    fatal_errors:
+      - stating Kodaira vanishing with no characteristic or smoothness assumptions
+      - confusing nef or big hypotheses with the classical statement without qualification
+    outline_summary: >
+      Classical Kodaira vanishing applies to a smooth projective variety over a
+      field of characteristic zero together with an ample line bundle L, yielding
+      H^i(X, K_X tensor L) = 0 for i > 0. In research use one must check those
+      hypotheses carefully: singularities, positive characteristic, or weakened
+      positivity assumptions can require different vanishing theorems or can
+      invalidate the argument entirely.
+    required_ingredients:
+      - classical Kodaira vanishing theorem
+      - sensitivity to characteristic, singularities, and positivity assumptions
+    common_failure_modes:
+      - applying Kodaira vanishing in positive characteristic without qualification
+  - msc_code: 14H10
+    source_id: harris-first-course
+    title: A moduli-minded reason genus is constant in a smooth family of curves
+    difficulty_stage: phd
+    reviewer_score: 3.8
+    problem_type: invariant_interpretation
+    answer_format: proof_outline
+    statement_body: >
+      Let f: X -> S be a smooth proper family of connected projective curves.
+      Explain why it makes sense to assign a single genus to the family, and why
+      that genus is constant on the base.
+    prerequisites_assumed:
+      - smooth proper families
+      - genus of a projective curve
+      - basic deformation invariants
+    success_criteria: >
+      The answer should explain that genus is controlled by a cohomological
+      invariant stable in smooth proper families, so the family lies over one
+      fixed moduli stratum by genus.
+    required_elements:
+      - identify the invariant controlling genus
+      - explain constancy in families
+      - connect the conclusion to the moduli interpretation
+    fatal_errors:
+      - treating genus as a visibly varying topological feature in a smooth family
+      - ignoring connectedness of the fibers
+    outline_summary: >
+      For a connected smooth projective curve, genus is the dimension of H^1 of
+      the structure sheaf and also determines the Euler characteristic of O_C.
+      In a smooth proper family these invariants behave locally constantly under
+      base change, so each fiber has the same genus. This is why smooth families
+      of curves naturally map into a fixed genus-g moduli problem rather than
+      mixing genera.
+    required_ingredients:
+      - genus as h^1(O_C)
+      - base-change stability in smooth proper families
+    common_failure_modes:
+      - discussing singular fibers when the hypothesis is smooth
+  - msc_code: 14M15
+    source_id: harris-first-course
+    title: Why the Grassmannian has dimension k(n-k)
+    difficulty_stage: phd
+    reviewer_score: 3.6
+    problem_type: proof_strategy
+    answer_format: proof_outline
+    statement_body: >
+      Explain why the Grassmannian Gr(k, n) of k-dimensional subspaces of an
+      n-dimensional vector space has dimension k(n-k), using a geometric
+      parameter count that would be acceptable in algebraic-geometry work.
+    prerequisites_assumed:
+      - Grassmannians
+      - local charts or Schubert cells
+      - dimension in algebraic geometry
+    success_criteria: >
+      The answer should give a chart-based or Schubert-cell-based dimension
+      calculation and justify why the resulting parameter count reflects the
+      dimension of the variety.
+    required_elements:
+      - identify a local chart or cell decomposition
+      - count the free parameters
+      - conclude the dimension formula
+    fatal_errors:
+      - giving only a naive linear-algebra count with no geometric justification
+      - confusing Gr(k, n) with projective space
+    outline_summary: >
+      Around a k-plane complementary to a fixed (n-k)-plane, the Grassmannian is
+      described by graphs of linear maps from k-space to (n-k)-space. Such maps
+      form an affine space of dimension k(n-k), giving a local chart of that
+      dimension. Equivalently, the big Schubert cell has dimension k(n-k), so
+      Gr(k, n) itself has dimension k(n-k).
+    required_ingredients:
+      - affine chart on the Grassmannian or big Schubert cell
+    common_failure_modes:
+      - counting bases of subspaces instead of subspaces themselves
+  - msc_code: 14N05
+    source_id: harris-first-course
+    title: Bertini smoothness away from the base locus
+    difficulty_stage: postdoc
+    reviewer_score: 4.0
+    problem_type: theorem_applicability
+    answer_format: proof_outline
+    statement_body: >
+      Let X be a smooth projective variety over an algebraically closed field of
+      characteristic zero, and let |V| be a base-point-free linear system on X.
+      Explain why a general divisor in |V| is smooth, and indicate why this is a
+      standard research-use step rather than a formal afterthought.
+    prerequisites_assumed:
+      - smooth projective varieties
+      - linear systems
+      - Bertini theorem
+    success_criteria: >
+      The answer should identify the Bertini smoothness theorem, state the role
+      of base-point-freeness and characteristic assumptions, and explain why one
+      uses the theorem to reduce geometric questions to general hyperplane-type
+      sections.
+    required_elements:
+      - identify Bertini smoothness
+      - explain the role of base-point-freeness
+      - connect the theorem to research-style reduction arguments
+    fatal_errors:
+      - claiming every divisor in the system is smooth
+      - ignoring characteristic issues or base points
+    outline_summary: >
+      Bertini's theorem says that on a smooth projective variety over an
+      algebraically closed field of characteristic zero, a general member of a
+      base-point-free linear system is smooth. The base-point-free hypothesis
+      ensures there is no forced singularity at a fixed base locus, and the
+      theorem underwrites many research arguments that pass to general sections
+      to simplify dimension or positivity questions.
+    required_ingredients:
+      - Bertini smoothness theorem
+    common_failure_modes:
+      - substituting an arbitrary special divisor for a general member

@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0047
+query_id: PMB-CAND-2026-0047
+owning_area_code: 14Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Vakil, The Rising Sea.
+rubric_focus:
+  problem_type: invariant_interpretation
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the functor represented by the Hilbert scheme and
+  explain that the represented objects are families of closed subschemes, so a
+  closed point corresponds to a single closed subscheme with the given Hilbert
+  polynomial.
+required_elements:
+  - mention representability of the Hilbert functor
+  - identify the object represented at a closed point
+  - distinguish subschemes from mere finite or set-theoretic point data
+alternate_valid_approaches: []
+fatal_errors:
+  - interpreting the Hilbert scheme as only parameterizing reduced sets of points
+  - omitting the Hilbert polynomial condition
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

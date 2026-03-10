@@ -1,0 +1,62 @@
+id: PMB-CAND-2026-0050
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Birational morphisms of smooth projective curves are isomorphisms
+primary_msc_code: "14E05"
+primary_msc_path:
+  - 14-XX
+  - 14Exx
+  - "14E05"
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 14Exx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 14Exx
+  - 14-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.8
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Birational morphisms of smooth projective curves are isomorphisms
+  body: >
+    Let f: C -> D be a birational morphism between smooth projective curves.
+    Explain why f must already be an isomorphism.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - smooth projective curves
+    - birational morphisms
+    - normalization
+goal:
+  success_criteria: >
+    The answer should use regularity and normality of smooth curves, together
+    with the universal property of normalization or an equivalent argument, to
+    conclude that no nontrivial birational modification is possible.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: Robin Hartshorne, Algebraic Geometry, Springer, 1977.
+  year: 1977
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Hartshorne, Algebraic Geometry; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 42fb35ff14e379f7
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

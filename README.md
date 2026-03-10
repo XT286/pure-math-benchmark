@@ -59,6 +59,14 @@ The benchmark is intentionally designed to complement, rather than replicate, cu
 
 See [`docs/benchmark-landscape.md`](docs/benchmark-landscape.md) for a fuller comparison.
 
+See [`docs/candidate-catalog-roadmap.md`](docs/candidate-catalog-roadmap.md) for
+the current roadmap covering candidate-query surfacing, generation methodology,
+promotion workflow, and algebraic-geometry prioritization.
+See [`docs/query-generation-methodology.md`](docs/query-generation-methodology.md)
+for the standard-compliant query generation workflow, and
+[`docs/candidate-promotion-workflow.md`](docs/candidate-promotion-workflow.md)
+for how generated candidates become canonical benchmark items.
+
 ## Current release goals
 
 The current redesign is focused on the benchmark source-of-truth itself:

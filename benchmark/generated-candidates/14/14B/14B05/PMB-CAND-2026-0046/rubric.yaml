@@ -1,0 +1,30 @@
+rubric_id: RUB-CAND-0046
+query_id: PMB-CAND-2026-0046
+owning_area_code: 14Bxx
+rubric_basis: Reference-grounded candidate rubric derived from Hartshorne,
+  Algebraic Geometry.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the Jacobian criterion, explain how the
+  nonvanishing gradient gives codimension one tangent behavior, and conclude
+  that the local ring is regular at p.
+required_elements:
+  - identify the Jacobian criterion
+  - explain the role of the nonzero partial derivative
+  - conclude smoothness at p
+alternate_valid_approaches: []
+fatal_errors:
+  - treating nonzero gradient as a global smoothness statement
+  - confusing singularity of the polynomial with singularity of the point
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

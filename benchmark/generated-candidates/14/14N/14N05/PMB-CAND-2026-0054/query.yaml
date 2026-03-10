@@ -1,0 +1,65 @@
+id: PMB-CAND-2026-0054
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Bertini smoothness away from the base locus
+primary_msc_code: 14N05
+primary_msc_path:
+  - 14-XX
+  - 14Nxx
+  - 14N05
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 14Nxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 14Nxx
+  - 14-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: postdoc
+  reviewer_score: 4
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Bertini smoothness away from the base locus
+  body: >
+    Let X be a smooth projective variety over an algebraically closed field of
+    characteristic zero, and let |V| be a base-point-free linear system on X.
+    Explain why a general divisor in |V| is smooth, and indicate why this is a
+    standard research-use step rather than a formal afterthought.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - smooth projective varieties
+    - linear systems
+    - Bertini theorem
+goal:
+  success_criteria: >
+    The answer should identify the Bertini smoothness theorem, state the role of
+    base-point-freeness and characteristic assumptions, and explain why one uses
+    the theorem to reduce geometric questions to general hyperplane-type
+    sections.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "Joe Harris, Algebraic Geometry: A First Course, Springer, 1992."
+  year: 1992
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Harris, A First Course; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 682c4a149a66248d
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

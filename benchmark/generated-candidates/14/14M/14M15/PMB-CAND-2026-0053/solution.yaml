@@ -1,0 +1,16 @@
+query_id: PMB-CAND-2026-0053
+solution_id: SOL-CAND-0053
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Around a k-plane complementary to a fixed (n-k)-plane, the Grassmannian is
+  described by graphs of linear maps from k-space to (n-k)-space. Such maps form
+  an affine space of dimension k(n-k), giving a local chart of that dimension.
+  Equivalently, the big Schubert cell has dimension k(n-k), so Gr(k, n) itself
+  has dimension k(n-k).
+required_ingredients:
+  - affine chart on the Grassmannian or big Schubert cell
+common_failure_modes:
+  - counting bases of subspaces instead of subspaces themselves
+verification_status: reference_grounded_candidate

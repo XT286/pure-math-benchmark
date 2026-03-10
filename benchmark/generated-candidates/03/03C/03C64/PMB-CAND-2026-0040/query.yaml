@@ -1,0 +1,65 @@
+id: PMB-CAND-2026-0040
+version: 0.0.0
+status: draft
+benchmark_track: broad_msc_math
+title: Monotonicity on a definable interval in an o-minimal structure
+primary_msc_code: 03C64
+primary_msc_path:
+  - 03-XX
+  - 03Cxx
+  - 03C64
+secondary_msc_codes: []
+secondary_msc_paths: []
+owning_area_code: 03Cxx
+owning_editor_id: pending_assignment
+eligible_reviewer_area_codes:
+  - 03Cxx
+  - 03-XX
+cross_area_owner_codes: []
+difficulty:
+  stage: phd
+  reviewer_score: 3.7
+problem_type: theorem_applicability
+answer_format: proof_outline
+statement:
+  title: Monotonicity on a definable interval in an o-minimal structure
+  body: >
+    Let M be an o-minimal expansion of a real closed field and let f: (a, b) ->
+    M be definable. A collaborator wants to analyze f by cutting the interval
+    into finitely many pieces on which f has controlled behavior. Explain why
+    o-minimality guarantees a finite partition of (a, b) into subintervals on
+    each of which f is continuous and either constant or strictly monotone.
+  notation_conventions: []
+  definitions_included: true
+  prerequisites_assumed:
+    - o-minimality
+    - definable sets in one variable
+    - cell decomposition or monotonicity theorem
+goal:
+  success_criteria: >
+    The answer should identify the o-minimal monotonicity theorem and explain
+    why one-variable definability forces only finitely many intervals of
+    discontinuity or changes of monotonic behavior.
+  forbidden_shortcuts:
+    - citation-only answer without explaining why the cited fact applies
+    - asserting the conclusion without identifying the governing theorem or
+      construction
+source:
+  source_type: monograph
+  citation: "David Marker, Model Theory: An Introduction, Springer, 2002."
+  year: 2002
+  license_status: restricted
+  provenance_notes: Generated as a reference-grounded benchmark candidate from
+    Marker, Model Theory; pending area review.
+novelty_and_leakage:
+  public_on_web: high
+  generated_by_model: true
+  contamination_risk: medium
+  leakage_check_completed: false
+release:
+  first_release: unreleased_candidate
+  item_hash: 93b37f50de9ce793
+legacy_record:
+  split: generated_candidate
+  previous_schema_taxonomy: {}
+  previous_review_summary_embedded: {}

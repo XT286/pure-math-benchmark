@@ -1,0 +1,29 @@
+rubric_id: RUB-CAND-0040
+query_id: PMB-CAND-2026-0040
+owning_area_code: 03Cxx
+rubric_basis: Reference-grounded candidate rubric derived from Marker, Model Theory.
+rubric_focus:
+  problem_type: theorem_applicability
+  answer_format: proof_outline
+  primary_metric: mathematical correctness
+  secondary_metrics:
+    - correct theorem selection
+    - hypothesis handling
+    - clarity of proof architecture
+success_criteria: >
+  The answer should identify the o-minimal monotonicity theorem and explain why
+  one-variable definability forces only finitely many intervals of discontinuity
+  or changes of monotonic behavior.
+required_elements:
+  - identify the monotonicity theorem for o-minimal structures
+  - explain the finiteness of the partition
+  - describe the allowed behaviors on each interval
+alternate_valid_approaches: []
+fatal_errors:
+  - allowing infinitely many oscillations on a definable interval
+  - treating the conclusion as true for arbitrary measurable functions
+partial_credit_guidance:
+  - award partial credit when the governing theorem is identified correctly but
+    one justification step is incomplete
+  - award partial credit for a structurally correct proof outline that leaves
+    only routine verification gaps

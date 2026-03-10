@@ -1,0 +1,17 @@
+query_id: PMB-CAND-2026-0041
+solution_id: SOL-CAND-0041
+proof_outline_available: true
+formalization_status: none
+independent_verification_count: 0
+outline_summary: >
+  Minkowski's theorem shows that for each fractional ideal class there is an
+  integral ideal in that class whose norm is bounded by a constant depending
+  only on K. Since there are only finitely many nonzero integral ideals of
+  bounded norm, only finitely many ideal classes can occur. Hence the ideal
+  class group is finite.
+required_ingredients:
+  - Minkowski bound
+  - finiteness of ideals with bounded norm
+common_failure_modes:
+  - confusing representatives of classes with generators of principal ideals
+verification_status: reference_grounded_candidate
